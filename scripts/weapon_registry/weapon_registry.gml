@@ -178,3 +178,28 @@ function get_weapon_info(weapon_id) {
 function get_gem_info(gem_id) {
     return global.gems_pool[? gem_id]
 }
+
+/// @function remove_all_gems_from_slot(slot)
+/// @desc 卸下指定slot的所有宝石
+/// @param {string} slot 武器槽位
+function remove_all_gems_from_slot(slot){
+    var gem_array = [];
+    
+    if slot == "main_weapon"{
+        gem_array = global.save_data.equipped_items.main_weapon.gems;
+    }
+    else if slot == "secondary_weapon"{
+        gem_array = global.save_data.equipped_items.secondary_weapon.gems;
+    }
+    else if slot == "super_weapon"{
+        gem_array = global.save_data.equipped_items.super_weapon.gems;
+    }
+    
+    // 反向循环卸下所有宝石
+    for(var i = array_length(gem_array) - 1; i >= 0; i--){
+        var gem_id = gem_array[i];
+        remove_gem(gem_id);
+    }
+    
+    save_file(global.save_slot);
+}

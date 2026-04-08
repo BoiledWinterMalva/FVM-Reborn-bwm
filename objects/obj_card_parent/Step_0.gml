@@ -106,3 +106,4 @@ if timer < current_flash_speed - 1 {
     timer = 0;
 }
 
+update_aurora_buff();//根据白名单获取增伤

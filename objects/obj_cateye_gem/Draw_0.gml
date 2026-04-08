@@ -36,7 +36,7 @@ if on_click{
     var text_height = string_height_ext(description, 0.65, 180);
     
     var box_width = text_width + 20;
-    var box_height = text_height + 15;
+    var box_height = text_height + 27;
 	
 	if cooldown_timer > 0{
 		display_description += "\n正在冷却中"
@@ -53,7 +53,7 @@ if on_click{
 	draw_rectangle(box_x, box_y - box_height/2, box_x + box_width, box_y + box_height/2,  false);
     
 	draw_set_color(c_black);
-	draw_text(box_x + 10, box_y-box_height/2+7, display_description);
+	draw_text(box_x + 10, box_y-box_height/2+5, display_description);
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
 	draw_set_alpha(1);

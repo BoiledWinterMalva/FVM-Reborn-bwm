@@ -245,4 +245,29 @@ function slots_init(){
 	    {"shape":1, "sprite":spr_cotton_candy_1_0, "cost":0, "cooldown":10*60, "description":"草莓棉花糖：在空中和岩浆上承载卡片","plant_type":"coffee","feature_type":"normal","target_card":"none"},
 		{"shape":2, "sprite":spr_cotton_candy_2_0, "cost":0, "cooldown":10*60, "description":"彩虹棉花糖：在空中和岩浆上承载卡片","plant_type":"coffee","feature_type":"normal","target_card":"none"}
 	])
+	register_card("gaia", obj_gaia, [
+	    {"shape":0, "sprite":spr_gaia, "cost":350, "cooldown":35*60, "description":"盖亚神使：双连发射3*3范围爆炸的毁灭巨石","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":1, "sprite":spr_gaia_1, "cost":350, "cooldown":35*60, "description":"盖亚圣神：双连发射3*3范围爆炸的毁灭巨石","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":2, "sprite":spr_gaia_2, "cost":350, "cooldown":35*60, "description":"大地女神·盖亚：三连发射3*3范围爆炸的毁灭巨石","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":3, "sprite":spr_gaia_3, "cost":350, "cooldown":35*60, "description":"至尊大地女神：三连发射5*5范围爆炸的毁灭巨石","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
+	]);
+	register_card("aurora", obj_aurora, [
+	    {"shape":0, "sprite":spr_aurora, "cost":190, "cooldown":1800, "description":"欧若拉神使：为本行投掷类卡片增伤","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":1, "sprite":spr_aurora_1, "cost":190, "cooldown":1800, "description":"欧若拉圣神：为本行投掷类卡片增伤，死亡后爆炸","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":2, "sprite":spr_aurora_2, "cost":190, "cooldown":1800, "description":"曙光女神·欧若拉：为本行投掷类卡片增伤，死亡后爆炸","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":3, "sprite":spr_aurora_3, "cost":190, "cooldown":1800, "description":"至尊曙光女神：为本行及相邻行投掷类卡片增伤，死亡后爆炸","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
+	]);
+	register_card("warm_birds", obj_warm_birds, [
+	    {"shape":0, "sprite":spr_warm_birds, "cost":125, "cooldown":18*60, "description":"暖暖鸡：一次生产3朵火苗","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_warm_birds_1, "cost":125, "cooldown":18*60, "description":"焰羽暖暖鸡：一次生产4朵火苗","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_warm_birds_2, "cost":125, "cooldown":9*60, "description":"日耀暖暖鸡：一次生产5朵火苗","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	]);
+	register_card("sea_star", obj_sea_star, [
+	    {"shape":0, "sprite":spr_sea_star, "cost":175, "cooldown":420, "description":"芥末海星刺身：向五个方向发射两枚炭烧海星子弹","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	]);
+	register_card("tanghulu", obj_tanghulu, [
+	    {"shape":0, "sprite":spr_tanghulu, "cost":175, "cooldown":7*60, "description":"糖葫芦炮弹：对空中敌人发射追踪炮弹","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_tanghulu_1, "cost":200, "cooldown":7*60, "description":"水果糖葫芦炮弹：对空中敌人发射追踪炮弹","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_tanghulu_2, "cost":250, "cooldown":7*60, "description":"七彩糖葫芦炮弹：对空中敌人发射追踪炮弹","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	]);
 }

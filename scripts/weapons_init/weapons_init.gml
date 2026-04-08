@@ -116,6 +116,15 @@ function weapons_init(){
 									"description":"切糕盾牌：增加300生命值",
 									"name":"切糕盾牌",
 									})
+		register_weapon("master_shield",{"sprite":spr_master_shield_icon,
+									"icon":spr_master_shield_icon,
+									"obj":obj_player_shield,
+									"slot":"secondary_weapon",
+									"allowed_gems":["divine_blessing_gem","divine_forbidden_gem","divine_holy_gem","divine_protect_gem"],
+									"hp_increase":500,
+									"description":"主宰之盾：增加500生命值",
+									"name":"主宰之盾",
+									})								
 	}
 	{//注册所有超级武器
 		register_weapon("howitzer",{"sprite":spr_howitzer_icon,
@@ -140,16 +149,37 @@ function weapons_init(){
 									"atk_impact":[220,240,260,280,320,360,400,440,480,540,600,640,680,720,760,800],
 									"cycle_impact":[19.8*60,19.4*60,19*60,18.6*60,17.8*60,17*60,16.2*60,15*60,13.8*60,12.6*60,11*60,10*60,9*60,8*60,7*60,6*60]
 									})
+		register_weapon("hades_scythe",{"sprite":spr_hades_scythe_icon,
+									"icon":spr_hades_scythe_icon,
+									"obj":obj_hades_scythe_enter,
+									"slot":"super_weapon",
+									"allowed_gems":["ghost_strike_gem","ghost_spark_gem","ghost_pact_gem"],
+									"atk":230,
+									"cycle":15*60,
+									"ghost_shape":0,
+									"bullet_shape":0,
+									"bullet_amount":1,
+									"description":"冥王战镰：∞形轨迹发射旋转镰刀",
+									"name":"冥王战镰",
+									"atk_impact":[356,414,471,529,609,690,782,908,1035,1161,1380,1495,1575,1656,1736,1897],
+									"cycle_impact":[13.45*60,13*60,12.55*60,12.1*60,11.5*60,10.9*60,10.3*60,9.4*60,8.5*60,8*60,6.5*60,6.25*60,6*60,5.75*60,5.5*60,5*60],
+									"bullet_amount_impact":[1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,5],
+									"bullet_shape_impact":[0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,4],
+									"ghost_shape_impact":[0,0,0,0,0,0,0,0,0,0,0,0,1,1,2,2]
+									})														
 	}
 	{//注册所有宝石
 		register_gem("attack_gem",{"name":"攻击宝石",
-									"description":"攻击宝石：增加主武器伤害",
+									"description":"攻击宝石：增加主武器伤害\n[通用宝石]",
 									"icon":spr_attack_gem_icon,
 									"slot":"main_weapon",
-									"obj":noone
+									"obj":obj_attack_gem,
+									"max_level":15,
+									"first_cooldown":0,
+									"cooldown":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 		})
 		register_gem("laser_gem",{"name":"激光宝石",
-									"description":"激光宝石：发射清行激光",
+									"description":"激光宝石：发射清行激光\n[通用宝石]",
 									"icon":spr_laser_gem_icon,
 									"slot":"main_weapon",
 									"obj":obj_laser_gem,
@@ -159,49 +189,52 @@ function weapons_init(){
 									"range":[1,1,1,2,2,3,3,4,5,6,7]
 		})
 		register_gem("bomb_gem",{"name":"轰炸宝石",
-							"description":"轰炸宝石：召唤5个3*3范围炸弹",
-							"icon":spr_bomb_gem_icon,
-							"slot":"main_weapon",
-							"obj":obj_bomb_gem,
-							"max_level":10,
-							"first_cooldown":60,
-							"cooldown":[320,300,280,260,240,220,200,180,160,140,120]
+									"description":"轰炸宝石：召唤5个3*3范围炸弹\n[通用宝石]",
+									"icon":spr_bomb_gem_icon,
+									"slot":"main_weapon",
+									"obj":obj_bomb_gem,
+									"max_level":10,
+									"first_cooldown":60,
+									"cooldown":[320,300,280,260,240,220,200,180,160,140,120]
 		})
 		register_gem("cateye_gem",{"name":"猫眼宝石",
-							"description":"猫眼宝石：召唤猫猫",
-							"icon":spr_cateye_gem_icon,
-							"slot":"main_weapon",
-							"obj":obj_cateye_gem,
-							"max_level":10,
-							"first_cooldown":90,
-							"cooldown":[300,280,260,240,220,200,190,180,170,160,150],
-							"range":[1,1,1,2,2,3,3,4,5,6,7]
+									"description":"猫眼宝石：召唤猫猫\n[专属宝石]：猫猫枪",
+									"icon":spr_cateye_gem_icon,
+									"slot":"main_weapon",
+									"obj":obj_cateye_gem,
+									"allowed_weapons":["cat_gun"],
+									"max_level":10,
+									"first_cooldown":90,
+									"cooldown":[300,280,260,240,220,200,190,180,170,160,150],
+									"range":[1,1,1,2,2,3,3,4,5,6,7]
 		})
 		register_gem("freeze_gem",{"name":"冰冻宝石",
-					"description":"冰冻宝石：冰冻并减速全屏敌人",
-					"icon":spr_freeze_gem_icon,
-					"slot":"main_weapon",
-					"obj":obj_freeze_gem,
-					"max_level":10,
-					"first_cooldown":30,
-					"cooldown":[210,200,190,180,170,160,150,140,130,120,110]
+									"description":"冰冻宝石：冰冻并减速全屏敌人\n[通用宝石]",
+									"icon":spr_freeze_gem_icon,
+									"slot":"main_weapon",
+									"obj":obj_freeze_gem,
+									"max_level":10,
+									"first_cooldown":30,
+									"cooldown":[210,200,190,180,170,160,150,140,130,120,110]
 		})
 		register_gem("flame_recover_gem",{"name":"回火宝石",
-					"description":"回火宝石：从天上掉落火苗",
-					"icon":spr_flamerecover_gem_icon,
-					"slot":"main_weapon",
-					"obj":obj_flamerecover_gem,
-					"max_level":15,
-					"first_cooldown":5,
-					"cooldown":[40,40,35,40,35,30,35,30,20,20,15,15,15,15,15,15],
-					"flame_value":[25,25,25,25,25,25,25,25,25,25,25,26,27,29,31,33],
-					"flame_amount":[1,1,1,2,2,2,3,3,3,4,5,5,5,5,5,5]
+									"description":"回火宝石：从天上掉落火苗\n[专属宝石]：冰勺弩枪",
+									"icon":spr_flamerecover_gem_icon,
+									"slot":"main_weapon",
+									"obj":obj_flamerecover_gem,
+									"allowed_weapons":["ice_spoon_crossbow"],
+									"max_level":15,
+									"first_cooldown":5,
+									"cooldown":[40,40,35,40,35,30,35,30,20,20,15,15,15,15,15,15],
+									"flame_value":[25,25,25,25,25,25,25,25,25,25,25,26,27,29,31,33],
+									"flame_amount":[1,1,1,2,2,2,3,3,3,4,5,5,5,5,5,5]
 		})
 		register_gem("starlight_gem",{"name":"星光宝石",
-									"description":"星光宝石：压扁老鼠并产生火苗",
+									"description":"星光宝石：压扁老鼠并产生火苗\n[专属宝石]：星星枪|泡泡枪|双向水枪",
 									"icon":spr_starlight_gem_icon,
 									"slot":"main_weapon",
 									"obj":obj_starlight_gem,
+									"allowed_weapons":["star_gun","bubble_gun","double_water_gun"],
 									"max_level":10,
 									"first_cooldown":30,
 									"cooldown":60,
@@ -210,73 +243,135 @@ function weapons_init(){
 		
 		
 		register_gem("gale_gem",{"name":"疾风宝石",
-									"description":"疾风宝石：增加超级武器攻速",
+									"description":"疾风宝石：增加超级武器攻速\n[通用宝石]",
 									"icon":spr_gale_gem_icon,
 									"slot":"super_weapon",
-									"obj":noone
+									"obj":obj_gale_gem,
+									"max_level":15,
+									"first_cooldown":0,
+									"cooldown":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 		})
 		register_gem("power_gem",{"name":"强力宝石",
-									"description":"强力宝石：增加超级武器伤害",
+									"description":"强力宝石：增加超级武器伤害\n[通用宝石]",
 									"icon":spr_power_gem_icon,
 									"slot":"super_weapon",
-									"obj":noone
+									"obj":obj_power_gem,
+									"max_level":15
 		})
 		register_gem("transform_gem",{"name":"转化宝石",
-									"description":"转化宝石：子弹落地产生火苗",
+									"description":"转化宝石：子弹落地产生火苗\n[专属宝石]：榴弹炮|加强榴弹炮",
 									"icon":spr_transform_gem_icon,
 									"slot":"super_weapon",
 									"value":[3,5,8,10,13,15,20,25,30,40,50,53,55,58,63,70],
-									"obj":noone
+									"obj":obj_transform_gem,
+									"max_level":15,
+									"allowed_weapons":["enhanced_howitzer","howitzer"]
+		})
+		register_gem("ghost_strike_gem",{"name":"亡灵强袭",
+									"description":"亡灵强袭：增加冥王战镰伤害\n[专属宝石]：冥王战镰",
+									"icon":spr_ghost_strike_gem_icon,
+									"slot":"super_weapon",
+									"obj":obj_ghost_strike_gem,
+									"allowed_weapons":["hades_scythe"],
+									"max_level":15,
+									"first_cooldown":0,
+									"cooldown":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+		})
+		register_gem("ghost_spark_gem",{"name":"亡灵星火",
+									"description":"亡灵星火：增加冥王战镰攻速\n[专属宝石]：冥王战镰",
+									"icon":spr_ghost_spark_gem_icon,
+									"slot":"super_weapon",
+									"obj":obj_ghost_pact_gem,
+									"allowed_weapons":["hades_scythe"],
+									"max_level":15,
+									"first_cooldown":0,
+									"cooldown":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+		})
+		register_gem("ghost_pact_gem",{"name":"亡灵契约",
+									"description":"亡灵契约：增加冥王战镰子弹\n[专属宝石]：冥王战镰",
+									"icon":spr_ghost_pact_gem_icon,
+									"slot":"super_weapon",
+									"obj":obj_ghost_spark_gem,
+									"allowed_weapons":["hades_scythe"],
+									"max_level":15,
+									"first_cooldown":0,
+									"cooldown":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 		})
 		
 		
 		register_gem("health_gem",{"name":"生命宝石",
-									"description":"生命宝石：增加角色生命值",
+									"description":"生命宝石：增加角色生命值\n[通用宝石]",
 									"icon":spr_health_gem_icon,
 									"slot":"secondary_weapon",
 									"hp_increase":20,
-									"obj":noone
+									"obj":obj_health_gem,
+									"max_level":10
 		})
 		register_gem("produce_gem",{"name":"生产宝石",
-									"description":"生产宝石：生产火苗",
+									"description":"生产宝石：生产火苗\n[通用宝石]",
 									"icon":spr_produce_gem_icon,
 									"slot":"secondary_weapon",
 									"first_produce_delay":1,
 									"cycle":[25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10],
 									"flame_value":[5,10,15,20,25,30,40,50,60,80,100,110,120,130,140,150],
-									"obj":noone
+									"obj":obj_produce_gem,
+									"max_level":15
 		})
 		register_gem("slow_down_gem",{"name":"迟缓宝石",
-									"description":"迟缓宝石：减速周围敌人",
+									"description":"迟缓宝石：减速周围敌人\n[专属宝石]：奥利奥盾牌",
 									"icon":spr_slowdown_gem_icon,
 									"slot":"secondary_weapon",
 									"max_level":10,
 									"cooldown":[20,19,18,17,16,15,14,12,10,9,5],
-									"obj":noone
+									"obj":obj_slowdown_gem,
+									"allowed_weapons":["oreo_shield"]
 		})
 		register_gem("bleed_gem",{"name":"流血宝石",
-									"description":"流血宝石：伤害周围敌人",
+									"description":"流血宝石：伤害周围敌人\n[通用宝石]",
 									"icon":spr_bleed_gem_icon,
 									"slot":"secondary_weapon",
 									"max_level":10,
 									"atk":[5,10,15,20,25,30,40,50,60,80,100],
-									"obj":noone
+									"obj":obj_bleed_gem,
+									"first_cooldown":0,
+									"cooldown":[0,0,0,0,0,0,0,0,0,0,0]
 		})
 		register_gem("guard_gem",{"name":"守护宝石",
-									"description":"守护宝石：治疗周围卡片并增加生命上限",
+									"description":"守护宝石：治疗周围卡片并增加生命上限\n[通用宝石]",
 									"icon":spr_guard_gem_icon,
 									"slot":"secondary_weapon",
 									"max_level":10,
 									"max_hp_increase":[5,10,15,20,30,40,50,70,90,110,150],
-									"obj":noone
+									"obj":obj_guard_gem
 		})
 		register_gem("strength_gem",{"name":"蓄力宝石",
-									"description":"蓄力宝石：为周围卡片增加攻击力",
+									"description":"蓄力宝石：为周围卡片增加攻击力\n[专属宝石]：切糕盾牌",
 									"icon":spr_strength_gem_icon,
 									"slot":"secondary_weapon",
 									"max_level":10,
 									"atk_ratio":[0.05,0.06,0.07,0.09,0.11,0.13,0.16,0.19,0.22,0.26,0.30],
-									"obj":noone
+									"obj":obj_strength_gem,
+									"allowed_weapons":["cut_cake_shield"]
+		})
+		register_gem("divine_blessing_gem",{"name":"神佑之眼",
+									"description":"神佑之眼：生产火苗\n[专属宝石]：主宰之盾",
+									"icon":spr_divine_blessing_gem_icon,
+									"slot":"secondary_weapon",
+									"first_produce_delay":1,
+									"cycle":[15,15,15,14,14,14,13,13,12,11,10,10,10,10,10,10],
+									"flame_value":[20,30,40,50,60,75,90,105,120,135,150,170,190,210,230,260],
+									"obj":obj_divine_blessing_gem,
+									"allowed_weapons":["master_shield"],
+									"max_level":15
+		})
+		register_gem("divine_protect_gem",{"name":"神护之眼",
+									"description":"神护之眼：为周围卡片增加攻击力\n[专属宝石]：主宰之盾",
+									"icon":spr_divine_protect_gem_icon,
+									"slot":"secondary_weapon",
+									"max_level":15,
+									"atk_ratio":[0.07,0.08,0.09,0.11,0.14,0.17,0.20,0.23,0.26,0.29,0.32,0.35,0.38,0.42,0.46,0.50],
+									"obj":obj_divine_protect_gem,
+									"allowed_weapons":["master_shield"]
 		})
 		
 	}

@@ -37,6 +37,12 @@ function create_battle_slots() {
 		inst.card_id = deck_entry[? "card_id"];
         inst.shape = deck_entry[? "shape"]; // 存储形态信息
 		inst.depth = -2000
+		
+		// 添加这一行：读取 is_gold
+        is_gold = card_data[? "is_gold"] ?? 0;
+		if is_gold == 1 {inst.sprite_index = spr_slot_1}
+		else {inst.sprite_index = spr_slot}
+		
 		//show_debug_message("植物卡槽已生成，id：" + inst.card_id)
     }
 }

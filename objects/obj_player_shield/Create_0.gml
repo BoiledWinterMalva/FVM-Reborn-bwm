@@ -18,6 +18,8 @@ slow_down_gem = false
 bleed_gem = false
 guard_gem = false
 strength_gem = false
+divine_blessing_gem = false
+divine_protect_gem = false
 
 hp_modified_card_list = []
 atk_modified_card_list = []
@@ -61,5 +63,23 @@ if get_gem_index("strength_gem")!= -1{
 	var gem_info = get_gem_info("strength_gem")
 	var gem_level =  get_gem_level("strength_gem")
 	if gem_level > 10 gem_level = 10
+	atk_ratio = gem_info.atk_ratio[gem_level]
+}
+
+if get_gem_index("divine_blessing_gem")!= -1{
+	var gem_info = get_gem_info("divine_blessing_gem")
+	var gem_level =  get_gem_level("divine_blessing_gem")
+	cycle = gem_info.cycle[gem_level] * 60
+	flame_produce = gem_info.flame_value[gem_level]
+	first_produce_delay = gem_info.first_produce_delay * 60
+	first_produce = false
+	divine_blessing_gem = true
+}
+
+if get_gem_index("divine_protect_gem")!= -1{
+	divine_protect_gem = true
+	var gem_info = get_gem_info("divine_protect_gem")
+	var gem_level =  get_gem_level("divine_protect_gem")
+	if gem_level > 15 gem_level = 15
 	atk_ratio = gem_info.atk_ratio[gem_level]
 }

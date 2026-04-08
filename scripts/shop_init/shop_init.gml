@@ -10,6 +10,11 @@ function shop_init(){
 	register_goods("gatlin_ice_long_bao",{"type":"card","cost":"20000","unlock_item_id":"gatlin_ice_long_bao","description":"机枪冰冻小笼包：发射四发冰包子","display_name":"机枪冰冻小笼包"})
 	register_goods("aquarius_elve",{"type":"card","cost":"15000","unlock_item_id":"aquarius_elve","description":"水瓶座精灵：本行5格和本列5格范围爆炸","display_name":"水瓶座精灵"})
 	register_goods("tar_sprayer",{"type":"card","cost":"80000","unlock_item_id":"tar_sprayer","description":"焦油喷壶：喷出可被点燃的油滴穿透攻击四格内敌人","display_name":"焦油喷壶"})
+	register_goods("gaia",{"type":"card","cost":"1000000","unlock_item_id":"gaia","description":"至尊盖亚：三连发射5*5范围爆炸的毁灭巨石","display_name":"至尊盖亚"})
+	register_goods("aurora",{"type":"card","cost":"800000","unlock_item_id":"aurora","description":"曙光女神·欧若拉：为本行投掷类卡片增伤","display_name":"曙光女神·欧若拉"})
+	register_goods("warm_birds",{"type":"card","cost":"30000","unlock_item_id":"warm_birds","description":"暖暖鸡：一次生产3朵火苗","display_name":"暖暖鸡"})
+	register_goods("sea_star",{"type":"card","cost":"100000","unlock_item_id":"sea_star","description":"芥末海星刺身：向五个方向发射两枚炭烧海星子弹","display_name":"芥末海星刺身"})
+	register_goods("tanghulu",{"type":"card","cost":"30000","unlock_item_id":"tanghulu","description":"糖葫芦炮弹：对空中敌人发射追踪炮弹","display_name":"糖葫芦炮弹"})
 	
 	register_goods("card_slot_plus",{"type":"item","cost":"20000","unlock_item_id":"card_slot","description":"增加一格卡槽，仅可在卡槽数小于18时使用","display_name":"卡槽+1","spr":spr_slot_plus})
 	register_goods("card_slot_19",{"type":"item","cost":"50000","unlock_item_id":"card_slot_19","description":"解锁第19格卡槽","display_name":"卡槽第19格","spr":spr_slot_19})
@@ -30,4 +35,11 @@ function shop_init(){
 	register_goods("guard_gem",{"type":"gem","cost":"20000","unlock_item_id":"guard_gem","description":"守护宝石：治疗周围卡片并增加生命上限","display_name":"守护宝石"})
 	register_goods("strength_gem",{"type":"gem","cost":"50000","unlock_item_id":"strength_gem","description":"蓄力宝石：增加周围卡片伤害","display_name":"蓄力宝石"})
 	register_goods("ice_spoon_crossbow",{"type":"weapon","cost":"20000","unlock_item_id":"ice_spoon_crossbow","description":"冰勺弩枪：投掷减速冰鸡蛋","display_name":"冰勺弩枪"})
+	register_goods("master_shield",{"type":"weapon","cost":"100000","unlock_item_id":"master_shield","description":"主宰之盾：增加500生命值，让你看起来更炫酷","display_name":"主宰之盾"})
+	register_goods("divine_blessing_gem",{"type":"gem","cost":"100000","unlock_item_id":"divine_blessing_gem","description":"神佑之眼：产生火苗","display_name":"神佑之眼"})
+	register_goods("divine_protect_gem",{"type":"gem","cost":"100000","unlock_item_id":"divine_protect_gem","description":"神护之眼：为周围卡片增加攻击力","display_name":"神护之眼"})
+	register_goods("hades_scythe",{"type":"weapon","cost":"150000","unlock_item_id":"hades_scythe","description":"冥王战镰：∞形轨迹发射旋转镰刀","display_name":"冥王战镰"})
+	register_goods("ghost_strike_gem",{"type":"gem","cost":"150000","unlock_item_id":"ghost_strike_gem","description":"亡灵强袭：增加冥王战镰伤害","display_name":"亡灵强袭"})
+	register_goods("ghost_spark_gem",{"type":"gem","cost":"150000","unlock_item_id":"ghost_spark_gem","description":"亡灵星火：增加冥王战镰攻速","display_name":"亡灵星火"})
+	register_goods("ghost_pact_gem",{"type":"gem","cost":"150000","unlock_item_id":"ghost_pact_gem","description":"亡灵契约：增加冥王战镰子弹","display_name":"亡灵契约"})
 }

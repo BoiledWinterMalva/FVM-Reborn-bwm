@@ -56,7 +56,7 @@ if bleed_gem{
 }
 if guard_gem || strength_gem{
 	with (obj_card_parent){
-		if(grid_row >= other.grid_row-1&&grid_row <= other.grid_row+1&&grid_col >= other.grid_col-1&&grid_col<=other.grid_col+1&&plant_id!="player"){
+		if(grid_row >= other.grid_row-1&&grid_row <= other.grid_row+1&&grid_col >= other.grid_col-1&&grid_col<=other.grid_col+1&&plant_id!="player" && plant_id != "aurora"){
 			if other.guard_gem{
 				if (array_get_index(other.hp_modified_card_list,id)==-1){
 					max_hp += other.max_hp_increase
@@ -79,5 +79,46 @@ if guard_gem || strength_gem{
 			}
 		}
 	}
+}
+if divine_blessing_gem{
+	if not first_produce{
+		if timer mod first_produce_delay == 0{
+			var f_inst = instance_create_depth(x,y-50,-1300,obj_flame)
+			f_inst.value = flame_produce
+			first_produce = true
+		}
+	}
+	else{
+		if timer mod cycle == 0{
+			var f_inst = instance_create_depth(x,y-50,-1300,obj_flame)
+			f_inst.value = flame_produce
+		}
+	}
+}
+if (divine_protect_gem) { 
+    with (obj_card_parent) {
+        // 排除自己和黑名单
+        if (plant_id != "player" && plant_id != "aurora") {
+
+            // 计算与自身的行列差
+            var row_diff = grid_row - other.grid_row;
+            var col_diff = grid_col - other.grid_col;
+
+            // 内圈 3x3
+            if (row_diff >= -1 && row_diff <= 1 && col_diff >= -1 && col_diff <= 1) {
+                if (array_get_index(other.atk_modified_card_list, id) == -1) {
+                    atk = atk * (other.atk_ratio + 1); // 内圈全额倍率
+                    array_push(other.atk_modified_card_list, id);
+                }
+            }
+            // 外圈 5x5（去掉内圈）
+            else if (row_diff >= -2 && row_diff <= 2 && col_diff >= -2 && col_diff <= 2) {
+                if (array_get_index(other.atk_modified_card_list, id) == -1) {
+                    atk = atk * (1 + other.atk_ratio / 2); // 外圈一半倍率
+                    array_push(other.atk_modified_card_list, id);
+                }
+            }
+        }
+    }
 }
 

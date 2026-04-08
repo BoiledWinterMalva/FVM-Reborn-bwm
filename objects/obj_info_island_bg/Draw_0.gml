@@ -113,6 +113,7 @@ if info_button_select == 1 {
         draw_text(tooltip_x, tooltip_y, "点击查看情报");
     }
 	if select_card_index != -1{
+		sprite_index = spr_info_island_bg_3;
 		//绘制右侧信息栏
 		var card_id = global.player_deck[| select_card_index*2];
 	    var deck_entry = global.player_deck[| select_card_index*2+1];
@@ -137,14 +138,15 @@ if info_button_select == 1 {
 		
 		//绘制文本
 		draw_set_font(font_hei)
-		draw_sprite_ext(card_data[? "sprite"], 0, x-320, y-210, 1.5, 1.5, 0, c_white, 1);
+		draw_sprite_ext(card_data[? "sprite"], 0, x-300, y-190, 1.5, 1.5, 0, c_white, 1);
 		draw_set_halign(fa_left);
 		draw_set_valign(fa_top);
+		draw_set_color(make_color_rgb(0, 44, 81));
 		draw_text(x-360,y-350,"当前查看数值：星级："+string(view_card_level)+"，转职："+string(current_view_shape)+"，技能："+string(view_card_skill))
 		draw_set_color(c_white);
 		draw_set_halign(fa_center);
 		draw_set_valign(fa_middle);
-		draw_text(x-320,y-190,name)
+		draw_text(x-300,y-170,name)
 		draw_set_halign(fa_left);
 		draw_set_valign(fa_top);
 		var sun = string(info[? "flame_produce"])

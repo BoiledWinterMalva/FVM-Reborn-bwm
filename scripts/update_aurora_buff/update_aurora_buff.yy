@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"update_aurora_buff",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"update_aurora_buff",
+  "parent":{
+    "name":"assistant",
+    "path":"folders/脚本/assistant.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

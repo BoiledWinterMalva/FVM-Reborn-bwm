@@ -4,6 +4,7 @@ function register_card(card_id, _obj, _shapes_array) {
     var card = ds_map_create();
     card[? "obj"] = _obj; // 存储基础对象
     card[? "shapes"] = ds_list_create(); // 创建形态列表
+    card[? "is_gold"] = 0; // 金卡默认值
     
     // 遍历形态数组，将每个形态数据存储到列表中
     for(var i = 0; i < array_length(_shapes_array); i++) {
@@ -19,6 +20,17 @@ function register_card(card_id, _obj, _shapes_array) {
 		shape_data[? "plant_type"] = shape_info.plant_type;
 		shape_data[? "feature_type"] = shape_info.feature_type;
 		shape_data[? "target_card"] = shape_info.target_card;
+		
+		///////////////////////////////////////////
+		
+		shape_data[? "is_gold"] = struct_exists(shape_info, "is_gold") ? shape_info.is_gold : 0;
+
+        if (shape_data[? "is_gold"] == 1) {
+            card[? "is_gold"] = 1;
+        }
+		
+		///////////////////////////////////////////
+		
 		if struct_exists(shape_info,"place_preview"){
 			shape_data[? "place_preview"] = shape_info.place_preview
 		}

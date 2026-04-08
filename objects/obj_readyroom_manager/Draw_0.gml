@@ -52,10 +52,12 @@ for(var i = 0 ; i < slot_rows ; i++){
 				}
 			}
             
+			var slot_sprite = (deck_entry[? "is_gold"] == 1) ? spr_slot_1 : spr_slot;//金卡判断
+			
             // 绘制卡片
             if (is_unlocked) {
                 // 已解锁的卡片正常绘制
-				draw_sprite_ext(spr_slot, 0, card_x, card_y-3, 0.25, 0.25, 0, c_white, 1);
+				draw_sprite_ext(slot_sprite, 0, card_x, card_y-3, 0.25, 0.25, 0, c_white, 1);
                 draw_sprite_ext(card_data[? "sprite"], 0, card_x, card_y+15, 0.7, 0.7, 0, c_white, 1);
 				draw_set_color(c_black);
 				draw_set_halign(fa_center);
@@ -94,7 +96,7 @@ for(var i = 0 ; i < slot_rows ; i++){
 				draw_set_halign(fa_center);
 				draw_set_valign(fa_bottom);
 				draw_set_font(font_pixel)
-				draw_sprite_ext(spr_slot, 0, card_x, card_y-3, 0.25, 0.25, 0, c_gray, 1);
+				draw_sprite_ext(slot_sprite, 0, card_x, card_y-3, 0.25, 0.25, 0, c_gray, 1);
 				card_data = card_data_shapes[| card_shape]
                 draw_sprite_ext(card_data[? "sprite"], 0, card_x, card_y+15, 0.7, 0.7, 0, c_gray, 1);
 				var info_index = 0
@@ -183,7 +185,8 @@ for(var i = deck_first_slot_index; i < deck_first_slot_index+11;i++){
     var card_y = y + 132
 	
 	// 已解锁的卡片正常绘制
-				draw_sprite_ext(spr_slot, 0, card_x, card_y-3, 0.25, 0.25, 0, c_white, 1);
+				var slot_sprite = (card_data[? "is_gold"] == 1) ? spr_slot_1 : spr_slot;//金卡判断
+				draw_sprite_ext(slot_sprite, 0, card_x, card_y-3, 0.25, 0.25, 0, c_white, 1);
                 draw_sprite_ext(card_data[? "sprite"], 0, card_x, card_y+15, 0.7, 0.7, 0, c_white, 1);
 				draw_set_color(c_black);
 				draw_set_halign(fa_center);
