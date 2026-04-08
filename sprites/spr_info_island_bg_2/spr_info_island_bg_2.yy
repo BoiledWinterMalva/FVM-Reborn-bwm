@@ -19,6 +19,9 @@
   "height":487,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"afe4f90f-efa3-4635-9635-f6841a753328","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"afe4f90f-efa3-4635-9635-f6841a753328","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
+    {"$GMImageLayer":"","%Name":"7015017f-ed94-4459-ae28-e13d669c1331","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"7015017f-ed94-4459-ae28-e13d669c1331","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
+    {"$GMImageLayer":"","%Name":"ce757e94-a5ed-4d8f-a762-c28f950ef324","blendMode":0,"displayName":"Layer 3","isLocked":false,"name":"ce757e94-a5ed-4d8f-a762-c28f950ef324","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"8e68c25a-8c91-457c-9b4a-7a0e161a20c1","blendMode":0,"displayName":"default","isLocked":false,"name":"8e68c25a-8c91-457c-9b4a-7a0e161a20c1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_info_island_bg_2",
