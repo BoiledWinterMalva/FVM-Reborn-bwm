@@ -56,7 +56,7 @@ if bleed_gem{
 }
 if guard_gem || strength_gem{
 	with (obj_card_parent){
-		if(grid_row >= other.grid_row-1&&grid_row <= other.grid_row+1&&grid_col >= other.grid_col-1&&grid_col<=other.grid_col+1&&plant_id!="player" && plant_id != "aurora"){
+		if(grid_row >= other.grid_row-1&&grid_row <= other.grid_row+1&&grid_col >= other.grid_col-1&&grid_col<=other.grid_col+1&&array_get_index(other.blacklist, plant_id) == -1){
 			if other.guard_gem{
 				if (array_get_index(other.hp_modified_card_list,id)==-1){
 					max_hp += other.max_hp_increase
@@ -98,7 +98,7 @@ if divine_blessing_gem{
 if (divine_protect_gem) { 
     with (obj_card_parent) {
         // 排除自己和黑名单
-        if (plant_id != "player" && plant_id != "aurora") {
+        if (array_get_index(other.blacklist, plant_id) == -1) {
 
             // 计算与自身的行列差
             var row_diff = grid_row - other.grid_row;

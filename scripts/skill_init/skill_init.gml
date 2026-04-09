@@ -59,4 +59,5 @@ function skill_init(){
 	register_card_skill("sea_star","cycle",[1.3*60,1.25*60,1.2*60,1.15*60,1.1*60,1.05*60,1*60,0.9*60,0.8*60])
 	register_card_skill("aurora","cooldown",[30*60,28*60,26*60,23*60,20*60,17*60,14*60,11*60,7*60])
 	register_card_skill("tanghulu","cycle",[3*60,2.8*60,2.6*60,2.4*60,2.2*60,2*60,1.8*60,1.6*60,1.4*60])
+	register_card_skill("cold_drew","cycle",[6*60,5.8*60,5.6*60,5.4*60,5.2*60,5*60,4.8*60,4.6*60,4.3*60])
 }

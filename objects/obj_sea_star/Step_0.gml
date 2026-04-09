@@ -9,6 +9,7 @@ var current_flash_speed = flash_speed
 if is_slowdown{
 	current_flash_speed *= 2
 }
+
 //检测自身右方是否有敌人
 var has_enemy = false;
 with (obj_enemy_parent) {
@@ -17,6 +18,7 @@ with (obj_enemy_parent) {
         break;
     }
 }
+
 //攻击逻辑
 if (has_enemy) {
     if (attack_timer <= cycle - attack_anim * current_flash_speed) {
@@ -28,10 +30,10 @@ if (has_enemy) {
         attack_timer = 0;
         state = CARD_STATE.IDLE;
     }
-	if attack_timer == cycle - 10{
+	if (attack_timer == cycle - 3*flash_speed){
 		event_user(1)
 	}
-	if attack_timer == cycle - 5{
+	if (attack_timer == cycle - 2*flash_speed && shape == 2){
 		event_user(1)
 	}
 } else {

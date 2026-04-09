@@ -24,6 +24,9 @@ divine_protect_gem = false
 hp_modified_card_list = []
 atk_modified_card_list = []
 
+blacklist = ["aurora", "player","cherry_pudding","brazier"];
+
+
 if get_gem_index("produce_gem")!= -1{
 	var gem_info = get_gem_info("produce_gem")
 	var gem_level =  get_gem_level("produce_gem")

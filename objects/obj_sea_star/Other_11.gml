@@ -1,4 +1,4 @@
-var inst = instance_create_depth(x-50,y-75,depth-500,obj_star_bullet)
+var inst = instance_create_depth(x-40,y-75,depth-500,obj_star_bullet)
 inst.damage = atk
 inst.move_speed = -8
 inst.row = grid_row
@@ -26,3 +26,14 @@ inst5.damage = atk
 inst5.move_speed = -8
 inst5.col = grid_col
 inst5.image_angle = 0
+
+var bullet_spr = spr_star_bullet;
+var bounced = true;
+if (shape == 1) bullet_spr = spr_star_bullet_1;
+else if (shape == 2) {bullet_spr = spr_star_bullet_2; bounced = false}
+
+inst.sprite_index = bullet_spr;inst.bounced = bounced;
+inst2.sprite_index = bullet_spr;inst2.bounced = bounced;
+inst3.sprite_index = bullet_spr;inst3.bounced = bounced;
+inst4.sprite_index = bullet_spr;inst4.bounced = bounced;
+inst5.sprite_index = bullet_spr;inst5.bounced = bounced;

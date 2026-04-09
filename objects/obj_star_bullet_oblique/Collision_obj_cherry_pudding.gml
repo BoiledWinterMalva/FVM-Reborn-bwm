@@ -1,5 +1,6 @@
-if !bounced && col == other.grid_col{
+if (!bounced){
 	move_speed *= -1
+	xd = -1
 	damage += other.atk
 	image_angle += 180
 	bounced = true

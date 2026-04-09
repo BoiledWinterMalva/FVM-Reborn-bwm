@@ -263,11 +263,18 @@ function slots_init(){
 		{"shape":2, "sprite":spr_warm_birds_2, "cost":125, "cooldown":9*60, "description":"日耀暖暖鸡：一次生产5朵火苗","plant_type":"normal","feature_type":"normal","target_card":"none"}
 	]);
 	register_card("sea_star", obj_sea_star, [
-	    {"shape":0, "sprite":spr_sea_star, "cost":175, "cooldown":420, "description":"芥末海星刺身：向五个方向发射两枚炭烧海星子弹","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	    {"shape":0, "sprite":spr_sea_star, "cost":350, "cooldown":420, "description":"炭烧海星：向五个方向发射炭烧海星子弹","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":1, "sprite":spr_sea_star_1, "cost":175, "cooldown":420, "description":"芝士焗海星：向五个方向发射炭烧海星子弹","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_sea_star_2, "cost":175, "cooldown":420, "description":"芥末海星刺身：向五个方向发射两枚炭烧海星子弹","plant_type":"normal","feature_type":"normal","target_card":"none"}
 	]);
 	register_card("tanghulu", obj_tanghulu, [
 	    {"shape":0, "sprite":spr_tanghulu, "cost":175, "cooldown":7*60, "description":"糖葫芦炮弹：对空中敌人发射追踪炮弹","plant_type":"normal","feature_type":"normal","target_card":"none"},
 	    {"shape":1, "sprite":spr_tanghulu_1, "cost":200, "cooldown":7*60, "description":"水果糖葫芦炮弹：对空中敌人发射追踪炮弹","plant_type":"normal","feature_type":"normal","target_card":"none"},
 		{"shape":2, "sprite":spr_tanghulu_2, "cost":250, "cooldown":7*60, "description":"七彩糖葫芦炮弹：对空中敌人发射追踪炮弹","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	]);
+	register_card("cold_drew", obj_cold_drew, [
+	    {"shape":0, "sprite":spr_cold_drew_machine, "cost":295, "cooldown":15*60, "description":"冰块冷萃机：对全屏敌人发射至多4颗追踪冰块","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_cold_drew_machine_1, "cost":295, "cooldown":15*60, "description":"低温冷萃机：对全屏敌人发射至多5颗追踪冰块","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_cold_drew_machine_2, "cost":295, "cooldown":15*60, "description":"迅捷冷萃机：对全屏敌人发射6颗追踪冰块，可集火","plant_type":"normal","feature_type":"normal","target_card":"none"}
 	]);
 }

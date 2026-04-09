@@ -55,4 +55,5 @@ if (shape >= 2) {
             }
         }
     }
+	audio_play_sound(snd_coke_bomb_explode, 0, false);
 }
