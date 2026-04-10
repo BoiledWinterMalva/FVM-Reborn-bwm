@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"update_berry_dessert_buff",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"update_berry_dessert_buff",
+  "parent":{
+    "name":"assistant",
+    "path":"folders/脚本/assistant.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

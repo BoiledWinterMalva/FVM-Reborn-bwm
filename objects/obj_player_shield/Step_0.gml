@@ -9,6 +9,40 @@ depth = parent_player.depth-1
 
 timer++
 
+if parent_player.state == CARD_STATE.IDLE{
+	anim_timer++
+	// 每6帧才更新一次运动
+	if (anim_timer >= 6) {
+		anim_timer = 0
+
+	    t += t_speed * t_dir;
+
+	    // 到终点反向
+	    if (t >= 1) {
+	        t = 1;
+	        t_dir = -1;
+	    }
+
+	    // 回到起点再反向
+	    if (t <= -1) {
+	        t = -1;
+	        t_dir = 1;
+	    }
+	
+		var x_param = t;
+		var y_param = 0.5 * t * t - 1;
+
+		x = origin_x + x_param;
+		y = origin_y + y_param;
+	}
+}else if parent_player.state == CARD_STATE.ATTACK {
+	anim_timer = 0
+	x = origin_x;
+	y = origin_y;
+	t = 0;
+	t_dir = 1;
+}
+
 if produce_gem{
 	if not first_produce{
 		if timer mod first_produce_delay == 0{

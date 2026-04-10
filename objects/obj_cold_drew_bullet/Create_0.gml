@@ -1,6 +1,7 @@
 image_xscale = 1.8
 image_yscale = 1.8
-image_speed = 1
+image_speed = 0
+image_alpha = 0
 
 sprite_index = spr_cold_drew_bullet
 
@@ -9,10 +10,9 @@ row = 0
 damage = 0
 
 damage_type = "normal"
-timer = 0
+delay = 0
 hit_frame = 3
 hit_done = false
+snd = false
 
 shape_bullet = 0
-
-audio_play_sound(snd_cold_brew_machine,0,0)

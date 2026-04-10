@@ -1,73 +1,3 @@
-//if global.is_paused{
-//	exit
-//}
-//event_inherited(); 
-//if is_frozen || state == CARD_STATE.SLEEP{
-//	exit
-//}
-//var current_flash_speed = flash_speed
-//if is_slowdown{
-//	current_flash_speed *= 2
-//}
-
-//target_list = [];
-
-////检测自身右方是否有敌人
-//var enemy_list = ds_list_create();
-//var has_enemy = false;
-
-//with (obj_enemy_parent) {
-//    if (can_target_on(other.target_type, target_type)) {
-		
-//        var data = [x, id]; // ✅ 用数组
-
-//        ds_list_add(enemy_list, data);
-//        has_enemy = true;
-//    }
-//}
-
-//repeat (max_targets) {
-
-//    var best_index = -1;
-//    var best_x = 999999;
-
-//    for (var i = 0; i < ds_list_size(enemy_list); i++) {
-//        var e = enemy_list[| i];
-
-//        if (e[0] < best_x) {
-//            best_x = e[0];
-//            best_index = i;
-//        }
-//    }
-
-//    if (best_index != -1) {
-//        var best = enemy_list[| best_index];
-//        array_push(target_list, best[1]);
-
-//        ds_list_delete(enemy_list, best_index); // 防止重复选
-//    }
-//}
-
-////攻击逻辑
-//if (has_enemy) {
-//    if (attack_timer <= cycle - attack_anim * current_flash_speed) {
-//        attack_timer++;
-//    } else if (attack_timer <= cycle) {
-//        attack_timer++;
-//        state = CARD_STATE.ATTACK;
-//    } else {
-//        event_user(1); // 发射子弹
-//        attack_timer = 0;
-//        state = CARD_STATE.IDLE;
-//    }
-//} else {
-//    // 没有符合条件的敌人，重置状态
-//    attack_timer = 0;
-//    state = CARD_STATE.IDLE;
-//}
-
-//ds_list_destroy(enemy_list);
-
 if global.is_paused {
     exit;
 }
@@ -98,7 +28,7 @@ var has_enemy = false;
 
 with (obj_enemy_parent) {
 
-    // 只攻击右侧 + 可攻击类型
+    // 可攻击类型
     if (can_target_on(other.target_type, target_type)) {
 
         has_enemy = true;

@@ -54,7 +54,7 @@
   ],
   "name":"spr_gaia_3",
   "nineSlice":null,
-  "origin":7,
+  "origin":9,
   "parent":{
     "name":"gaia",
     "path":"folders/精灵/Cards/boomer/gaia.yy",
@@ -200,7 +200,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":55,
-    "yorigin":191,
+    "yorigin":188,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

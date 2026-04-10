@@ -35,7 +35,8 @@ for(var i = 0 ; i< 4; i++){
 			if ds_list_find_value(goods_list,i*4+j+(current_page-1)*16) != undefined{
 				//根据商品id获取卡片信息
 				var card_data = deck_get_card_data(global.goods_map[? ds_list_find_value(goods_list,i*4+j+(current_page-1)*16)].unlock_item_id,0)
-				draw_sprite_ext(spr_slot, 0, x-618+411*j-122,y-190+165*i, 0.33, 0.33, 0, c_white, 1);
+				var slot_sprite = (card_data[? "is_gold"] == 1) ? spr_slot_1 : spr_slot;//金卡判断
+				draw_sprite_ext(slot_sprite, 0, x-618+411*j-122,y-190+165*i, 0.33, 0.33, 0, c_white, 1);
 				draw_sprite_ext(card_data[? "sprite"],0,x-618+411*j-122,y-190+165*i+25,1,1,0,c_white,1)
 				draw_set_halign(fa_left);
 				draw_set_valign(fa_middle);

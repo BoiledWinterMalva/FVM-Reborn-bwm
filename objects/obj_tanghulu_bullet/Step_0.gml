@@ -32,7 +32,7 @@ if (instance_exists(target_enemy) && target_enemy.hp > 0) {
     // 检查是否有更靠近的空中敌人，优先切换
     var new_air_target = noone;
     with (obj_enemy_parent) {
-        if (hp > 0 && can_hit(other.target_type, target_type) && target_type == "air") {
+        if (hp > 0 && can_hit(other.target_type, target_type)) {
             if (new_air_target == noone || x < new_air_target.x) {
                 new_air_target = id;
             }
@@ -47,7 +47,7 @@ if (instance_exists(target_enemy) && target_enemy.hp > 0) {
     // 当前目标不存在或死亡，寻找空中敌人
     var air_enemy = noone;
     with (obj_enemy_parent) {
-        if (hp > 0 && can_hit(other.target_type, target_type) && target_type == "air") {
+        if (hp > 0 && can_hit(other.target_type, target_type)) {
             if (air_enemy == noone || x < air_enemy.x) {
                 air_enemy = id;
             }

@@ -20,7 +20,7 @@ if not is_placed{
 		var gem_index = 0
 		if global.save_data.equipped_items.main_weapon.id != ""{
 			var main_info = get_weapon_info(global.save_data.equipped_items.main_weapon.id)
-			var main_weapon_inst = instance_create_depth(x-10,y-100,depth-1,main_info.obj)
+			var main_weapon_inst = instance_create_depth(x-10,y-100,depth-2,main_info.obj)
 			main_weapon_inst.parent_player = id
 			main_weapon_inst.grid_row = grid_row
 			main_weapon_inst.grid_col = grid_col
@@ -36,11 +36,13 @@ if not is_placed{
 			}
 		}
 		if global.save_data.equipped_items.secondary_weapon.id != ""{
-			var s_inst = instance_create_depth(x,y,depth,obj_player_shield)
+			var main_info = get_weapon_info(global.save_data.equipped_items.secondary_weapon.id)
+			var s_inst = instance_create_depth(x+37,y-37,depth-1,obj_player_shield)
 			s_inst.parent_player = id
 			s_inst.grid_row = grid_row
 			s_inst.grid_col = grid_col
-			var main_info = get_weapon_info(global.save_data.equipped_items.secondary_weapon.id)
+			s_inst.sprite_index = main_info.sprite;
+			
 			hp += main_info.hp_increase
 			max_hp += main_info.hp_increase
 			if get_gem_index("health_gem") != -1{

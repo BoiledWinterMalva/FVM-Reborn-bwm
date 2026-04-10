@@ -92,7 +92,7 @@ function weapons_init(){
 									})
 	}
 	{//注册所有副武器
-		register_weapon("cookie_shield",{"sprite":spr_cookie_shield_icon,
+		register_weapon("cookie_shield",{"sprite":spr_cookie_shield,
 									"icon":spr_cookie_shield_icon,
 									"obj":obj_player_shield,
 									"slot":"secondary_weapon",
@@ -100,7 +100,7 @@ function weapons_init(){
 									"description":"小圆饼盾牌：增加100生命值",
 									"name":"小圆饼盾牌",
 									})
-		register_weapon("oreo_shield",{"sprite":spr_oreo_shield_icon,
+		register_weapon("oreo_shield",{"sprite":spr_oreo_shield,
 									"icon":spr_oreo_shield_icon,
 									"obj":obj_player_shield,
 									"slot":"secondary_weapon",
@@ -108,7 +108,7 @@ function weapons_init(){
 									"description":"奥利奥盾牌：增加200生命值",
 									"name":"奥利奥盾牌",
 									})
-		register_weapon("cut_cake_shield",{"sprite":spr_cut_cake_shield_icon,
+		register_weapon("cut_cake_shield",{"sprite":spr_cut_cake_shield,
 									"icon":spr_cut_cake_shield_icon,
 									"obj":obj_player_shield,
 									"slot":"secondary_weapon",
@@ -116,7 +116,7 @@ function weapons_init(){
 									"description":"切糕盾牌：增加300生命值",
 									"name":"切糕盾牌",
 									})
-		register_weapon("master_shield",{"sprite":spr_master_shield_icon,
+		register_weapon("master_shield",{"sprite":spr_master_shield,
 									"icon":spr_master_shield_icon,
 									"obj":obj_player_shield,
 									"slot":"secondary_weapon",

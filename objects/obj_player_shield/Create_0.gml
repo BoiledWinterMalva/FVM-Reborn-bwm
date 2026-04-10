@@ -1,7 +1,6 @@
 image_xscale = 1.6
 image_yscale = 1.6
 image_speed = 0
-image_alpha = 0
 parent_player = noone
 atk = 0
 cycle = 0
@@ -24,7 +23,16 @@ divine_protect_gem = false
 hp_modified_card_list = []
 atk_modified_card_list = []
 
-blacklist = ["aurora", "player","cherry_pudding","brazier"];
+blacklist = ["aurora","player","cherry_pudding","brazier","berry_dessert"];
+
+origin_x = x;
+origin_y = y;
+
+t = 0;        // 函数中的 x
+t_speed = 0.5; // 控制运动速度
+t_dir = 1;
+
+anim_timer = 0
 
 
 if get_gem_index("produce_gem")!= -1{

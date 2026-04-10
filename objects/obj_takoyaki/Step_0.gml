@@ -9,6 +9,7 @@ var current_flash_speed = flash_speed
 if is_slowdown{
 	current_flash_speed *= 2
 }
+
 //检测屏幕上是否有敌人
 var has_enemy = false
 if instance_exists(obj_enemy_parent){

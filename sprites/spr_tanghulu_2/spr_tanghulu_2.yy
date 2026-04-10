@@ -52,7 +52,7 @@
   ],
   "name":"spr_tanghulu_2",
   "nineSlice":null,
-  "origin":7,
+  "origin":9,
   "parent":{
     "name":"tanghulu",
     "path":"folders/精灵/Cards/Track/tanghulu.yy",
@@ -192,7 +192,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":39,
-    "yorigin":122,
+    "yorigin":117,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

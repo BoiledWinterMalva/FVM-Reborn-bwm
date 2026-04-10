@@ -23,7 +23,7 @@ idle_anim = 11
 flash_speed = 5
 plant_type = "normal"
 is_slowdown = false
-target_type = "throw"
+target_type = "rotate"
 if shape ==0 {attack_timer = 0} 
 else {attack_timer = cycle - 150}
 is_attacking = false

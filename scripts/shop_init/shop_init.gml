@@ -16,6 +16,8 @@ function shop_init(){
 	register_goods("sea_star",{"type":"card","cost":"100000","unlock_item_id":"sea_star","description":"炭烧海星：向五个方向发射炭烧海星子弹","display_name":"炭烧海星"})
 	register_goods("tanghulu",{"type":"card","cost":"100000","unlock_item_id":"tanghulu","description":"糖葫芦炮弹：对空中敌人发射追踪炮弹","display_name":"糖葫芦炮弹"})
 	register_goods("cold_drew",{"type":"card","cost":"100000","unlock_item_id":"cold_drew","description":"冰块冷萃机：对全屏敌人发射至多4颗追踪冰块","display_name":"冰块冷萃机"})
+	register_goods("berry_dessert",{"type":"card","cost":"100000","unlock_item_id":"berry_dessert","description":"莓果点心：为3x3范围内追踪类卡片提供增伤","display_name":"莓果点心"})
+	register_goods("grilled_lizard_pult",{"type":"card","cost":"100000","unlock_item_id":"grilled_lizard_pult","description":"烤蜥蜴投手：向前投掷配料爆弹","display_name":"烤蜥蜴投手"})
 	
 	register_goods("card_slot_plus",{"type":"item","cost":"20000","unlock_item_id":"card_slot","description":"增加一格卡槽，仅可在卡槽数小于18时使用","display_name":"卡槽+1","spr":spr_slot_plus})
 	register_goods("card_slot_19",{"type":"item","cost":"50000","unlock_item_id":"card_slot_19","description":"解锁第19格卡槽","display_name":"卡槽第19格","spr":spr_slot_19})

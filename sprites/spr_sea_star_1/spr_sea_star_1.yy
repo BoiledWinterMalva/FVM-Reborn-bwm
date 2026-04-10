@@ -44,7 +44,7 @@
   ],
   "name":"spr_sea_star_1",
   "nineSlice":null,
-  "origin":7,
+  "origin":9,
   "parent":{
     "name":"sea_star",
     "path":"folders/精灵/Cards/Shooter/sea_star.yy",
@@ -160,7 +160,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":34,
-    "yorigin":82,
+    "yorigin":79,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
