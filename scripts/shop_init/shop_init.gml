@@ -10,6 +10,8 @@ function shop_init(){
 	register_goods("gatlin_ice_long_bao",{"type":"card","cost":"20000","unlock_item_id":"gatlin_ice_long_bao","description":"机枪冰冻小笼包：发射四发冰包子","display_name":"机枪冰冻小笼包"})
 	register_goods("aquarius_elve",{"type":"card","cost":"15000","unlock_item_id":"aquarius_elve","description":"水瓶座精灵：本行5格和本列5格范围爆炸","display_name":"水瓶座精灵"})
 	register_goods("tar_sprayer",{"type":"card","cost":"80000","unlock_item_id":"tar_sprayer","description":"焦油喷壶：喷出可被点燃的油滴穿透攻击四格内敌人","display_name":"焦油喷壶"})
+	register_goods("durian",{"type":"card","cost":"30000","unlock_item_id":"durian","description":"榴莲：伤害3*3范围敌人","display_name":"榴莲"})
+	register_goods("dragon_fruit",{"type":"card","cost":"50000","unlock_item_id":"dragon_fruit","description":"火龙果：伤害3*3范围敌人","display_name":"火龙果"})
 	register_goods("gaia",{"type":"card","cost":"500000","unlock_item_id":"gaia","description":"盖亚神使：双连发射3*3范围爆炸的毁灭巨石","display_name":"盖亚神使"})
 	register_goods("aurora",{"type":"card","cost":"500000","unlock_item_id":"aurora","description":"欧若拉神使：为本行投掷类卡片增伤","display_name":"欧若拉神使"})
 	register_goods("zhurong",{"type":"card","cost":"500000","unlock_item_id":"zhurong","description":"祝融神使：点燃前方3x3区域，持续灼烧敌人","display_name":"祝融神使"})
@@ -41,6 +43,7 @@ function shop_init(){
 	register_goods("guard_gem",{"type":"gem","cost":"20000","unlock_item_id":"guard_gem","description":"守护宝石：治疗周围卡片并增加生命上限","display_name":"守护宝石"})
 	register_goods("strength_gem",{"type":"gem","cost":"50000","unlock_item_id":"strength_gem","description":"蓄力宝石：增加周围卡片伤害","display_name":"蓄力宝石"})
 	register_goods("ice_spoon_crossbow",{"type":"weapon","cost":"20000","unlock_item_id":"ice_spoon_crossbow","description":"冰勺弩枪：投掷减速冰鸡蛋","display_name":"冰勺弩枪"})
+<<<<<<< HEAD
 	register_goods("master_shield",{"type":"weapon","cost":"150000","unlock_item_id":"master_shield","description":"主宰之盾：增加800生命值","display_name":"主宰之盾"})
 	register_goods("divine_blessing_gem",{"type":"gem","cost":"150000","unlock_item_id":"divine_blessing_gem","description":"神佑之眼：产生火苗","display_name":"神佑之眼"})
 	register_goods("divine_protect_gem",{"type":"gem","cost":"150000","unlock_item_id":"divine_protect_gem","description":"神护之眼：为周围卡片增加攻击力","display_name":"神护之眼"})
@@ -49,4 +52,7 @@ function shop_init(){
 	register_goods("ghost_strike_gem",{"type":"gem","cost":"200000","unlock_item_id":"ghost_strike_gem","description":"亡灵强袭：增加冥王战镰伤害","display_name":"亡灵强袭"})
 	register_goods("ghost_spark_gem",{"type":"gem","cost":"200000","unlock_item_id":"ghost_spark_gem","description":"亡灵星火：增加冥王战镰攻速","display_name":"亡灵星火"})
 	register_goods("ghost_pact_gem",{"type":"gem","cost":"200000","unlock_item_id":"ghost_pact_gem","description":"亡灵契约：增加冥王战镰子弹","display_name":"亡灵契约"})
+=======
+	register_goods("poseidon_dart_gun",{"type":"weapon","cost":"80000","unlock_item_id":"poseidon_dart_gun","description":"海神镖枪：发射两个追踪飞镖攻击敌人","display_name":"海神镖枪"})
+>>>>>>> upstream/develop
 }

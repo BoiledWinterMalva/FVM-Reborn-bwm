@@ -65,4 +65,6 @@ function skill_init(){
 	register_card_skill("zhurong","cycle",[3.8*60,3.7*60,3.5*60,3.3*60,3.1*60,2.9*60,2.7*60,2.5*60,2.2*60])
 	register_card_skill("firework_dragon_real","first_produce_delay",[8*60,7.5*60,7*60,6.5*60,6*60,5*60,4*60,3*60,1*60])
 	register_card_skill("brahma","cycle",[145,145,145,145,145,145,145,145,145])
+	register_card_skill("dragon_fruit","cooldown",[60*60,58*60,56*60,54*60,51*60,48*60,41*60,34*60,27*60])
+	register_card_skill("durian","cycle",[10*60,11*60,12*60,13*60,15*60,17*60,22*60,27*60,32*60])
 }
