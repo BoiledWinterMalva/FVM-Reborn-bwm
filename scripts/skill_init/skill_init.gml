@@ -62,4 +62,7 @@ function skill_init(){
 	register_card_skill("cold_drew","cycle",[6*60,5.8*60,5.6*60,5.4*60,5.2*60,5*60,4.8*60,4.6*60,4.3*60])
 	register_card_skill("berry_dessert","cooldown",[40*60,37*60,34*60,31*60,28*60,25*60,22*60,19*60,15*60])
 	register_card_skill("grilled_lizard_pult","cycle",[2.2*60,2.15*60,2.1*60,2.05*60,2*60,1.95*60,1.9*60,1.85*60,1.75*60])
+	register_card_skill("zhurong","cycle",[3.8*60,3.7*60,3.5*60,3.3*60,3.1*60,2.9*60,2.7*60,2.5*60,2.2*60])
+	register_card_skill("firework_dragon_real","first_produce_delay",[8*60,7.5*60,7*60,6.5*60,6*60,5*60,4*60,3*60,1*60])
+	register_card_skill("brahma","cycle",[145,145,145,145,145,145,145,145,145])
 }

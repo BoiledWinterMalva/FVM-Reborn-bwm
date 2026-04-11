@@ -16,9 +16,9 @@ function can_place_at_position(x, y, plant_type,feature_type,target_card) {
         return false;
     }
 	//调试相关
-	if global.debug{
-		return true
-	}
+	//if global.debug{
+	//	return true
+	//}
 	// 检查是否有障碍
 	if global.grid_terrains[row][col].type == "obstacle" && plant_type != "coffee"{
 		return false

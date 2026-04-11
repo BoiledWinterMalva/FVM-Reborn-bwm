@@ -41,6 +41,8 @@ if not is_placed{
 			s_inst.parent_player = id
 			s_inst.grid_row = grid_row
 			s_inst.grid_col = grid_col
+			s_inst.player_x = x;
+			s_inst.player_y = y;
 			s_inst.sprite_index = main_info.sprite;
 			
 			hp += main_info.hp_increase

@@ -42,7 +42,7 @@ for(var i = 0 ; i< 4; i++){
 				draw_set_valign(fa_middle);
 				draw_set_color(c_black);
 				draw_set_font(font_yuan);
-				draw_text_ext_transformed(x-618+411*j-122-12, y-190+165*i+40, string(card_data[? "cost"]),25,1800,1,1,0);
+				draw_text_ext_transformed(x-618+411*j-122-12, y-190+165*i+40, string(card_data[? "cost"]), 25, 1800, 1, 1, 0);
 				draw_sprite_ext(spr_flame, 0, x-618+411*j-122-24, y-190+165*i+43, 0.3, 0.3, 0, c_white, 1);
 				draw_set_halign(fa_left);
 				draw_set_valign(fa_top);

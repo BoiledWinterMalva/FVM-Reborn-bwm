@@ -15,7 +15,14 @@ global.game_over = false
 
 instance_create_depth(0,0,0,obj_battle_pause_manager)
 instance_create_depth(0,0,-2900,obj_battle_timer_display)
-instance_create_depth(mouse_x,mouse_y,0,obj_player_character)
+var body = instance_create_depth(mouse_x, mouse_y, 0, obj_player_character);
+var head = instance_create_depth(mouse_x, mouse_y, 0, obj_player_character_head);
+var face = instance_create_depth(mouse_x, mouse_y, 0, obj_player_character_face);
+var hair = instance_create_depth(mouse_x, mouse_y, 0, obj_player_character_hair);
+// 绑定关系
+head.parent_body = body;
+face.parent_body = body;
+hair.parent_body = body;
 
 instance_create_depth(room_width-200,room_height-25,0,obj_level_progress_bar)
 
@@ -29,6 +36,9 @@ global.grid_offset_y = 228
 global.grid_cols = global.level_file.map_cols
 global.grid_rows = global.level_file.map_rows
 
+//复制类卡信息记录
+global.last_placed_card_id = "";
+global.last_placed_card_shape = 0;
 
 //啃食音效
 chomp_sound_list = ds_list_create()
@@ -123,14 +133,14 @@ total_wave = global.level_file.total_waves
 level_stage = "ready"
 current_total_hp = 0
 current_wave_hp = 0
-hp_ratio = 0.2
+hp_ratio = 0.1
 if global.difficulty >= 2{
-	hp_ratio = 0.5
+	hp_ratio = 0.2
 }
 enemy_list = []
 
 wave_max_time = 25*60
-wave_min_time = 4 * 60
+wave_min_time = 4 *60
 wave_timer = 0
 //根据难度调整最大波长
 if global.difficulty >= 3 && global.map_id != "tower_cake"{
@@ -138,7 +148,8 @@ if global.difficulty >= 3 && global.map_id != "tower_cake"{
 }
 if is_real(global.level_file.version){
 	wave_max_time = global.level_file.max_wave_time
-	wave_min_time = global.level_file.min_wave_time
+	//wave_min_time = global.level_file.min_wave_time
+	wave_min_time = 240
 	if global.difficulty >= 3 && global.map_id != "tower_cake"{
 		wave_max_time = round(wave_max_time/2)
 	}

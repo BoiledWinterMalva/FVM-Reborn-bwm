@@ -60,8 +60,8 @@ if produce_gem{
 }
 if slow_down_gem{
 	if timer mod slow_down_cycle == 0{
-		var start_pos_x = x + 10 - global.grid_cell_size_x
-		var start_pos_y = y - 35 - global.grid_cell_size_y
+		var start_pos_x = player_x + 10 - global.grid_cell_size_x
+		var start_pos_y = player_y - 35 - global.grid_cell_size_y
 		for(var i = 0; i < 3;i++){
 			for(var j= 0 ; j < 3;j++){
 				var grid_pos = get_grid_position_from_world(start_pos_x + j * global.grid_cell_size_x,start_pos_y + i * global.grid_cell_size_y)
@@ -75,8 +75,8 @@ if slow_down_gem{
 }
 if bleed_gem{
 	if timer mod 60 == 0{
-			var _x = x;
-			var _y = y;
+			var _x = player_x;
+			var _y = player_y;
 			var _range = 250
 		with (obj_enemy_parent) {
 		
@@ -117,15 +117,44 @@ if guard_gem || strength_gem{
 if divine_blessing_gem{
 	if not first_produce{
 		if timer mod first_produce_delay == 0{
-			var f_inst = instance_create_depth(x,y-50,-1300,obj_flame)
-			f_inst.value = flame_produce
+			
+			var base = 25;
+		    var count = flame_produce div base;   // 能分出多少个25
+		    var remain = flame_produce mod base;  // 剩余
+
+		    // 生成每个25的火苗
+		    for (var i = 0; i < count; i++) {
+		        var f_inst = instance_create_depth(x, y - 50, -1300, obj_flame);
+		        f_inst.value = base;
+		    }
+
+		    // 如果有余数，再生成一个
+		    if (remain > 0) {
+		        var f_inst = instance_create_depth(x, y - 50, -1300, obj_flame);
+		        f_inst.value = remain;
+		    }
+			
 			first_produce = true
 		}
 	}
 	else{
-		if timer mod cycle == 0{
-			var f_inst = instance_create_depth(x,y-50,-1300,obj_flame)
-			f_inst.value = flame_produce
+		if timer mod cycle == 0 {
+
+		    var base = 25;
+		    var count = flame_produce div base;   // 能分出多少个25
+		    var remain = flame_produce mod base;  // 剩余
+
+		    // 生成每个25的火苗
+		    for (var i = 0; i < count; i++) {
+		        var f_inst = instance_create_depth(x, y - 50, -1300, obj_flame);
+		        f_inst.value = base;
+		    }
+
+		    // 如果有余数，再生成一个
+		    if (remain > 0) {
+		        var f_inst = instance_create_depth(x, y - 50, -1300, obj_flame);
+		        f_inst.value = remain;
+		    }
 		}
 	}
 }
@@ -154,5 +183,52 @@ if (divine_protect_gem) {
             }
         }
     }
+}
+//if (divine_holy_gem) {
+
+//    if (timer mod 150 == 0) {
+
+//        var list = ds_list_create();
+
+//        collision_rectangle_list(
+//            player_x - 2 * global.grid_cell_size_x,
+//            player_y - 2 * global.grid_cell_size_y,
+//            player_x + 2 * global.grid_cell_size_x,
+//            player_y + 2 * global.grid_cell_size_y,
+//            obj_enemy_parent,
+//            false,
+//            true,
+//            list,
+//            false
+//        );
+
+//        for (var i = 0; i < ds_list_size(list); i++) {
+
+//            var inst = list[| i];
+
+//            if (!inst.divine_holy_gem_debuffed) {
+//                inst.divine_holy_gem_debuffed = true;
+
+//                inst.hp -= reflect_damage;
+//                inst.ice_timer += ice_timer;
+//            }
+//        }
+
+//        ds_list_destroy(list);
+//    }
+//}
+if (divine_holy_gem) {
+	if (timer mod 150 == 0) {
+		 with (obj_enemy_parent) {
+			var row_diff = grid_row - other.grid_row;
+			var col_diff = grid_col - other.grid_col;
+			
+			if (row_diff >= -2 && row_diff <= 2 && col_diff >= -2 && col_diff <= 2 && !divine_holy_gem_debuffed) {
+				hp -= other.reflect_damage;
+                ice_timer += other.ice_timer;
+                divine_holy_gem_debuffed = true;
+            }
+		 }
+	}
 }
 

@@ -31,6 +31,7 @@ if (has_enemy) {
 } else {
     target_instance = noone
 }
+
 //攻击逻辑
 if (has_enemy) {
     if (attack_timer <= cycle - attack_anim * current_flash_speed) {

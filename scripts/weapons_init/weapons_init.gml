@@ -121,8 +121,8 @@ function weapons_init(){
 									"obj":obj_player_shield,
 									"slot":"secondary_weapon",
 									"allowed_gems":["divine_blessing_gem","divine_forbidden_gem","divine_holy_gem","divine_protect_gem"],
-									"hp_increase":500,
-									"description":"主宰之盾：增加500生命值",
+									"hp_increase":800,
+									"description":"主宰之盾：增加800生命值",
 									"name":"主宰之盾",
 									})								
 	}
@@ -373,6 +373,15 @@ function weapons_init(){
 									"obj":obj_divine_protect_gem,
 									"allowed_weapons":["master_shield"]
 		})
-		
+		register_gem("divine_holy_gem",{"name":"神圣之眼",
+									"description":"神圣之眼：伤害并减速5x5范围内的敌人\n[专属宝石]：主宰之盾",
+									"icon":spr_divine_holy_gem_icon,
+									"slot":"secondary_weapon",
+									"max_level":15,
+									"atk":[150,200,250,300,350,400,450,500,550,600,650,700,750,800,850,1000],
+									"ice_timer":[180,180,180,210,210,210,240,240,240,270,270,270,300,300,300,360],
+									"obj":obj_divine_holy_gem,
+									"allowed_weapons":["master_shield"]
+		})
 	}
 }

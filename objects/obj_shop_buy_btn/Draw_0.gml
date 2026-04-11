@@ -9,7 +9,13 @@ draw_set_valign(fa_middle)
 draw_text(x,y-108,goods_name)
 if not is_disabled{
 	draw_set_color(c_yellow)
-	draw_text(x,y-62,string(cost)+"G")
+	var cost_str;
+	if (cost >= 100000) {
+	    cost_str = string(floor(cost / 10000)) + " w";
+	} else {
+	    cost_str = string(cost);
+	}
+	draw_text(x,y-62,cost_str+"G")
 	if point_in_rectangle(mouse_x,mouse_y,x-280,y-120,x-120,y-20){
 		tooltip = true
 	}

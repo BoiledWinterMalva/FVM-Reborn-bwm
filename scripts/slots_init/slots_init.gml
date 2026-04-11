@@ -257,6 +257,22 @@ function slots_init(){
 		{"shape":2, "sprite":spr_aurora_icon_2, "cost":190, "cooldown":1800, "description":"曙光女神·欧若拉：为本行投掷类卡片增伤，死亡后爆炸","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_aurora_2},
 		{"shape":3, "sprite":spr_aurora_icon_3, "cost":190, "cooldown":1800, "description":"至尊曙光女神：为本行及相邻行投掷类卡片增伤，死亡后爆炸","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_aurora_3}
 	]);
+	register_card("zhurong", obj_zhurong, [
+	    {"shape":0, "sprite":spr_zhurong, "cost":245, "cooldown":7*60, "description":"祝融神使：点燃前方3x3区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":1, "sprite":spr_zhurong_1, "cost":245, "cooldown":7*60, "description":"祝融圣神：点燃前方3x3区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":2, "sprite":spr_zhurong_2, "cost":245, "cooldown":7*60, "description":"赤帝·祝融：点燃前方5x5区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":3, "sprite":spr_zhurong_3, "cost":245, "cooldown":7*60, "description":"至尊赤帝：点燃前方7x5区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
+	]);
+	register_card("brahma", obj_brahma, [
+	    {"shape":0, "sprite":spr_brahma_icon, "cost":325, "cooldown":55*60, "description":"梵天神使：变身出多个上一次种下的卡片","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_brahma},
+		{"shape":1, "sprite":spr_brahma_icon_1, "cost":325, "cooldown":55*60, "description":"梵天圣神：变身出多个上一次种下的卡片","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_brahma_1},
+		{"shape":2, "sprite":spr_brahma_icon_2, "cost":325, "cooldown":55*60, "description":"创造神·梵天：变身出多个上一次种下的卡片","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_brahma_2}
+	]);
+	register_card("firework_dragon_real", obj_firework_dragon_real, [
+	    {"shape":0, "sprite":spr_firework_dragon, "cost":150, "cooldown":7*60, "description":"花火龙：释放产生大量火苗的烟花","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_firework_dragon_1, "cost":150, "cooldown":7*60, "description":"灼灼花火龙：释放产生大量火苗的烟花","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_firework_dragon_icon_2, "cost":150, "cooldown":7*60, "description":"炽焰花火龙：释放产生大量火苗的烟花","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_firework_dragon_2}
+	]);
 	register_card("warm_birds", obj_warm_birds, [
 	    {"shape":0, "sprite":spr_warm_birds, "cost":125, "cooldown":50*60, "description":"暖暖鸡：一次生产3朵火苗","plant_type":"normal","feature_type":"normal","target_card":"none"},
 	    {"shape":1, "sprite":spr_warm_birds_1, "cost":125, "cooldown":50*60, "description":"焰羽暖暖鸡：一次生产4朵火苗","plant_type":"normal","feature_type":"normal","target_card":"none"},
