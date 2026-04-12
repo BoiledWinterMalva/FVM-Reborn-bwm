@@ -10,8 +10,8 @@
   "name":"obj_gaia",
   "overriddenProperties":[],
   "parent":{
-    "name":"Boomer",
-    "path":"folders/物体/Cards/Boomer.yy",
+    "name":"Gold card",
+    "path":"folders/物体/Gold card.yy",
   },
   "parentObjectId":{
     "name":"obj_card_parent",

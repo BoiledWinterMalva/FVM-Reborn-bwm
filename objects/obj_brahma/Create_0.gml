@@ -9,6 +9,7 @@ event_user(0)
 sprite_index = spr_brahma;
 if shape == 1 {sprite_index = spr_brahma_1;}
 else if shape == 2 {sprite_index = spr_brahma_2;}
+else if shape == 3 {sprite_index = spr_brahma_2;}
 
 // ========== 特定属性默认值 ==========
 
