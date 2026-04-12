@@ -9,8 +9,8 @@
   "name":"obj_berry_dessert",
   "overriddenProperties":[],
   "parent":{
-    "name":"Assistant",
-    "path":"folders/物体/Cards/Assistant.yy",
+    "name":"New cards",
+    "path":"folders/物体/New cards.yy",
   },
   "parentObjectId":{
     "name":"obj_card_parent",

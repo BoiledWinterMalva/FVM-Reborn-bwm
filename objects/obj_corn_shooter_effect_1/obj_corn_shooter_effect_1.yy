@@ -9,8 +9,8 @@
   "name":"obj_corn_shooter_effect_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"corn_shooter_bullet_effect",
-    "path":"folders/物体/Gold card/corn_shooter_bullet_effect.yy",
+    "name":"New cards",
+    "path":"folders/物体/New cards.yy",
   },
   "parentObjectId":null,
   "persistent":false,

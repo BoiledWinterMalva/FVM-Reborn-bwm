@@ -10,8 +10,8 @@
   "name":"obj_tanghulu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Track",
-    "path":"folders/物体/Cards/Track.yy",
+    "name":"New cards",
+    "path":"folders/物体/New cards.yy",
   },
   "parentObjectId":{
     "name":"obj_card_parent",

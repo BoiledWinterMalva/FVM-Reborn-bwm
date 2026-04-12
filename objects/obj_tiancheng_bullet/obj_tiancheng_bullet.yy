@@ -16,8 +16,8 @@
   "name":"obj_tiancheng_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"XingZuo_bullet",
-    "path":"folders/物体/XingZuo_bullet.yy",
+    "name":"New cards",
+    "path":"folders/物体/New cards.yy",
   },
   "parentObjectId":{
     "name":"obj_bullet_parent1",

@@ -10,8 +10,8 @@
   "name":"obj_chunv_inner",
   "overriddenProperties":[],
   "parent":{
-    "name":"XingZuo",
-    "path":"folders/物体/XingZuo.yy",
+    "name":"New cards",
+    "path":"folders/物体/New cards.yy",
   },
   "parentObjectId":null,
   "persistent":false,

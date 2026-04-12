@@ -10,8 +10,8 @@
   "name":"obj_juxie_bullet_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"XingZuo_bullet",
-    "path":"folders/物体/XingZuo_bullet.yy",
+    "name":"New cards",
+    "path":"folders/物体/New cards.yy",
   },
   "parentObjectId":null,
   "persistent":false,

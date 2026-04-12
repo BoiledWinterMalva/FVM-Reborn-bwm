@@ -16,8 +16,8 @@
   "name":"obj_corn_shooter_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"corn_shooter_bullet",
-    "path":"folders/物体/Gold card/corn_shooter_bullet.yy",
+    "name":"New cards",
+    "path":"folders/物体/New cards.yy",
   },
   "parentObjectId":null,
   "persistent":false,

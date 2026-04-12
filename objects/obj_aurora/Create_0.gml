@@ -21,5 +21,5 @@ flash_speed = 5
 plant_type = "normal"
 is_slowdown = false
 atk_modified_card_list = [];
-atk_whitelist = ["egg_boiler_pult", "chocolate_pult", "ice_egg_boiler_pult", "salad_pult", "stinky_tofu_pult", "gaia","grilled_lizard_pult","zhurong"];
+atk_whitelist = ["egg_boiler_pult", "chocolate_pult", "ice_egg_boiler_pult", "salad_pult", "stinky_tofu_pult", "gaia","grilled_lizard_pult","zhurong","thor"];
 

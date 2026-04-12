@@ -245,29 +245,6 @@ function slots_init(){
 	    {"shape":1, "sprite":spr_cotton_candy_1_0, "cost":0, "cooldown":10*60, "description":"草莓棉花糖：在空中和岩浆上承载卡片","plant_type":"coffee","feature_type":"normal","target_card":"none"},
 		{"shape":2, "sprite":spr_cotton_candy_2_0, "cost":0, "cooldown":10*60, "description":"彩虹棉花糖：在空中和岩浆上承载卡片","plant_type":"coffee","feature_type":"normal","target_card":"none"}
 	])
-	register_card("gaia", obj_gaia, [
-	    {"shape":0, "sprite":spr_gaia, "cost":350, "cooldown":35*60, "description":"盖亚神使：双连发射3*3范围爆炸的毁灭巨石","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
-		{"shape":1, "sprite":spr_gaia_1, "cost":350, "cooldown":35*60, "description":"盖亚圣神：双连发射3*3范围爆炸的毁灭巨石","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
-		{"shape":2, "sprite":spr_gaia_2, "cost":350, "cooldown":35*60, "description":"大地女神·盖亚：三连发射3*3范围爆炸的毁灭巨石","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
-		{"shape":3, "sprite":spr_gaia_3, "cost":350, "cooldown":35*60, "description":"至尊大地女神：三连发射5*5范围爆炸的毁灭巨石","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
-	]);
-	register_card("aurora", obj_aurora, [
-	    {"shape":0, "sprite":spr_aurora_icon, "cost":190, "cooldown":1800, "description":"欧若拉神使：为本行投掷类卡片增伤","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_aurora},
-		{"shape":1, "sprite":spr_aurora_icon_1, "cost":190, "cooldown":1800, "description":"欧若拉圣神：为本行投掷类卡片增伤，死亡后爆炸","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_aurora_1},
-		{"shape":2, "sprite":spr_aurora_icon_2, "cost":190, "cooldown":1800, "description":"曙光女神·欧若拉：为本行投掷类卡片增伤，死亡后爆炸","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_aurora_2},
-		{"shape":3, "sprite":spr_aurora_icon_3, "cost":190, "cooldown":1800, "description":"至尊曙光女神：为本行及相邻行投掷类卡片增伤，死亡后爆炸","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_aurora_3}
-	]);
-	register_card("zhurong", obj_zhurong, [
-	    {"shape":0, "sprite":spr_zhurong, "cost":245, "cooldown":7*60, "description":"祝融神使：点燃前方3x3区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
-	    {"shape":1, "sprite":spr_zhurong_1, "cost":245, "cooldown":7*60, "description":"祝融圣神：点燃前方3x3区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
-		{"shape":2, "sprite":spr_zhurong_2, "cost":245, "cooldown":7*60, "description":"赤帝·祝融：点燃前方5x5区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
-		{"shape":3, "sprite":spr_zhurong_3, "cost":245, "cooldown":7*60, "description":"至尊赤帝：点燃前方7x5区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
-	]);
-	register_card("brahma", obj_brahma, [
-	    {"shape":0, "sprite":spr_brahma_icon, "cost":325, "cooldown":55*60, "description":"梵天神使：变身出多个上一次种下的卡片","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_brahma},
-		{"shape":1, "sprite":spr_brahma_icon_1, "cost":325, "cooldown":55*60, "description":"梵天圣神：变身出多个上一次种下的卡片","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_brahma_1},
-		{"shape":2, "sprite":spr_brahma_icon_2, "cost":325, "cooldown":55*60, "description":"创造神·梵天：变身出多个上一次种下的卡片","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_brahma_2}
-	]);
 	register_card("firework_dragon_real", obj_firework_dragon_real, [
 	    {"shape":0, "sprite":spr_firework_dragon, "cost":150, "cooldown":7*60, "description":"花火龙：释放产生大量火苗的烟花","plant_type":"normal","feature_type":"normal","target_card":"none"},
 	    {"shape":1, "sprite":spr_firework_dragon_1, "cost":150, "cooldown":7*60, "description":"灼灼花火龙：释放产生大量火苗的烟花","plant_type":"normal","feature_type":"normal","target_card":"none"},
@@ -302,5 +279,176 @@ function slots_init(){
 	    {"shape":0, "sprite":spr_grilled_lizard_pult, "cost":275, "cooldown":7*60, "description":"烤蜥蜴投手：向前投掷配料爆弹","plant_type":"normal","feature_type":"normal","target_card":"none"},
 	    {"shape":1, "sprite":spr_grilled_lizard_pult_1, "cost":275, "cooldown":7*60, "description":"坚果蜥蜴投手：向前投掷配料爆弹","plant_type":"normal","feature_type":"normal","target_card":"none"},
 		{"shape":2, "sprite":spr_grilled_lizard_pult_2, "cost":275, "cooldown":7*60, "description":"花椒蜥蜴投手：向前投掷2发配料爆弹","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	]);
+	register_card("corn_shooter",obj_corn_shooter,[
+	    {"shape":0, "sprite":spr_corn_shooter, "cost":250, "cooldown":50*60, "description":"玉蜀黍：发射三颗玉米","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_corn_shooter_1, "cost":250, "cooldown":50*60, "description":"奶油玉米机枪：发射六颗玉米","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_corn_shooter_2, "cost":250, "cooldown":50*60, "description":"加农玉米机枪：发射六颗玉米","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	])
+	 register_card("athena",obj_athena,[
+	    {"shape":0, "sprite":spr_athena, "cost":375, "cooldown":20*60, "description":"雅典娜守护：全屏轰击，造成3×3范围伤害","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_athena_1, "cost":375, "cooldown":20*60, "description":"雅典娜圣衣：全屏轰击，造成3×3范围伤害","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_athena_2, "cost":375, "cooldown":20*60, "description":"雅典娜光辉：全屏轰击，造成3×3范围伤害","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	])
+	register_card("shuangzi",obj_shuangzi,[
+	    {"shape":0, "sprite":spr_shuangzi, "cost":200, "cooldown":50*60, "description":"双子座精灵：一次性产出4朵火苗","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_shuangzi_1, "cost":200, "cooldown":30*60, "description":"双子座战将：一次性产出4朵火苗","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_shuangzi_2, "cost":200, "cooldown":20*60, "description":"双子座星宿：一次性产出6朵火苗","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	])
+	register_card("sheshou",obj_sheshou,[
+	    {"shape":0, "sprite":spr_sheshou, "cost":300, "cooldown":7*60, "description":"射手座精灵：向前方三行射出4发强力子弹","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_sheshou_1, "cost":300, "cooldown":7*60, "description":"射手座战将：向前方三行射出4发强力子弹","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_sheshou_2, "cost":300, "cooldown":7*60, "description":"射手座星宿：向前方三行射出6发强力子弹","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	])
+	register_card("tiancheng",obj_tiancheng,[
+	    {"shape":0, "sprite":spr_tiancheng, "cost":150, "cooldown":7*60, "description":"天秤座精灵：向前后各射出3发比较强力的子弹","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_tiancheng_1, "cost":150, "cooldown":7*60, "description":"天秤座战将：向前后各射出3发比较强力的子弹","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_tiancheng_2, "cost":150, "cooldown":7*60, "description":"天秤座星宿：向前后各射出4发比较强力的子弹","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	])
+	register_card("shuangyu",obj_shuangyu,[
+	    {"shape":0, "sprite":spr_shuangyu, "cost":200, "cooldown":7*60, "description":"双鱼座精灵：投掷两颗带有减速的冰鱼","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_shuangyu_1, "cost":200, "cooldown":7*60, "description":"双鱼座战将：投掷两颗带有减速的冰鱼","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_shuangyu_2, "cost":200, "cooldown":7*60, "description":"双鱼座星宿：投掷两颗带有减速的强力冰鱼","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	])
+	register_card("juxie",obj_juxie,[
+	    {"shape":0, "sprite":spr_juxie, "cost":225, "cooldown":30*60, "description":"巨蟹座精灵：发射4发强力钳子，全屏跟踪","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_juxie_1, "cost":225, "cooldown":20*60, "description":"巨蟹座战将：发射4发强力钳子，全屏跟踪","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_juxie_2, "cost":225, "cooldown":15*60, "description":"巨蟹座星宿：发射6发强力钳子，全屏跟踪","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	])
+	register_card("shizi",obj_shizi,[
+	    {"shape":0, "sprite":spr_shizi, "cost":275, "cooldown":30*60, "description":"狮子座精灵：5×5范围穿透打击","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_shizi_1, "cost":275, "cooldown":20*60, "description":"狮子座战将：5×5范围穿透打击","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_shizi_2, "cost":275, "cooldown":15*60, "description":"狮子座星宿：5×5范围两次穿透打击","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	])
+	register_card("jinniu",obj_jinniu,[
+	    {"shape":0, "sprite":spr_jinniu, "cost":225, "cooldown":7*60, "description":"金牛座精灵：点燃子弹","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_jinniu_1, "cost":175, "cooldown":7*60, "description":"金牛座战将：点燃子弹","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_jinniu_2, "cost":175, "cooldown":7*60, "description":"金牛座星宿：点燃子弹","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	])
+	register_card("chunv",obj_chunv,[
+	    {"shape":0, "sprite":spr_chunv_0_3, "cost":175, "cooldown":30*60, "description":"处女座精灵：保护卡牌，并反弹伤害","plant_type":"shield_outer","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_chunv_1_4, "cost":200, "cooldown":30*60, "description":"处女座战将：保护卡牌，并反弹伤害","plant_type":"shield_outer","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_chunv_2_4, "cost":225, "cooldown":30*60, "description":"处女座星宿：保护卡牌，并反弹伤害","plant_type":"shield_outer","feature_type":"normal","target_card":"none"}
+	])
+	register_card("shuiping",obj_shuiping,[
+	    {"shape":0, "sprite":spr_shuiping, "cost":150, "cooldown":30*60, "description":"水瓶座精灵：5×5十字范围范围爆炸","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_shuiping_1, "cost":200, "cooldown":30*60, "description":"水瓶座战将：5×5十字范围范围爆炸","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_shuiping_2, "cost":250, "cooldown":30*60, "description":"水瓶座星宿：一行和一列范围爆炸","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	])
+	register_card("tianxie",obj_tianxie,[
+	    {"shape":0, "sprite":spr_tianxie, "cost":200, "cooldown":7*60, "description":"天蝎座精灵：发射一根穿透毒刺","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_tianxie_1, "cost":200, "cooldown":7*60, "description":"天蝎座战将：发射一根穿透毒刺","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_tianxie_2, "cost":200, "cooldown":7*60, "description":"天蝎座星宿：发射一根穿透毒刺","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	])
+	register_card("baiyang",obj_baiyang,[
+	    {"shape":0, "sprite":spr_baiyang_icon, "cost":300, "cooldown":50*60, "description":"白羊座精灵：冲撞清除一行鼠军","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_baiyang},
+	    {"shape":1, "sprite":spr_baiyang_icon, "cost":200, "cooldown":50*60, "description":"白羊座战将：冲撞清除一行鼠军，且无需格子放置","plant_type":"coffee","feature_type":"normal","target_card":"none","place_preview":spr_baiyang},
+		{"shape":2, "sprite":spr_baiyang_icon, "cost":200, "cooldown":50*60, "description":"白羊座星宿：冲撞清除三行鼠军，且无需格子放置","plant_type":"coffee","feature_type":"normal","target_card":"none","place_preview":spr_baiyang}
+	])
+	register_card("mojie",obj_mojie,[
+	    {"shape":0, "sprite":spr_mojie, "cost":300, "cooldown":50*60, "description":"摩羯座精灵：3×3范围内持续伤害并减速","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_mojie_1, "cost":300, "cooldown":50*60, "description":"摩羯座战将：3×3范围内持续伤害并减速","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_mojie_2, "cost":300, "cooldown":50*60, "description":"摩羯座星宿：5×5范围内持续伤害并减速","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	])
+    register_card("sun_god",obj_sun_god,[
+	    {"shape":0, "sprite":spr_sun_god, "cost":200, "cooldown":30*60, "description":"阿波罗神使：一次生产六朵火苗","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":1, "sprite":spr_sun_god_1, "cost":150, "cooldown":25*60, "description":"阿波罗圣神：一次生产八朵火苗","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":2, "sprite":spr_sun_god_2, "cost":100, "cooldown":20*60, "description":"太阳神·阿波罗：一次生产十朵火苗","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+        {"shape":3, "sprite":spr_sun_god_3, "cost":25, "cooldown":10*60, "description":"至尊太阳神：一次生产十二朵火苗","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
+	])
+    register_card("war_god",obj_war_god,[
+	    {"shape":0, "sprite":spr_war_god, "cost":150, "cooldown":7*60, "description":"阿瑞斯神使：向前后两个方向发射子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":1, "sprite":spr_war_god_1, "cost":150, "cooldown":7*60, "description":"阿瑞斯圣神：向前后两个方向发射子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":2, "sprite":spr_war_god_2, "cost":150, "cooldown":7*60, "description":"战神·阿瑞斯：向前后两个方向发射子弹，","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":3, "sprite":spr_war_god_3, "cost":150, "cooldown":7*60, "description":"至尊战神：向前后两个方向发射子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
+	])
+    register_card("love_god",obj_love_god,[
+	    {"shape":0, "sprite":spr_love_god, "cost":300, "cooldown":7*60, "description":"丘比特神使：向前方三行射出6发强力子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":1, "sprite":spr_love_god_1, "cost":300, "cooldown":7*60, "description":"丘比特圣神：向前方三行射出6发强力子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":2, "sprite":spr_love_god_2, "cost":300, "cooldown":7*60, "description":"爱神·丘比特：向前方三行射出9发强力子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+        {"shape":3, "sprite":spr_love_god_3, "cost":300, "cooldown":7*60, "description":"至尊爱神：向前方三行射出9发强力子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
+   ])
+	register_card("thor", obj_thor, [
+	    {"shape":0, "sprite":spr_thor_icon, "cost":200, "cooldown":7*60, "description":"索尔神使：连续发出2发冰锤","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_thor,"is_gold":1},
+	    {"shape":1, "sprite":spr_thor_icon_1, "cost":200, "cooldown":7*60, "description":"索尔圣神：连续发出3发冰锤","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_thor_1,"is_gold":1},
+	    {"shape":2, "sprite":spr_thor_icon_2, "cost":200, "cooldown":7*60, "description":"雷神·索尔：连续发出3发冰锤，其中1发为超级冰锤","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_thor_2,"is_gold":1},
+	    {"shape":3, "sprite":spr_thor_icon_3, "cost":200, "cooldown":7*60, "description":"至尊雷神：连续发出3发冰锤，其中1发为超级冰锤","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_thor_3,"is_gold":1}
+	])
+    register_card("moon_god", obj_moon_god, [
+	    {"shape":0, "sprite":spr_moon_god, "cost":225, "cooldown":50*60, "description":"狄安娜神使：甩出六发追踪子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":1, "sprite":spr_moon_god_1, "cost":225, "cooldown":50*60, "description":"狄安娜圣神：甩出六发追踪子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+   	    {"shape":2, "sprite":spr_moon_god_2, "cost":225, "cooldown":50*60, "description":"月神·狄安娜：甩出六发追踪子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":3, "sprite":spr_moon_god_3, "cost":225, "cooldown":50*60, "description":"至尊月神：甩出六发追踪子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
+	]);
+    register_card("fire_god",obj_fire_god,[
+	    {"shape":0, "sprite":spr_fire_god, "cost":225, "cooldown":7*60, "description":"洛基神使：点燃子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":1, "sprite":spr_fire_god_1, "cost":225, "cooldown":7*60, "description":"洛基圣神：点燃子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":2, "sprite":spr_fire_god_2, "cost":225, "cooldown":7*60, "description":"火神·洛基：点燃子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+        {"shape":3, "sprite":spr_fire_god_3, "cost":225, "cooldown":7*60, "description":"至尊火神：点燃子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
+   ])
+    register_card("poseidon", obj_poseidon, [
+	    {"shape":0, "sprite":spr_poseidon, "cost":275, "cooldown":30*60, "description":"波塞冬神使：5*5范围穿透攻击","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":1, "sprite":spr_poseidon_1, "cost":275, "cooldown":30*60, "description":"波塞冬圣神：5*5范围穿透攻击","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":2, "sprite":spr_poseidon_2, "cost":275, "cooldown":20*60, "description":"海神·波塞冬：5*5范围穿透攻击","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":3, "sprite":spr_poseidon_3, "cost":275, "cooldown":20*60, "description":"至尊海神：7*5范围穿透攻击","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
+	]);
+    register_card("odin", obj_odin, [
+	    {"shape":0, "sprite":spr_odin, "cost":230, "cooldown":7*60, "description":"奥丁神使：发射冈格尼尔穿透攻击敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":1, "sprite":spr_odin_1, "cost":230, "cooldown":7*60, "description":"奥丁圣神：发射冈格尼尔穿透攻击敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+        {"shape":2, "sprite":spr_odin_2, "cost":230, "cooldown":7*60, "description":"主神·奥丁：发射冈格尼尔穿透攻击敌人，发射两发","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+  	    {"shape":3, "sprite":spr_odin_3, "cost":230, "cooldown":7*60, "description":"至尊主神：发射冈格尼尔穿透攻击敌人，发射三发","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	]);
+	register_card("brahma", obj_brahma, [
+	    {"shape":0, "sprite":spr_brahma_icon, "cost":325, "cooldown":55*60, "description":"梵天神使：变身出多个上一次种下的卡片","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_brahma},
+		{"shape":1, "sprite":spr_brahma_icon_1, "cost":325, "cooldown":55*60, "description":"梵天圣神：变身出多个上一次种下的卡片","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_brahma_1},
+		{"shape":2, "sprite":spr_brahma_icon_2, "cost":325, "cooldown":55*60, "description":"创造神·梵天：变身出多个上一次种下的卡片","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_brahma_2}
+	]);
+	register_card("gaia", obj_gaia, [
+	    {"shape":0, "sprite":spr_gaia, "cost":350, "cooldown":35*60, "description":"盖亚神使：双连发射3*3范围爆炸的毁灭巨石","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":1, "sprite":spr_gaia_1, "cost":350, "cooldown":35*60, "description":"盖亚圣神：双连发射3*3范围爆炸的毁灭巨石","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":2, "sprite":spr_gaia_2, "cost":350, "cooldown":35*60, "description":"大地女神·盖亚：三连发射3*3范围爆炸的毁灭巨石","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":3, "sprite":spr_gaia_3, "cost":350, "cooldown":35*60, "description":"至尊大地女神：三连发射5*5范围爆炸的毁灭巨石","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
+	]);
+    register_card("zeus",obj_zeus,[
+	    {"shape":0, "sprite":spr_zeus, "cost":375, "cooldown":20*60, "description":"宙斯神使：全屏轰击，造成3×3范围伤害","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":1, "sprite":spr_zeus_1, "cost":375, "cooldown":20*60, "description":"宙斯圣神：全屏轰击，造成3×3范围伤害","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":2, "sprite":spr_zeus_2, "cost":375, "cooldown":20*60, "description":"天神·宙斯：全屏轰击，造成3×3范围伤害","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":3, "sprite":spr_zeus_3, "cost":375, "cooldown":20*60, "description":"至尊天神：全屏轰击，造成3×3范围伤害","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
+	])
+    register_card("ice_god",obj_ice_god,[
+	    {"shape":0, "sprite":spr_ice_god, "cost":325, "cooldown":15*60, "description":"典伊神使：召唤8颗冰晶轰击敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":1, "sprite":spr_ice_god_1, "cost":225, "cooldown":15*60, "description":"典伊圣神：召唤8颗冰晶轰击敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":2, "sprite":spr_ice_god_2, "cost":225, "cooldown":15*60, "description":"冰神·典伊：召唤10颗冰晶轰击敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":3, "sprite":spr_ice_god_3, "cost":225, "cooldown":15*60, "description":"至尊冰神：召唤12颗冰晶轰击敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
+	])
+	 register_card("ghost_god", obj_ghost_god, [
+	    {"shape":0, "sprite":spr_ghost_god, "cost":225, "cooldown":50*60, "description":"哈迪斯神使：发射五向子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":1, "sprite":spr_ghost_god_1, "cost":225, "cooldown":50*60, "description":"哈迪斯圣神：发射五向子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+   	    {"shape":2, "sprite":spr_ghost_god_2, "cost":225, "cooldown":50*60, "description":"冥神·哈迪斯：发射五向子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":3, "sprite":spr_ghost_god_3, "cost":225, "cooldown":50*60, "description":"至尊冥神：发射五向子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
+	]);
+    register_card("hera",obj_hera,[
+	    {"shape":0, "sprite":spr_hera_icon_1, "cost":125, "cooldown":30*60, "description":"赫拉神使：保护被罩住的卡片","plant_type":"shield_outer","feature_type":"normal","target_card":"none","place_preview":spr_hera_outer_1,"is_gold":1},
+	    {"shape":1, "sprite":spr_hera_icon_2, "cost":125, "cooldown":30*60, "description":"赫拉圣神：保护被罩住的卡片并反伤","plant_type":"shield_outer","feature_type":"normal","target_card":"none","place_preview":spr_hera_1_outer_1,"is_gold":1},
+		{"shape":2, "sprite":spr_hera_icon_3, "cost":125, "cooldown":30*60, "description":"天后·赫拉：保护被罩住的卡片并反伤","plant_type":"shield_outer","feature_type":"normal","target_card":"none","place_preview":spr_hera_2_outer_1,"is_gold":1},
+        {"shape":3, "sprite":spr_hera_icon_4, "cost":125, "cooldown":30*60, "description":"至尊天后：保护被罩住的卡片并反伤","plant_type":"shield_outer","feature_type":"normal","target_card":"none","place_preview":spr_hera_3_outer_1,"is_gold":1}
+	])
+	register_card("gaia", obj_gaia, [
+	    {"shape":0, "sprite":spr_gaia, "cost":350, "cooldown":35*60, "description":"盖亚神使：双连发射3*3范围爆炸的毁灭巨石","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":1, "sprite":spr_gaia_1, "cost":350, "cooldown":35*60, "description":"盖亚圣神：双连发射3*3范围爆炸的毁灭巨石","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":2, "sprite":spr_gaia_2, "cost":350, "cooldown":35*60, "description":"大地女神·盖亚：三连发射3*3范围爆炸的毁灭巨石","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":3, "sprite":spr_gaia_3, "cost":350, "cooldown":35*60, "description":"至尊大地女神：三连发射5*5范围爆炸的毁灭巨石","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
+	]);
+	register_card("aurora", obj_aurora, [
+	    {"shape":0, "sprite":spr_aurora_icon, "cost":190, "cooldown":1800, "description":"欧若拉神使：为本行投掷类卡片增伤","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_aurora},
+		{"shape":1, "sprite":spr_aurora_icon_1, "cost":190, "cooldown":1800, "description":"欧若拉圣神：为本行投掷类卡片增伤，死亡后爆炸","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_aurora_1},
+		{"shape":2, "sprite":spr_aurora_icon_2, "cost":190, "cooldown":1800, "description":"曙光女神·欧若拉：为本行投掷类卡片增伤，死亡后爆炸","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_aurora_2},
+		{"shape":3, "sprite":spr_aurora_icon_3, "cost":190, "cooldown":1800, "description":"至尊曙光女神：为本行及相邻行投掷类卡片增伤，死亡后爆炸","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_aurora_3}
+	]);
+	register_card("zhurong", obj_zhurong, [
+	    {"shape":0, "sprite":spr_zhurong, "cost":245, "cooldown":7*60, "description":"祝融神使：点燃前方3x3区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":1, "sprite":spr_zhurong_1, "cost":245, "cooldown":7*60, "description":"祝融圣神：点燃前方3x3区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":2, "sprite":spr_zhurong_2, "cost":245, "cooldown":7*60, "description":"赤帝·祝融：点燃前方5x5区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":3, "sprite":spr_zhurong_3, "cost":245, "cooldown":7*60, "description":"至尊赤帝：点燃前方7x5区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
 	]);
 }

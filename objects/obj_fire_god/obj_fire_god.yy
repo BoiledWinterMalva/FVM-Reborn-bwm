@@ -9,8 +9,8 @@
   "name":"obj_fire_god",
   "overriddenProperties":[],
   "parent":{
-    "name":"Gold card",
-    "path":"folders/物体/Gold card.yy",
+    "name":"Gold Cards",
+    "path":"folders/物体/Gold Cards.yy",
   },
   "parentObjectId":{
     "name":"obj_card_parent",

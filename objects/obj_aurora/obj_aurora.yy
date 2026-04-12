@@ -10,8 +10,8 @@
   "name":"obj_aurora",
   "overriddenProperties":[],
   "parent":{
-    "name":"Assistant",
-    "path":"folders/物体/Cards/Assistant.yy",
+    "name":"Gold Cards",
+    "path":"folders/物体/Gold Cards.yy",
   },
   "parentObjectId":{
     "name":"obj_card_parent",

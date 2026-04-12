@@ -10,8 +10,8 @@
   "name":"obj_sea_star",
   "overriddenProperties":[],
   "parent":{
-    "name":"Shooter",
-    "path":"folders/物体/Cards/Shooter.yy",
+    "name":"New cards",
+    "path":"folders/物体/New cards.yy",
   },
   "parentObjectId":{
     "name":"obj_card_parent",

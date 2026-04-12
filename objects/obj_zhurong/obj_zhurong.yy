@@ -10,8 +10,8 @@
   "name":"obj_zhurong",
   "overriddenProperties":[],
   "parent":{
-    "name":"Pult",
-    "path":"folders/物体/Cards/Pult.yy",
+    "name":"Gold Cards",
+    "path":"folders/物体/Gold Cards.yy",
   },
   "parentObjectId":{
     "name":"obj_card_parent",
