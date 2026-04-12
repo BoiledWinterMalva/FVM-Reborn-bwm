@@ -17,9 +17,11 @@ else if shape == 3{
 
 attack_anim = 0;
 idle_anim = 12
-flash_speed = 5
+flash_speed = 10
 plant_type = "normal"
 is_slowdown = false
 atk_modified_card_list = [];
 atk_whitelist = ["egg_boiler_pult", "chocolate_pult", "ice_egg_boiler_pult", "salad_pult", "stinky_tofu_pult", "gaia","grilled_lizard_pult","zhurong","thor"];
+same_row_buff_value = atk/100
+adj_row_buff_value = 0.2*same_row_buff_value
 

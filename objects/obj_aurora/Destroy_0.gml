@@ -17,6 +17,20 @@ if (shape == 0) {
     effect_inst.sprite_index = spr_aurora_dead_3;
 }
 
+event_inherited();
+
+if (instance_number(obj_aurora) <= 1) {
+    with (obj_card_parent) {
+        if (variable_instance_exists(id, "original_atk") && original_atk != -1) {
+            atk = original_atk;
+            original_atk = -1; 
+        }
+    }
+}
+
+
+
+
 // 3x3 灰烬伤害效果（仅当 shape >= 2）
 if (shape >= 2) {
     with (obj_enemy_parent) {
