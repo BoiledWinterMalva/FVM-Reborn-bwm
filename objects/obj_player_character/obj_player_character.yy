@@ -41,8 +41,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_character_body",
-    "path":"sprites/spr_player_character_body/spr_player_character_body.yy",
+    "name":"spr_player_character",
+    "path":"sprites/spr_player_character/spr_player_character.yy",
   },
   "spriteMaskId":null,
   "visible":true,

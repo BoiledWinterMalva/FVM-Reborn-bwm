@@ -13,8 +13,8 @@
   "name":"obj_ghost_god_bullet_ping",
   "overriddenProperties":[],
   "parent":{
-    "name":"Gold Cards",
-    "path":"folders/物体/Gold Cards.yy",
+    "name":"Gold card",
+    "path":"folders/物体/Gold card.yy",
   },
   "parentObjectId":null,
   "persistent":false,

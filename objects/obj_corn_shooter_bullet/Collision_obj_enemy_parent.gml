@@ -14,7 +14,10 @@
 	
 		}
 		if burnt == 0{
-			instance_create_depth(x,y,depth,obj_xiaolongbao_bullet_effect)
+			var inst2 = instance_create_depth(x,y,depth,obj_corn_shooter_effect)
+        if shape >= 1{
+	          inst2.sprite_index = spr_corn_shooter_bullet_effect_1
+              }
 		}
 		else{
 			var inst = instance_create_depth(x+25,y,depth,obj_fire_bullet_effect)

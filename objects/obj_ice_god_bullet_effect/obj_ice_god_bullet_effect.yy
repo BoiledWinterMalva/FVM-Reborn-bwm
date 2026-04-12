@@ -10,8 +10,8 @@
   "name":"obj_ice_god_bullet_effect",
   "overriddenProperties":[],
   "parent":{
-    "name":"Gold Cards",
-    "path":"folders/物体/Gold Cards.yy",
+    "name":"Gold card",
+    "path":"folders/物体/Gold card.yy",
   },
   "parentObjectId":null,
   "persistent":false,

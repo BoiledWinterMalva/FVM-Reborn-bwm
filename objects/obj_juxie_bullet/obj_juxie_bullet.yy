@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_juxie_bullet_2",
+  "%Name":"obj_juxie_bullet",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_juxie_bullet_2",
+  "name":"obj_juxie_bullet",
   "overriddenProperties":[],
   "parent":{
     "name":"New cards",
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_juxie_bullet_2",
-    "path":"sprites/spr_juxie_bullet_2/spr_juxie_bullet_2.yy",
+    "name":"spr_juxie_bullet",
+    "path":"sprites/spr_juxie_bullet/spr_juxie_bullet.yy",
   },
   "spriteMaskId":null,
   "visible":true,

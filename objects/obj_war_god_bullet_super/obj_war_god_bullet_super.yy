@@ -15,8 +15,8 @@
   "name":"obj_war_god_bullet_super",
   "overriddenProperties":[],
   "parent":{
-    "name":"Gold Cards",
-    "path":"folders/物体/Gold Cards.yy",
+    "name":"Gold card",
+    "path":"folders/物体/Gold card.yy",
   },
   "parentObjectId":null,
   "persistent":false,

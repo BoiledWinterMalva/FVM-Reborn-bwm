@@ -11,8 +11,8 @@
   "name":"obj_love_god",
   "overriddenProperties":[],
   "parent":{
-    "name":"Gold Cards",
-    "path":"folders/物体/Gold Cards.yy",
+    "name":"Gold card",
+    "path":"folders/物体/Gold card.yy",
   },
   "parentObjectId":{
     "name":"obj_card_parent",

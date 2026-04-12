@@ -46,19 +46,14 @@ function find_priority_enemy() {
     return closest_left_enemy;
 }
 var target = find_priority_enemy()
-if shape == 2{
-	var inst2 = instance_create_depth(x+40,y-55,depth-500,obj_juxie_bullet_2)
-	inst2.damage = atk
-	inst2.move_speed = 10
-	inst2.target_enemy = target
-	inst2.banding_card_obj = id
-	inst2.row = grid_row
-}else{
-	var inst = instance_create_depth(x,y-55,depth-500,obj_juxie_bullet_1)
+
+var inst = instance_create_depth(x,y-55,depth-500,obj_juxie_bullet)
+        if shape == 2{
+	       inst.sprite_index = spr_juxie_bullet_2
+        }
     inst.damage = atk
     inst.move_speed = 10
     inst.target_enemy = target
     inst.banding_card_obj = id
     inst.row = grid_row
-}
 audio_play_sound(snd_throw,0,0)
