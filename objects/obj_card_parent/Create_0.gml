@@ -53,12 +53,3 @@ awake_anim = 0
 plant_id = ""  // 植物唯一标识符
 current_level = 0  // 当前等级
 
-// ========== 增伤信息 ==========
-buff_timer = 0
-
-aurora_buff_active = false;
-aurora_buff_factor = 1;
-
-berry_buff_active = false;
-berry_buff_factor = 1;
-

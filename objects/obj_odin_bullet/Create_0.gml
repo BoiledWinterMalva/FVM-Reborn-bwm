@@ -1,0 +1,14 @@
+damage = 0
+move_speed = 0
+row = 0
+hitted_enemy = ds_list_create()
+shape = 0
+burnt = 0
+shape = 0
+bounced = false
+damage_type = "pierce"
+target_type = "normal"
+brazier_list = ds_list_create()
+fire_god_effct = 0
+image_xscale = 1.8
+image_yscale = 1.8

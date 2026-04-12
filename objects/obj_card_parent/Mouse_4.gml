@@ -1,1 +1,0 @@
-if (global.debug && plant_id!="player"){show_debug_message("当前atk: " + string(atk));}

@@ -106,11 +106,3 @@ if timer < current_flash_speed - 1 {
     timer = 0;
 }
 
-buff_timer++;
-
-if (buff_timer >= 5) {
-    buff_timer = 0;
-
-    update_aurora_buff();
-    update_berry_dessert_buff();
-}
