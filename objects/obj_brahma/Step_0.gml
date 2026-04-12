@@ -16,11 +16,14 @@ if (transform_timer > 4){
 }
 
 if (transform_timer <= 15 && !henshin ){
+	var current_replace_option = global.replace_placement
+	global.replace_placement = false
     transform_into_target();
 	transform_into_target();
 	if shape >= 2{transform_into_target();}
 	if shape >= 3{transform_into_target();transform_into_target();}
 	henshin = true;
+	global.replace_placement = current_replace_option
 }else if (shape >= 1 && transform_timer <= 55 && !exploded){
 	event_user(1);
 	exploded = true;
