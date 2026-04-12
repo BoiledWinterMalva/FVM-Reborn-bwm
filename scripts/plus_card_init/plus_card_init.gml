@@ -8,5 +8,12 @@ function plus_card_init(){
 	ds_map_add(global.plus_card_map,"chocolate_bread",[obj_chocolate_bread,1])
 	ds_map_add(global.plus_card_map,"ice_egg_boiler_pult",[obj_ice_egg_boiler_pult,1])
 	ds_map_add(global.plus_card_map,"chocolate_cannon",[obj_chocolate_cannon,1])
-	ds_map_add(global.plus_card_map,"gatlin_ice_long_bao",[obj_gatlin_ice_long_bao,1])
+	ds_map_add(global.plus_card_map,"shaungzi",[obj_shuangzi,1])
+	ds_map_add(global.plus_card_map,"sheshou",[obj_sheshou,1])
+	ds_map_add(global.plus_card_map,"tiancheng",[obj_tiancheng,1])
+	ds_map_add(global.plus_card_map,"shizi",[obj_shizi,1])
+	ds_map_add(global.plus_card_map,"shuangyu",[obj_shuangyu,1])
+	ds_map_add(global.plus_card_map,"juxie",[obj_juxie,1])
+	ds_map_add(global.plus_card_map,"tianxie",[obj_tianxie,1])
+	ds_map_add(global.plus_card_map,"athena",[obj_athena,1])
 }
