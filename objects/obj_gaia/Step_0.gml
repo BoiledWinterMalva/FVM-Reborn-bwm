@@ -11,6 +11,16 @@ if is_frozen || state == CARD_STATE.SLEEP{
 	exit
 }
 
+// 增伤读取
+if buff_timer > 0 buff_timer--;// 计时器由父类create定义
+else{
+	var type = "thrower";
+	var buff = global.buff_grid[? type][grid_col][grid_row];
+	var buff_au = get_aurora_buff(grid_col, grid_row);
+	atk = base_atk *max(buff, buff_au);// 原始攻击力继承由父类step完成
+	buff_timer = 5;
+}
+
 //索敌
 var has_enemy = false
 var target_enemy = noone

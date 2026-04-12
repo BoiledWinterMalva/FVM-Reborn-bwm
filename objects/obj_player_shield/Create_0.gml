@@ -38,7 +38,6 @@ t_dir = 1;
 
 anim_timer = 0
 
-
 if get_gem_index("produce_gem")!= -1{
 	var gem_info = get_gem_info("produce_gem")
 	var gem_level =  get_gem_level("produce_gem")
@@ -96,7 +95,7 @@ if get_gem_index("divine_protect_gem")!= -1{
 	var gem_info = get_gem_info("divine_protect_gem")
 	var gem_level =  get_gem_level("divine_protect_gem")
 	if gem_level > 15 gem_level = 15
-	atk_ratio = gem_info.atk_ratio[gem_level]
+	buff_value = gem_info.atk_ratio[gem_level]
 }
 
 if get_gem_index("divine_holy_gem")!= -1{
@@ -106,4 +105,11 @@ if get_gem_index("divine_holy_gem")!= -1{
 	if gem_level > 15 gem_level = 15
 	reflect_damage = gem_info.atk[gem_level]
 	ice_timer = gem_info.ice_timer[gem_level]
+}
+
+rebuild_shield_grid()
+
+if divine_protect_gem {
+	buff_cells = []
+	buff_cells_refreshed = false;
 }

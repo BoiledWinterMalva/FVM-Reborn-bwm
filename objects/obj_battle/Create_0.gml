@@ -40,6 +40,13 @@ global.grid_rows = global.level_file.map_rows
 global.last_placed_card_id = "";
 global.last_placed_card_shape = 0;
 
+//增益系统启动
+global.buff_sources = ds_list_create();
+global.buff_dirty = false;
+build_shield_grid()
+build_buff_aurora()
+build_buff_grid()
+
 //啃食音效
 chomp_sound_list = ds_list_create()
 battle_time = 0

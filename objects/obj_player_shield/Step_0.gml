@@ -158,31 +158,10 @@ if divine_blessing_gem{
 		}
 	}
 }
-if (divine_protect_gem) { 
-    with (obj_card_parent) {
-        // 排除自己和黑名单
-        if (array_get_index(other.blacklist, plant_id) == -1) {
-
-            // 计算与自身的行列差
-            var row_diff = grid_row - other.grid_row;
-            var col_diff = grid_col - other.grid_col;
-
-            // 内圈 3x3
-            if (row_diff >= -1 && row_diff <= 1 && col_diff >= -1 && col_diff <= 1) {
-                if (array_get_index(other.atk_modified_card_list, id) == -1) {
-                    atk = atk * (other.atk_ratio + 1); // 内圈全额倍率
-                    array_push(other.atk_modified_card_list, id);
-                }
-            }
-            // 外圈 5x5（去掉内圈）
-            else if (row_diff >= -2 && row_diff <= 2 && col_diff >= -2 && col_diff <= 2) {
-                if (array_get_index(other.atk_modified_card_list, id) == -1) {
-                    atk = atk * (1 + other.atk_ratio / 2); // 外圈一半倍率
-                    array_push(other.atk_modified_card_list, id);
-                }
-            }
-        }
-    }
+if (divine_protect_gem && !buff_cells_refreshed) { 
+	add_shield_area(buff_cells, grid_col, grid_row, buff_value);
+	apply_shield_buff(id);
+	buff_cells_refreshed = true;
 }
 //if (divine_holy_gem) {
 

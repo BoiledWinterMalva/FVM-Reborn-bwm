@@ -91,15 +91,32 @@ function weapons_init(){
 									"atk_impact":[72, 84, 96, 118, 140, 162, 196, 232, 270, 335, 430, 535, 650, 775, 910, 1045]
 									})
 		register_weapon("poseidon_dart_gun",{"sprite":spr_poseidon_dart_gun,
-										"icon":spr_poseidon_dart_gun_icon,
-										"obj":obj_poseidon_dart_gun,
-										"slot":"main_weapon",
-										"atk":20,
-										"cycle":90,
-										"description":"海神镖枪：发射两个追踪飞镖攻击敌人",
-										"name":"海神镖枪",
-										"atk_impact":[24,28,32,36,40,44,52,64,80,110,140,170,200,230,260,290]
-										})
+									"icon":spr_poseidon_dart_gun_icon,
+									"obj":obj_poseidon_dart_gun,
+									"slot":"main_weapon",
+									"atk":20,
+									"cycle":90,
+									"description":"海神镖枪：发射两个追踪飞镖攻击敌人",
+									"name":"海神镖枪",
+									"atk_impact":[24,28,32,36,40,44,52,64,80,110,140,170,200,230,260,290]
+									})
+		register_weapon("zeus_bolt",{"sprite":spr_zeus_bolt,
+									"icon":spr_zeus_bolt_icon,
+									"obj":obj_zeus_bolt,
+									"slot":"main_weapon",
+									"allowed_gems":["zeus_shadow_gem","zeus_power_gem","zeus_anger_gem"],
+									"atk":65,
+									"bullet_amount":2,
+									"bullet_style":0,
+									"splash_ratio":0,
+									"cycle":120,
+									"description":"宙斯神弩：发射两个追踪飞镖攻击敌人",
+									"name":"宙斯神弩",
+									"atk_impact":[78,91,104,117,130,143,156,169,182,195,227,240,253,266,279,292],
+									"bullet_amount_impact":[2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,7],
+									"bullet_style_impact":[0,0,0,0,0,0,1,1,1,1,2,2,3,3,4,4],
+									"splash_ratio_impact":[15,16,18,20,23,26,29,32,35,40,45,50,55,65,75,90]
+									})							
 	}
 	{//注册所有副武器
 		register_weapon("cookie_shield",{"sprite":spr_cookie_shield,
@@ -250,6 +267,30 @@ function weapons_init(){
 									"cooldown":60,
 									"star_amount":[2,3,4,5,6,7,8,9,10,12,14]
 		})
+		register_gem("zeus_shadow_gem",{"name":"天神之影",
+									"description":"天神之影：增加宙斯神弩子弹溅射\n[专属宝石]：宙斯神弩",
+									"icon":spr_zeus_shadow_gem_icon,
+									"slot":"main_weapon",
+									"obj":obj_zeus_shadow_gem,
+									"allowed_weapons":["zeus_bolt"],
+									"max_level":15
+		})
+		register_gem("zeus_power_gem",{"name":"天神之力",
+									"description":"天神之力：增加宙斯神弩子弹伤害\n[专属宝石]：宙斯神弩",
+									"icon":spr_zeus_power_gem_icon,
+									"slot":"main_weapon",
+									"obj":obj_zeus_power_gem,
+									"allowed_weapons":["zeus_bolt"],
+									"max_level":15
+		})
+		register_gem("zeus_anger_gem",{"name":"天神之怒",
+									"description":"天神之怒：增加宙斯神弩子弹数量\n[专属宝石]：宙斯神弩",
+									"icon":spr_zeus_anger_gem_icon,
+									"slot":"main_weapon",
+									"obj":obj_zeus_anger_gem,
+									"allowed_weapons":["zeus_bolt"],
+									"max_level":15
+		})
 		
 		
 		register_gem("gale_gem",{"name":"疾风宝石",
@@ -283,9 +324,7 @@ function weapons_init(){
 									"slot":"super_weapon",
 									"obj":obj_ghost_strike_gem,
 									"allowed_weapons":["hades_scythe"],
-									"max_level":15,
-									"first_cooldown":0,
-									"cooldown":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+									"max_level":15
 		})
 		register_gem("ghost_spark_gem",{"name":"亡灵星火",
 									"description":"亡灵星火：增加冥王战镰攻速\n[专属宝石]：冥王战镰",
@@ -293,9 +332,7 @@ function weapons_init(){
 									"slot":"super_weapon",
 									"obj":obj_ghost_pact_gem,
 									"allowed_weapons":["hades_scythe"],
-									"max_level":15,
-									"first_cooldown":0,
-									"cooldown":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+									"max_level":15
 		})
 		register_gem("ghost_pact_gem",{"name":"亡灵契约",
 									"description":"亡灵契约：增加冥王战镰子弹\n[专属宝石]：冥王战镰",
@@ -303,9 +340,7 @@ function weapons_init(){
 									"slot":"super_weapon",
 									"obj":obj_ghost_spark_gem,
 									"allowed_weapons":["hades_scythe"],
-									"max_level":15,
-									"first_cooldown":0,
-									"cooldown":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+									"max_level":15
 		})
 		
 		

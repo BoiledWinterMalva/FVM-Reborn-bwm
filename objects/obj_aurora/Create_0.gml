@@ -20,6 +20,20 @@ idle_anim = 12
 flash_speed = 5
 plant_type = "normal"
 is_slowdown = false
-atk_modified_card_list = [];
-atk_whitelist = ["egg_boiler_pult", "chocolate_pult", "ice_egg_boiler_pult", "salad_pult", "stinky_tofu_pult", "gaia","grilled_lizard_pult","zhurong"];
 
+// ========== 初始化增伤数据 ==========
+atk_whitelist = ["egg_boiler_pult", "chocolate_pult", "ice_egg_boiler_pult", "salad_pult", "stinky_tofu_pult", "gaia","grilled_lizard_pult","zhurong"];// 暂时无用
+
+buff_type = "thrower"
+buff_value = atk/100
+if (shape < 3) {
+	buff_shape = "row";
+	buff_cells = build_buff_cells(grid_col, grid_row, buff_shape, buff_value);
+	buff_cells_refreshed = false;
+} else {
+	buff_cells = [];
+	buff_cells_refreshed = true;
+}
+
+ds_list_add(global.buff_sources, id);// 进入增伤源名单
+global.buff_dirty = true;// 驱动增伤系统更新

@@ -106,11 +106,14 @@ if timer < current_flash_speed - 1 {
     timer = 0;
 }
 
-buff_timer++;
+// 应用盾牌加成
+if !shield_buffed{
+	var shield_buff = global.shield_grid[grid_col][grid_row] + 1;
+	atk = atk *shield_buff;
+	shield_buffed = true;
+}
 
-if (buff_timer >= 5) {
-    buff_timer = 0;
-
-    update_aurora_buff();
-    update_berry_dessert_buff();
+// 存一次原始攻击力
+if base_atk < 0 {
+	base_atk = atk;
 }

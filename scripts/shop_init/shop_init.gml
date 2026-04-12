@@ -43,7 +43,6 @@ function shop_init(){
 	register_goods("guard_gem",{"type":"gem","cost":"20000","unlock_item_id":"guard_gem","description":"守护宝石：治疗周围卡片并增加生命上限","display_name":"守护宝石"})
 	register_goods("strength_gem",{"type":"gem","cost":"50000","unlock_item_id":"strength_gem","description":"蓄力宝石：增加周围卡片伤害","display_name":"蓄力宝石"})
 	register_goods("ice_spoon_crossbow",{"type":"weapon","cost":"20000","unlock_item_id":"ice_spoon_crossbow","description":"冰勺弩枪：投掷减速冰鸡蛋","display_name":"冰勺弩枪"})
-<<<<<<< HEAD
 	register_goods("master_shield",{"type":"weapon","cost":"150000","unlock_item_id":"master_shield","description":"主宰之盾：增加800生命值","display_name":"主宰之盾"})
 	register_goods("divine_blessing_gem",{"type":"gem","cost":"150000","unlock_item_id":"divine_blessing_gem","description":"神佑之眼：产生火苗","display_name":"神佑之眼"})
 	register_goods("divine_protect_gem",{"type":"gem","cost":"150000","unlock_item_id":"divine_protect_gem","description":"神护之眼：为周围卡片增加攻击力","display_name":"神护之眼"})
@@ -52,7 +51,9 @@ function shop_init(){
 	register_goods("ghost_strike_gem",{"type":"gem","cost":"200000","unlock_item_id":"ghost_strike_gem","description":"亡灵强袭：增加冥王战镰伤害","display_name":"亡灵强袭"})
 	register_goods("ghost_spark_gem",{"type":"gem","cost":"200000","unlock_item_id":"ghost_spark_gem","description":"亡灵星火：增加冥王战镰攻速","display_name":"亡灵星火"})
 	register_goods("ghost_pact_gem",{"type":"gem","cost":"200000","unlock_item_id":"ghost_pact_gem","description":"亡灵契约：增加冥王战镰子弹","display_name":"亡灵契约"})
-=======
 	register_goods("poseidon_dart_gun",{"type":"weapon","cost":"80000","unlock_item_id":"poseidon_dart_gun","description":"海神镖枪：发射两个追踪飞镖攻击敌人","display_name":"海神镖枪"})
->>>>>>> upstream/develop
+	register_goods("zeus_bolt",{"type":"weapon","cost":"150000","unlock_item_id":"zeus_bolt","description":"宙斯神弩：发射两个追踪飞镖攻击敌人","display_name":"宙斯神弩"})
+	register_goods("zeus_shadow_gem",{"type":"gem","cost":"150000","unlock_item_id":"zeus_shadow_gem","description":"天神之影：增加宙斯神弩子弹溅射","display_name":"天神之影"})
+	register_goods("zeus_power_gem",{"type":"gem","cost":"150000","unlock_item_id":"zeus_power_gem","description":"天神之力：增加宙斯神弩子弹伤害","display_name":"天神之力"})
+	register_goods("zeus_anger_gem",{"type":"gem","cost":"150000","unlock_item_id":"zeus_anger_gem","description":"天神之怒：增加宙斯神弩子弹数量","display_name":"天神之怒"})
 }
