@@ -4,6 +4,13 @@ if hp < max_hp && !invincible{
 }
 card_destroyed(id);
 
+// 注销增伤源
+var idx = ds_list_find_index(global.buff_sources, id);
+if (idx != -1) {
+    ds_list_delete(global.buff_sources, idx);
+}
+global.buff_dirty = true; // 驱动增伤系统更新
+
 // 创建死亡特效
 var effect_inst = instance_create_depth(x, y, depth, obj_aurora_dead_explode);
 effect_inst.shape_dead = shape;

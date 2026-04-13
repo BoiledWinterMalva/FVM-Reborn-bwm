@@ -13,7 +13,16 @@ if is_slowdown {
     current_flash_speed *= 2;
 }
 
-// 目标选择（无ds_list版本）
+// 增伤读取
+if buff_timer > 0 buff_timer--;// 计时器由父类create定义
+else{
+	var type = "tracker";
+	var buff = global.buff_grid[? type][grid_col][grid_row];
+	atk = base_atk *buff;// 原始攻击力继承由父类step完成
+	buff_timer = 5;
+}
+
+// 目标选择
 
 target_list = [];
 
