@@ -7,7 +7,11 @@ global.level_file = {}
 global.level_name = "曲奇岛"
 global.level_data = {}
 global.debug = 1
+<<<<<<< HEAD
 global.preload = false
+=======
+global.preloaded = false
+>>>>>>> upstream/develop
 Music_Init()
 
 // 初始化全局键位映射

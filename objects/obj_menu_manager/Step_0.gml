@@ -50,6 +50,7 @@ if keyboard_check_pressed(vk_escape){
 		instance_create_depth(room_width /2,room_height/2,-20,obj_quit_confirm)
 	}
 }
+<<<<<<< HEAD
 //if !global.preload && timer == 2{
 //	instance_create_depth(0,0,-1200,obj_load_bar)
 //}
@@ -69,4 +70,7 @@ if keyboard_check_pressed(vk_escape){
 //	instance_destroy(obj_load_bar)
 //}
 
+=======
+
+>>>>>>> upstream/develop
 pre_load_texture()

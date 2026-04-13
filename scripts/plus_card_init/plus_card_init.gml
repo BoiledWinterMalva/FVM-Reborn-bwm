@@ -10,4 +10,5 @@ function plus_card_init(){
 	ds_map_add(global.plus_card_map,"chocolate_cannon",[obj_chocolate_cannon,1])
 	ds_map_add(global.plus_card_map,"gatlin_ice_long_bao",[obj_gatlin_ice_long_bao,1])
 	ds_map_add(global.plus_card_map,"rig",[obj_rig,1])
+	ds_map_add(global.plus_card_map,"pineapple_explosive_bread",[obj_pineapple_explosive_bread,1])
 }
