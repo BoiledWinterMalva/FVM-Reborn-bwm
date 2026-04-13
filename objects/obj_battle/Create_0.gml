@@ -35,6 +35,7 @@ global.buff_sources = ds_list_create();
 global.buff_dirty = false;
 build_shield_grid()
 build_buff_aurora()
+build_buff_thalia()
 build_buff_grid()
 
 //啃食音效

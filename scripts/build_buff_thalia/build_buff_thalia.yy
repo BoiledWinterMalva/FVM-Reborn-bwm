@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"build_buff_thalia",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"build_buff_thalia",
+  "parent":{
+    "name":"Battle",
+    "path":"folders/脚本/Battle.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

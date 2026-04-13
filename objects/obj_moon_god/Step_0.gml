@@ -6,6 +6,18 @@ var current_flash_speed = flash_speed
 if is_slowdown{
 	current_flash_speed *= 2
 }
+
+// 增伤读取
+if buff_timer > 0 buff_timer--;// 计时器由父类create定义
+else{
+	var type = "tracker";
+	var buff = global.buff_grid[? type][grid_col][grid_row];
+	var buff_th = get_thalia_buff(grid_col, grid_row);
+	atk = base_atk *max(buff, buff_th);// 原始攻击力继承由父类step完成
+	buff_timer = 5;
+}
+
+
 final_atk = atk
 
 //检测屏幕上是否有敌人
@@ -33,7 +45,7 @@ if (has_enemy) {
         var num = instance_number(obj_moon_god);
         final_atk = atk * min(0.95+(num*0.05),1.45);
         }
-		event_user(3);
+		if(shape>=2)event_user(3);
 	}
 	if (attack_timer == cycle - 7*flash_speed){
 		event_user(1);

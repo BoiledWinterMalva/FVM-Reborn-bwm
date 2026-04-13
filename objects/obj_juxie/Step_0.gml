@@ -9,6 +9,16 @@ var current_flash_speed = flash_speed
 if is_slowdown{
 	current_flash_speed *= 2
 }
+
+if buff_timer > 0 buff_timer--;// 计时器由父类create定义
+else{
+	var type = "tracker";
+	var buff = global.buff_grid[? type][grid_col][grid_row];
+	var buff_th = get_thalia_buff(grid_col, grid_row);
+	atk = base_atk *max(buff, buff_th);// 原始攻击力继承由父类step完成
+	buff_timer = 5;
+}
+
 //检测屏幕上是否有敌人
 var has_enemy = false
 if instance_exists(obj_enemy_parent){

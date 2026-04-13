@@ -43,6 +43,7 @@ function rebuild_buff_grid() {
 
         apply_buff(inst);
 		apply_aurora(inst);
+		apply_thalia(inst);
     }
 }
 
@@ -51,7 +52,8 @@ function apply_buff(_inst) {
     if (_inst.plant_id == "aurora" && _inst.shape >= 3) {
         exit;
     }
-
+    // 过滤 thalia shape 3
+    if (_inst.plant_id == "thalia" && _inst.shape >= 3) exit;
     var type = _inst.buff_type;
     var grid = global.buff_grid[? type];
     var cells = _inst.buff_cells;

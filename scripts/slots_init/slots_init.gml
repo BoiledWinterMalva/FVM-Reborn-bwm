@@ -361,6 +361,12 @@ function slots_init(){
 		{"shape":2, "sprite":spr_ice_god_2, "cost":225, "cooldown":15*60, "description":"冰神·典伊：召唤10颗冰晶轰击敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
 		{"shape":3, "sprite":spr_ice_god_3, "cost":225, "cooldown":15*60, "description":"至尊冰神：召唤12颗冰晶轰击敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
 	])
+    register_card("thalia",obj_thalia,[
+	    {"shape":0, "sprite":spr_thalia, "cost":260, "cooldown":40*60, "description":"塔利亚神使：巨幅增加周围追踪类卡片的攻击力","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":1, "sprite":spr_thalia_1, "cost":260, "cooldown":40*60, "description":"塔利亚圣神：巨幅增加周围追踪类卡片的攻击力","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":2, "sprite":spr_thalia_2, "cost":260, "cooldown":40*60, "description":"宴飨女神·塔利亚：巨幅增加周围追踪类卡片的攻击力","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":3, "sprite":spr_thalia_3, "cost":260, "cooldown":40*60, "description":"至尊宴飨女神：巨幅增加周围追踪类卡片的攻击力","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
+	])
 	 register_card("ghost_god", obj_ghost_god, [
 	    {"shape":0, "sprite":spr_ghost_god, "cost":225, "cooldown":50*60, "description":"哈迪斯神使：发射五向子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
 	    {"shape":1, "sprite":spr_ghost_god_1, "cost":225, "cooldown":50*60, "description":"哈迪斯圣神：发射五向子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
