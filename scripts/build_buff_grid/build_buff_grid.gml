@@ -2,7 +2,7 @@ function build_buff_grid() {
 
     global.buff_grid = ds_map_create();
 
-    var types = ["tracker", "thrower", "shield"];
+    var types = ["tracker", "thrower", "5direction"];
 
     for (var t = 0; t < array_length(types); t++) {
 
@@ -61,6 +61,14 @@ function apply_buff(_inst) {
         var c = cells[i][0];
         var r = cells[i][1];
         var v = cells[i][2];
+		
+		// 边界保护
+		if (c < 0 || r < 0) {
+			show_debug_message("INVALID GRID: " + string(_inst.id) 
+	        + " col=" + string(c) + " row=" + string(r));
+			exit;
+		}
+		if (c >= array_length(grid) || r >= array_length(grid[0])) exit;
 
         if (v > grid[c][r]) {
             grid[c][r] = v;

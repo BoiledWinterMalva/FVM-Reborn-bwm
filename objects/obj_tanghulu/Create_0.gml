@@ -21,3 +21,6 @@ flash_speed = 5
 plant_type = "normal"
 is_slowdown = false
 target_type = "air_only"
+
+cooldown = cycle
+attacking = false

@@ -1,6 +1,10 @@
-var inst = instance_create_depth(x, y-360, depth-1, obj_gaia_bullet)
+var inst = instance_create_depth(x, y-330, depth-1, obj_gaia_bullet)
 
-inst.target_x = enemy_x_locked
+if (target_x != noone ) {
+	inst.target_x = target_x
+} else {
+	inst.target_x = get_world_position_from_grid(9, grid_row)
+}
 inst.target_y = y
 inst.damage = atk
 inst.row = grid_row

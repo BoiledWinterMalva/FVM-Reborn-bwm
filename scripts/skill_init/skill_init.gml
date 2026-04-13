@@ -67,4 +67,6 @@ function skill_init(){
 	register_card_skill("brahma","cycle",[145,145,145,145,145,145,145,145,145])
 	register_card_skill("dragon_fruit","cooldown",[60*60,58*60,56*60,54*60,51*60,48*60,41*60,34*60,27*60])
 	register_card_skill("durian","cycle",[10*60,11*60,12*60,13*60,15*60,17*60,22*60,27*60,32*60])
+	register_card_skill("blueberry_tower","cooldown",[35*60,33*60,31*60,29*60,27*60,25*60,23*60,20*60,15*60])
+	register_card_skill("rig","cycle",[1.3*60,1.25*60,1.2*60,1.15*60,1.1*60,1.05*60,1*60,0.9*60,0.8*60])
 }

@@ -22,15 +22,20 @@ else{
 	buff_timer = 5;
 }
 
+//冷却计时器，没冷却完啥都不要干
+if cooldown > 0{
+	cooldown --;
+	state = CARD_STATE.IDLE;
+	return;
+}
+
 // 目标选择
-
 target_list = [];
-
 var max_t = max_targets;
 
 // 存“最优目标”
- var best = array_create(max_t, noone);
- var best_x = array_create(max_t, 999999);
+var best = array_create(max_t, noone);
+var best_x = array_create(max_t, 999999);
 
 // 是否有敌人
 var has_enemy = false;
@@ -68,26 +73,15 @@ for (var i = 0; i < max_t; i++) {
     }
 }
 
-// 攻击逻辑（保持不变）
-
-if (has_enemy) {
-
-    if (attack_timer <= cycle - attack_anim * current_flash_speed) {
-        attack_timer++;
-    } 
-    else if (attack_timer <= cycle) {
-        attack_timer++;
-        state = CARD_STATE.ATTACK;
-    } 
-    else {
-        event_user(1); // 发射子弹
-        attack_timer = 0;
-        state = CARD_STATE.IDLE;
-    }
-
-} else {
-    attack_timer = 0;
-    state = CARD_STATE.IDLE;
+// 攻击逻辑
+if has_enemy {
+	state = CARD_STATE.ATTACK;
+	attack_timer ++
+	if attack_timer >= attack_anim * flash_speed {
+		event_user(1);// 发射子弹
+		cooldown = cycle - attack_timer;
+		attack_timer = 0;
+	}
 }
 
 

@@ -30,7 +30,7 @@
   ],
   "name":"spr_star_13",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Stars",
     "path":"folders/精灵/Stars.yy",
@@ -106,7 +106,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":39,
-    "yorigin":26,
+    "yorigin":27,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

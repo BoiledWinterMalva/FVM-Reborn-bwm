@@ -273,6 +273,12 @@ function slots_init(){
 		{"shape":2, "sprite":spr_zhurong_2, "cost":245, "cooldown":7*60, "description":"赤帝·祝融：点燃前方5x5区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
 		{"shape":3, "sprite":spr_zhurong_3, "cost":245, "cooldown":7*60, "description":"至尊赤帝：点燃前方7x5区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
 	]);
+	register_card("rig", obj_rig, [
+	    {"shape":0, "sprite":spr_rig, "cost":185, "cooldown":7*60, "description":"里格神使：前方5方向发射穿透子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":1, "sprite":spr_rig_1, "cost":260, "cooldown":7*60, "description":"里格圣神：前方5方向发射穿透子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":2, "sprite":spr_rig_2, "cost":260, "cooldown":7*60, "description":"守护神·里格：前方5方向发射穿透子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":3, "sprite":spr_rig_icon_3, "cost":260, "cooldown":7*60, "description":"至尊守护神：前方5方向发射穿透子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_rig_3}
+	]);
 	register_card("brahma", obj_brahma, [
 	    {"shape":0, "sprite":spr_brahma_icon, "cost":325, "cooldown":55*60, "description":"梵天神使：变身出多个上一次种下的卡片","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_brahma},
 		{"shape":1, "sprite":spr_brahma_icon_1, "cost":325, "cooldown":55*60, "description":"梵天圣神：变身出多个上一次种下的卡片","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_brahma_1},
@@ -294,24 +300,27 @@ function slots_init(){
 		{"shape":2, "sprite":spr_sea_star_2, "cost":175, "cooldown":420, "description":"芥末海星刺身：向五个方向发射两枚炭烧海星子弹","plant_type":"normal","feature_type":"normal","target_card":"none"}
 	]);
 	register_card("tanghulu", obj_tanghulu, [
-	    {"shape":0, "sprite":spr_tanghulu, "cost":175, "cooldown":7*60, "description":"糖葫芦炮弹：对空中敌人发射追踪炮弹","plant_type":"normal","feature_type":"normal","target_card":"none"},
-	    {"shape":1, "sprite":spr_tanghulu_1, "cost":200, "cooldown":7*60, "description":"水果糖葫芦炮弹：对空中敌人发射追踪炮弹","plant_type":"normal","feature_type":"normal","target_card":"none"},
-		{"shape":2, "sprite":spr_tanghulu_2, "cost":250, "cooldown":7*60, "description":"七彩糖葫芦炮弹：对空中敌人发射追踪炮弹","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	    {"shape":0, "sprite":spr_tanghulu_icon, "cost":175, "cooldown":7*60, "description":"糖葫芦炮弹：对空中敌人发射追踪炮弹","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_tanghulu},
+	    {"shape":1, "sprite":spr_tanghulu_icon_1, "cost":200, "cooldown":7*60, "description":"水果糖葫芦炮弹：对空中敌人发射追踪炮弹","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_tanghulu_1},
+		{"shape":2, "sprite":spr_tanghulu_icon_2, "cost":250, "cooldown":7*60, "description":"七彩糖葫芦炮弹：对空中敌人发射追踪炮弹","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_tanghulu_2}
 	]);
 	register_card("cold_drew", obj_cold_drew, [
-	    {"shape":0, "sprite":spr_cold_drew_machine, "cost":295, "cooldown":15*60, "description":"冰块冷萃机：对全屏敌人发射至多4颗追踪冰块","plant_type":"normal","feature_type":"normal","target_card":"none"},
-	    {"shape":1, "sprite":spr_cold_drew_machine_1, "cost":295, "cooldown":15*60, "description":"低温冷萃机：对全屏敌人发射至多5颗追踪冰块","plant_type":"normal","feature_type":"normal","target_card":"none"},
-		{"shape":2, "sprite":spr_cold_drew_machine_2, "cost":295, "cooldown":15*60, "description":"迅捷冷萃机：对全屏敌人发射6颗追踪冰块，可集火","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	    {"shape":0, "sprite":spr_cold_drew_machine_icon, "cost":295, "cooldown":15*60, "description":"冰块冷萃机：对全屏敌人发射至多4颗追踪冰块","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_cold_drew_machine},
+	    {"shape":1, "sprite":spr_cold_drew_machine_icon_1, "cost":295, "cooldown":15*60, "description":"低温冷萃机：对全屏敌人发射至多5颗追踪冰块","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_cold_drew_machine_1},
+		{"shape":2, "sprite":spr_cold_drew_machine_icon_2, "cost":295, "cooldown":15*60, "description":"迅捷冷萃机：对全屏敌人发射6颗追踪冰块，可集火","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_cold_drew_machine_2}
 	]);
 	register_card("berry_dessert", obj_berry_dessert, [
-	    {"shape":0, "sprite":spr_berry_dessert, "cost":260, "cooldown":40*60, "description":"莓果点心：为3x3范围内追踪类卡片提供增伤","plant_type":"normal","feature_type":"normal","target_card":"none"},
-	    {"shape":1, "sprite":spr_berry_dessert_1, "cost":260, "cooldown":40*60, "description":"薄荷莓果点心：为5x5范围内追踪类卡片提供增伤","plant_type":"normal","feature_type":"normal","target_card":"none"},
-		{"shape":2, "sprite":spr_berry_dessert_2, "cost":260, "cooldown":40*60, "description":"流心莓果点心：为5x5范围内追踪类卡片提供增伤","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	    {"shape":0, "sprite":spr_berry_dessert_icon, "cost":260, "cooldown":40*60, "description":"莓果点心：为3x3范围内追踪类卡片提供增伤","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_berry_dessert_icon_1, "cost":260, "cooldown":40*60, "description":"薄荷莓果点心：为5x5范围内追踪类卡片提供增伤","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_berry_dessert_icon_2, "cost":260, "cooldown":40*60, "description":"流心莓果点心：为5x5范围内追踪类卡片提供增伤","plant_type":"normal","feature_type":"normal","target_card":"none"}
 	]);
 	register_card("grilled_lizard_pult", obj_grilled_lizard_pult, [
 	    {"shape":0, "sprite":spr_grilled_lizard_pult, "cost":275, "cooldown":7*60, "description":"烤蜥蜴投手：向前投掷配料爆弹","plant_type":"normal","feature_type":"normal","target_card":"none"},
 	    {"shape":1, "sprite":spr_grilled_lizard_pult_1, "cost":275, "cooldown":7*60, "description":"坚果蜥蜴投手：向前投掷配料爆弹","plant_type":"normal","feature_type":"normal","target_card":"none"},
 		{"shape":2, "sprite":spr_grilled_lizard_pult_2, "cost":275, "cooldown":7*60, "description":"花椒蜥蜴投手：向前投掷2发配料爆弹","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	]);
+	register_card("blueberry_tower", obj_blueberry_tower, [
+	    {"shape":0, "sprite":spr_blueberry_tower, "cost":160, "cooldown":35*60, "description":"蓝莓信号塔塔：为本行投掷卡片增加攻击力","plant_type":"normal","feature_type":"normal","target_card":"none"}
 	]);
 	
 }

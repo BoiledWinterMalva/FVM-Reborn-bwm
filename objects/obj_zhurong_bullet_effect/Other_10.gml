@@ -9,7 +9,8 @@ with (obj_enemy_parent) {
     && grid_col <= other.grid_col + col_offset
     && grid_row >= other.grid_row - row_offset
     && grid_row <= other.grid_row + row_offset 
-    && can_hit(other.target_type, target_type)) {
+    && can_hit(other.target_type, target_type)
+	&& hp > 0) {
         
         // ===== 灰烬判定准备 =====
         var can_ash = !immune_to_ash;

@@ -12,6 +12,13 @@ function find_valid_position(_col, _row, _card_data) {
 	    [1, -1],
 	    [1, 1]
 	];
+	
+	var is_replace_mode = false;
+	if global.replace_placement{
+		global.replace_placement = false;
+		is_replace_mode = true;
+	}
+	
     for (var i = 0; i < array_length(offsets); i++) {
 
 	    var c = _col + offsets[i][0];
@@ -26,10 +33,12 @@ function find_valid_position(_col, _row, _card_data) {
 	        _card_data[? "feature_type"],
 	        _card_data[? "target_card"]
 	    )) {
+			if is_replace_mode global.replace_placement = true;
 	        return { col: c, row: r };
 	    }
 	}
 
+	if is_replace_mode global.replace_placement = true;
     return undefined;
 }
 

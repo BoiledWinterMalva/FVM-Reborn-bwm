@@ -35,7 +35,7 @@ for (var i = 0; i < total_bullets; i++) {
     var t = temp_targets[i];
     if (t != noone && instance_exists(t)) {
 
-        var inst = instance_create_depth(t.x, t.y-20, depth-1, obj_cold_drew_bullet);
+        var inst = instance_create_depth(t.x, t.y-20, t.depth-1, obj_cold_drew_bullet);
         inst.target_id = t.id;
         inst.damage = atk;
         inst.row = t.grid_row;

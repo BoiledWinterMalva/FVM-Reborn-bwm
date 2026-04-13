@@ -21,85 +21,60 @@ else{
 	buff_timer = 5;
 }
 
-//索敌
+//冷却计时器，没冷却完啥都不要干
+if cooldown > 0{
+	cooldown --;
+	state = CARD_STATE.IDLE;
+	exit;
+}
+
 var has_enemy = false
 var target_enemy = noone
-var min_distance = 10000
-var row_offset = (shape == 3) ? 2 : 1
 
-with(obj_enemy_parent){
-    if (
+if !attacking {
+	// 检测自身右方是否有敌人，并获取最近的敌人
+	var min_distance = 10000 // 设置一个足够大的初始值
+	var row_offset = (shape == 3) ? 2 : 1
+
+	with(obj_enemy_parent){
+		if (
         grid_row >= other.grid_row - row_offset 
         && grid_row <= other.grid_row + row_offset
         && grid_col <= (global.grid_cols + 1) 
         && can_target_on(other.target_type, target_type)
-    ){
-        var distance = grid_col - other.grid_col
-        if (distance < min_distance) {
-            min_distance = distance
-            target_enemy = id
-            has_enemy = true
-        }
-    }
-}
-
-//获取目标
-if (has_enemy && !is_attacking)
-{
-    if (attack_timer >= cycle - attack_anim * current_flash_speed)
-    {
-		target_instance = target_enemy;
-		if (target_instance != noone && instance_exists(target_instance)) {
-			enemy_x_locked = target_instance.x;
-			is_attacking = true;
+		){
+		    var distance = grid_col - other.grid_col
+		    if (distance < min_distance) {
+		        min_distance = distance
+		        target_enemy = id
+		        has_enemy = true
+		    }
 		}
-    }
+	}
 }
 
-//计时
-attack_timer++;
-
-if (attack_timer > cycle)
-{
-    attack_timer = 0;
-    is_attacking = false;
-	target_instance = noone;
+// 存储目标敌人信息
+if (has_enemy) {
+    target_x = target_enemy.x;
+	attacking = true;
 }
 
-// 攻击锁定（防止三连发中断）
-if (is_attacking)
-{
-    // 一旦进入攻击区间，必须打完
-    if (attack_timer < cycle - attack_anim * current_flash_speed)
-    {
-        is_attacking = false;
-        target_instance = noone;
-    }
-}
-
-//状态控制
-if (is_attacking)
-{
-    state = CARD_STATE.ATTACK;
-}
-else
-{
-    state = CARD_STATE.IDLE;
-}
-
-//攻击
-if (is_attacking)
-{
-    if (attack_timer == cycle - 10*flash_speed)
-    {
-        event_user(1);
-    }
-    if (attack_timer == cycle - 8*flash_speed)
-    {
-        event_user(1);
-    }
-    if (attack_timer == cycle - 6*flash_speed && shape >= 2)
-    {
-        event_user(1);
-    }
+if attacking {
+	state = CARD_STATE.ATTACK;
+	attack_timer ++
+	if attack_timer == attack_anim * flash_speed -50 {
+		event_user(1);// 发射子弹
+	}
+	if attack_timer == attack_anim * flash_speed -40 {
+		event_user(1);// 发射子弹
+	}
+	if attack_timer == attack_anim * flash_speed -30 {
+		event_user(1);// 发射子弹
+	}
+	if attack_timer >= attack_anim * flash_speed {
+		attacking = false;
+		cooldown = cycle - attack_timer;
+		attack_timer = 0;
+		target_x = noone;
+	}
 }

@@ -63,4 +63,4 @@ water_effect_timer = 0
 hp_modified = false
 
 // 增加
-divine_holy_gem_debuffed = false
+divine_holy_gem_debuffed = false;

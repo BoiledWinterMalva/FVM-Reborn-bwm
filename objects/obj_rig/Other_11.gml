@@ -1,0 +1,35 @@
+var inst = instance_create_depth(x+60,y-40,depth-500,obj_rig_bullet)
+inst.damage = atk
+inst.move_speed_x = 8
+inst.row = grid_row
+
+var inst2 = instance_create_depth(x+60,y-40,depth-500,obj_rig_bullet_oblique)
+inst2.damage = atk
+inst2.move_speed_x = 5.658
+inst2.move_speed_y = 5.658
+
+var inst3 = instance_create_depth(x+60,y-40,depth-500,obj_rig_bullet_oblique)
+inst3.damage = atk
+inst3.move_speed_x = 5.658
+inst3.move_speed_y = -5.658
+
+var inst4 = instance_create_depth(x+60,y-40,depth-500,obj_rig_bullet_oblique)
+inst4.damage = atk
+inst4.move_speed_x = 7.391
+inst4.move_speed_y = 3.062
+
+var inst5 = instance_create_depth(x+60,y-40,depth-500,obj_rig_bullet_oblique)
+inst5.damage = atk
+inst5.move_speed_x = 7.391
+inst5.move_speed_y = -3.062
+
+var bullet_spr = spr_rig_bullet;
+if (shape == 1) bullet_spr = spr_rig_bullet_1;
+else if (shape == 2) bullet_spr = spr_rig_bullet_2
+else if (shape == 3) bullet_spr = spr_rig_bullet_3
+
+inst.sprite_index = bullet_spr;
+inst2.sprite_index = bullet_spr;
+inst3.sprite_index = bullet_spr;
+inst4.sprite_index = bullet_spr;
+inst5.sprite_index = bullet_spr;

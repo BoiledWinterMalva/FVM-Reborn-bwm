@@ -20,5 +20,6 @@ plant_type = "normal"
 is_slowdown = false
 target_type = "rotate"
 
-target = noone
 main_target = noone
+
+cooldown = cycle

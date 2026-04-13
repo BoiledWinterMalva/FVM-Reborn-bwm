@@ -47,6 +47,8 @@ build_shield_grid()
 build_buff_aurora()
 build_buff_grid()
 
+global.rig_count = 0
+
 //啃食音效
 chomp_sound_list = ds_list_create()
 battle_time = 0

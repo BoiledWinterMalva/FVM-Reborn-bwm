@@ -159,7 +159,7 @@ if (is_selected) {
 			// 记录上一张卡（排除复制卡自己）
 			if (card_id != "brahma" && card_id != "coffee_grounds") {
 			    global.last_placed_card_id = card_id;
-				show_debug_message(string(card_id));
+				//show_debug_message(string(card_id));
 			    global.last_placed_card_shape = card_shape;
 			}
 			

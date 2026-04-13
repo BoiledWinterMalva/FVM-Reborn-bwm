@@ -43,10 +43,9 @@ if (target_instance != noone && instance_exists(target_instance)) {
     inst.target_y = target_y
 
     inst.has_target = true
-    inst.target_enemy = noone   // 彻底取消锁敌
 
 } else {
-    var final_col = grid_col + _max
+    var final_col = min(grid_col + _max, 9 )
 
     var grid_pos = get_world_position_from_grid(final_col, grid_row)
     var target_x = grid_pos.x
@@ -56,7 +55,7 @@ if (target_instance != noone && instance_exists(target_instance)) {
     var flight_time = clamp(30 + (distance_x/1000) * 45, 30, 75)
 
     var total_distance_x = distance_x
-    var total_distance_y = target_y - inst.y
+    var total_distance_y = 600
 
     inst.move_speed = total_distance_x / flight_time
     inst.cgravity = (2 * total_distance_y) / (flight_time * flight_time)
