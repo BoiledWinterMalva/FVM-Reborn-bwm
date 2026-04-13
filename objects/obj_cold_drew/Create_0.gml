@@ -13,7 +13,6 @@ else if shape == 2{
 	max_targets = 6
 }
 // ========== 特定属性默认值 ==========
-
 attack_anim = 13;
 idle_anim = 11
 flash_speed = 5
