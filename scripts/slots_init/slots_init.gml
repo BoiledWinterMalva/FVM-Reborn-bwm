@@ -343,6 +343,12 @@ function slots_init(){
         {"shape":2, "sprite":spr_odin_2, "cost":230, "cooldown":7*60, "description":"主神·奥丁：发射冈格尼尔穿透攻击敌人，发射两发","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
   	    {"shape":3, "sprite":spr_odin_3, "cost":230, "cooldown":7*60, "description":"至尊主神：发射冈格尼尔穿透攻击敌人，发射三发","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
 	]);
+	register_card("ymir", obj_ymir, [
+	    {"shape":0, "sprite":spr_ymir_icon, "cost":380, "cooldown":7*60, "description":"尤弥尔神使：向前方三行投出共6发巨锤","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_ymir,"is_gold":1},
+	    {"shape":1, "sprite":spr_ymir_icon_1, "cost":380, "cooldown":7*60, "description":"尤弥尔圣神：向前方三行投出共7发巨锤","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_ymir_1,"is_gold":1},
+	    {"shape":2, "sprite":spr_ymir_icon_2, "cost":380, "cooldown":7*60, "description":"巨神·尤弥尔：向前方三行投出共9发巨锤","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_ymir_2,"is_gold":1},
+	    {"shape":3, "sprite":spr_ymir_icon_3, "cost":380, "cooldown":7*60, "description":"至尊巨神：向前方三行投出共12发巨锤","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_ymir_3,"is_gold":1}
+	])
 	register_card("brahma", obj_brahma, [
 	    {"shape":0, "sprite":spr_brahma_icon, "cost":325, "cooldown":55*60, "description":"梵天神使：变身出多个上一次种下的卡片","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_brahma},
 		{"shape":1, "sprite":spr_brahma_icon_1, "cost":325, "cooldown":55*60, "description":"梵天圣神：变身出多个上一次种下的卡片","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_brahma_1},

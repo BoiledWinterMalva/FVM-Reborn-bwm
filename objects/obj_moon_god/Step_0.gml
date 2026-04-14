@@ -6,7 +6,25 @@ var current_flash_speed = flash_speed
 if is_slowdown{
 	current_flash_speed *= 2
 }
-
+if (id == instance_find(object_index, 0)) {
+    
+    global.moon_god_target = noone;
+    
+    var enemy = noone;
+    var min_x = room_width;
+    var max_hp = 0;
+    
+    with (obj_enemy_parent) {
+        if (hp > 0&&can_target_on(other.target_type,target_type)) {
+                if (x < min_x || (x == min_x && hp > max_hp)) {
+                    min_x = x;
+                    max_hp = hp;
+                    enemy = id;
+                }
+            }
+   global.moon_god_target = enemy;
+}
+}
 // 增伤读取
 if buff_timer > 0 buff_timer--;// 计时器由父类create定义
 else{

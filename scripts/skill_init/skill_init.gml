@@ -94,4 +94,5 @@ function skill_init(){
 	register_card_skill("dragon_fruit","cooldown",[60*60,58*60,56*60,54*60,51*60,48*60,41*60,34*60,27*60])
 	register_card_skill("durian","cycle",[10*60,11*60,12*60,13*60,15*60,17*60,22*60,27*60,32*60])
 	register_card_skill("thalia","cooldown",[40*60,37*60,34*60,31*60,28*60,25*60,22*60,19*60,15*60])
+    register_card_skill("ymir","cycle",[2.1*60,2.05*60,2*60,1.95*60,1.85*60,1.75*60,1.65*60,1.55*60,1.4*60])
 }
