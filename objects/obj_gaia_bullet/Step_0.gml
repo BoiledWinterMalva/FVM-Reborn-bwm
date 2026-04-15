@@ -13,7 +13,7 @@ if state == "drop"{
 	if shape_bullet == 3 {y += 30}
 	else {y += 20}
 	if y >= (target_y-10){
-		var effect_inst = instance_create_depth(x+15,y-15,-200,obj_gaia_bullet_effect)
+		var effect_inst = instance_create_depth(x+15,y-15,depth,obj_gaia_bullet_effect)
         if (shape_bullet == 0) {
             effect_inst.sprite_index = spr_gaia_bullet_effect;
         } else if (shape_bullet == 1) {

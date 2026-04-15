@@ -1,1 +1,2 @@
-if (global.debug && plant_id!="player"){show_debug_message("当前atk: " + string(atk));}
+if (global.debug && plant_id!="player"){show_debug_message(string(plant_id) + "当前atk: " + string(atk));}
+if (global.debug && plant_id!="player"){show_debug_message(string(plant_id) + "当前cyc: " + string(cycle));}

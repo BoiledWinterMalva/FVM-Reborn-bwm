@@ -2,6 +2,7 @@
 if global.is_paused{
 	exit
 }
+//减速
 if ice_timer > 0{
 	ice_timer--
 	is_slowdown = true
@@ -9,6 +10,7 @@ if ice_timer > 0{
 else{
 	is_slowdown = false
 }
+//冰冻
 if frozen_timer > 0{
 	frozen_timer--
 	is_frozen = true
@@ -16,15 +18,15 @@ if frozen_timer > 0{
 else{
 	is_frozen = false
 }
+//生命归零死亡
 if hp <= 0{
 	instance_destroy()
 }
-
+//受击闪光
 if flash_value >0{
-	
 	flash_value -= 10
-	
 }
+//睡眠
 if awake_buff_timer > 0{
 	awake_buff_timer--
 	if state == CARD_STATE.SLEEP{
@@ -47,8 +49,6 @@ if state != CARD_STATE.SLEEP && instance_exists(banding_sleep_obj){
 // 计算深度值
 //var depth_value = -((y + depth_offset) * 10 + x);
 //depth = depth_value - depth_group * 100;
-
-
 
 var grid_pos = get_grid_position_from_world(x,y)
 
@@ -76,18 +76,20 @@ if instance_exists(banding_water_obj) && global.grid_terrains[water_define_pos_x
 if is_frozen{
 	exit
 }
+
 // 动画计时器
 var current_flash_speed = flash_speed
 if is_slowdown{
 	current_flash_speed *= 2
 }
 var upgrade_data = get_plant_data_with_skill(plant_id, shape,current_level,skill);
-    if is_slowdown {
-        cycle = upgrade_data[? "cycle"] * 2;    
-    }
-	else{
-		cycle = upgrade_data[? "cycle"]
-	}
+if is_slowdown {
+    cycle = base_cycle * 2;    
+}
+else{
+	cycle = base_cycle
+}
+
 if timer < current_flash_speed - 1 {
     timer++;
 } else {

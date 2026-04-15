@@ -299,6 +299,12 @@ function slots_init(){
 		{"shape":1, "sprite":spr_brahma_icon_1, "cost":325, "cooldown":55*60, "description":"梵天圣神：变身出多个上一次种下的卡片","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_brahma_1},
 		{"shape":2, "sprite":spr_brahma_icon_2, "cost":325, "cooldown":55*60, "description":"创造神·梵天：变身出多个上一次种下的卡片","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_brahma_2}
 	]);
+	register_card("clotho", obj_clotho, [
+	    {"shape":0, "sprite":spr_clotho_icon, "cost":400, "cooldown":3600, "description":"克洛托神使：随机改变范围内卡片星级，一段时间后恢复","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_clotho},
+		{"shape":1, "sprite":spr_clotho_icon_1, "cost":400, "cooldown":3600, "description":"克洛托圣神：随机改变范围内卡片星级，一段时间后恢复","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_clotho_1},
+		{"shape":2, "sprite":spr_clotho_icon_2, "cost":400, "cooldown":3600, "description":"命运女神·克洛托：随机改变范围内卡片星级，一段时间后恢复","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_clotho_2},
+		{"shape":3, "sprite":spr_clotho_icon_3, "cost":400, "cooldown":3600, "description":"至尊命运女神：随机改变范围内卡片星级，一段时间后恢复","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_clotho_3}
+	]);
 	register_card("firework_dragon_real", obj_firework_dragon_real, [
 	    {"shape":0, "sprite":spr_firework_dragon, "cost":150, "cooldown":7*60, "description":"花火龙：释放产生大量火苗的烟花","plant_type":"normal","feature_type":"normal","target_card":"none"},
 	    {"shape":1, "sprite":spr_firework_dragon_1, "cost":150, "cooldown":7*60, "description":"灼灼花火龙：释放产生大量火苗的烟花","plant_type":"normal","feature_type":"normal","target_card":"none"},
@@ -336,6 +342,11 @@ function slots_init(){
 	]);
 	register_card("blueberry_tower", obj_blueberry_tower, [
 	    {"shape":0, "sprite":spr_blueberry_tower, "cost":160, "cooldown":35*60, "description":"蓝莓信号塔塔：为本行投掷卡片增加攻击力","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	]);
+	register_card("donut", obj_donut, [
+	    {"shape":0, "sprite":spr_donut_3, "cost":200, "cooldown":7*60, "description":"梦幻多拿滋：连续攻击本行鼠军，优先空军","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_donut},
+	    {"shape":1, "sprite":spr_donut_4, "cost":200, "cooldown":7*60, "description":"仙女多拿滋：连续攻击本行鼠军，优先空军","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_donut_1},
+		{"shape":2, "sprite":spr_donut_5, "cost":200, "cooldown":7*60, "description":"女王多拿滋：连续攻击本行鼠军，优先空军","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_donut_2}
 	]);
 	
 }

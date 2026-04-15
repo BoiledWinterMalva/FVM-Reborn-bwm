@@ -149,7 +149,7 @@ if global.difficulty >= 2{
 enemy_list = []
 
 wave_max_time = 25*60
-wave_min_time = 4 *60
+wave_min_time = 2 *60
 wave_timer = 0
 //根据难度调整最大波长
 if global.difficulty >= 3 && global.map_id != "tower_cake"{
@@ -158,7 +158,7 @@ if global.difficulty >= 3 && global.map_id != "tower_cake"{
 if is_real(global.level_file.version){
 	wave_max_time = global.level_file.max_wave_time
 	//wave_min_time = global.level_file.min_wave_time
-	wave_min_time = 240
+	wave_min_time = 120
 	if global.difficulty >= 3 && global.map_id != "tower_cake"{
 		wave_max_time = round(wave_max_time/2)
 	}

@@ -91,9 +91,13 @@ else if info_button_select == 2{
 	draw_set_font(font_yuan)
 }
 if package_button_select == 1 {
+	
+	surface_set_target(p_card_surface)
+	draw_clear_alpha(c_black, 0);
+	
     for(var i = 0 ; i < package_rows ; i++){
-        for(var j = 0 ; j < package_cols ; j++){
-            draw_sprite_ext(spr_package_slot_bg,0,x-354+i*84,y - 361 + 96 * j,1.8,1.8,0,c_white,1)
+        for(var j = 0 ; j < package_cols + 11; j++){
+            draw_sprite_ext(spr_package_slot_bg,0,42+i*84,48+ 96 * j-y_offset,1.8,1.8,0,c_white,1)
         }
     }
     
@@ -114,8 +118,8 @@ if package_button_select == 1 {
         var col = card_index mod package_rows;
         
         if (row < package_rows) {
-            var card_x = x - 354 + col * 84;
-            var card_y = y - 359 + row * 96;
+            var card_x = 42 + col * 84;
+            var card_y = 48 + row * 96 - y_offset;
             
             // 检查卡片是否已解锁
             var is_unlocked = false;
@@ -156,10 +160,14 @@ if package_button_select == 1 {
                 // 检查鼠标是否悬停在卡片上
                 var spr_width = 84;
                 var spr_height = 96;
+				
+				var hover_card_x = x - 354 + col*84
+				var hover_card_y = y - 361 + 96*row - y_offset
+		
                 
                 if (point_in_rectangle(mouse_x, mouse_y, 
-                                      card_x - spr_width/2, card_y - spr_height/2,
-                                      card_x + spr_width/2, card_y + spr_height/2)) {
+                                      hover_card_x - spr_width/2, hover_card_y - spr_height/2,
+                                      hover_card_x + spr_width/2, hover_card_y + spr_height/2)) {
                     hover_card_index = card_index;
                 }
             } else {
@@ -173,6 +181,9 @@ if package_button_select == 1 {
         }
     }
     
+	surface_reset_target()
+	draw_surface(p_card_surface,x-354-42,y-361-48)
+	
     // 绘制悬停提示
     if (hover_card_index != -1) {
         // 获取鼠标位置
@@ -195,6 +206,7 @@ if package_button_select == 1 {
         draw_text(tooltip_x, tooltip_y, tooltip_text);
     }
 }
+
 //else if package_button_select == 2 {
 //    // 绘制武器背包
 //    for(var i = 0 ; i < package_rows ; i++){

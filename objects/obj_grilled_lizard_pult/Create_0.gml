@@ -1,9 +1,11 @@
 event_inherited();  // 继承父对象属性
+
 plant_id = "grilled_lizard_pult"; 
-// 设置对象类型和精灵
 obj_type = object_index;
 current_level = 1
+
 event_user(0)
+
 if shape == 0{
 	sprite_index = spr_grilled_lizard_pult
 }
@@ -24,5 +26,5 @@ is_slowdown = false
 target_type = "throw"
 
 target_instance = noone
-cooldown = cycle
+cooldown_timer = cycle
 attacking = false

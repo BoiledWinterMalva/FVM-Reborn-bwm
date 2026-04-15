@@ -35,18 +35,10 @@ self.texture_to_load = [
 
 self.texture_count = array_length(self.texture_to_load)
 self.texture_loaded = 0
-<<<<<<< HEAD
-self.preloaded = false
-self.display_progress = 0
-
-function pre_load_texture() {
-    if (self.preloaded) return;
-=======
 self.display_progress = 0
 
 function pre_load_texture() {
     if (global.preloaded) return;
->>>>>>> upstream/develop
 
     if (self.animating) {
         var _target = self.texture_loaded;
@@ -57,11 +49,7 @@ function pre_load_texture() {
             self.animating = false;
             
             if (self.texture_loaded >= self.texture_count) {
-<<<<<<< HEAD
-                self.preloaded = true;
-=======
                 global.preloaded = true;
->>>>>>> upstream/develop
             }
         }
         return;
@@ -84,11 +72,7 @@ self.offset_y = (room_height - 20) / 2
 self.animating = false
 function on_draw() {
     if (!self.animating && self.texture_loaded == 0) return;
-<<<<<<< HEAD
-    if (self.preloaded) return;
-=======
     if (global.preloaded) return;
->>>>>>> upstream/develop
 
     draw_set_colour(c_black);
     draw_set_alpha(0.8);
@@ -110,11 +94,6 @@ function on_draw() {
     
     draw_set_color(c_white);
     draw_set_font(font_yuan);
-<<<<<<< HEAD
-    var _text = "Loading " + string(self.texture_loaded) + "/" + string(self.texture_count);
-    draw_text(_x1, _y1 - 30, _text);
-}
-=======
 	var _text = "加载完成！"
 	if self.texture_loaded <= array_length(self.texture_to_load)-1{
 		_text = "加载中 " + string(self.texture_loaded) + "/" + string(self.texture_count) + " " + self.texture_to_load[clamp(self.texture_loaded,0,array_length(self.texture_to_load)-1)];
@@ -122,4 +101,3 @@ function on_draw() {
     draw_text(_x1, _y1 - 30, _text);
 }
 
->>>>>>> upstream/develop

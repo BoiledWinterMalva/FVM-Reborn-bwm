@@ -178,7 +178,8 @@ function maps_init(){
 					"boss_music":mus_delicious_tower_boss,
 					"pre_level":"tower_cake_5_2",
 					"rewards":[
-						{"card_id":"cherry_pudding","target_shape":1}
+						{"card_id":"cherry_pudding","target_shape":1},
+						{"card_id":"grilled_lizard_pult","target_shape":1}
 					]
 				},
 				{
@@ -222,7 +223,8 @@ function maps_init(){
 					"boss_music":mus_volcanic_tower_boss,
 					"pre_level":"tower_cake_7_1",
 					"rewards":[
-						{"card_id":"triple_wine_rack","target_shape":1}
+						{"card_id":"triple_wine_rack","target_shape":1},
+						{"card_id":"warm_birds","target_shape":1}
 					]
 				},
 				{
@@ -236,7 +238,8 @@ function maps_init(){
 					"boss_music":mus_volcanic_tower_boss,
 					"pre_level":"tower_cake_7_2",
 					"rewards":[
-						{"card_id":"salad_pult","target_shape":1}
+						{"card_id":"salad_pult","target_shape":1},
+						{"card_id":"tanghulu","target_shape":1}
 					]
 				},
 				{
@@ -265,7 +268,9 @@ function maps_init(){
 					"boss_music":mus_volcanic_tower_boss,
 					"pre_level":"tower_cake_8_2",
 					"rewards":[
-						{"card_id":"stinky_tofu_pult","target_shape":1}
+						{"card_id":"stinky_tofu_pult","target_shape":1},
+						{"card_id":"cold_drew","target_shape":1}
+						
 					]
 				},
 				{
@@ -279,7 +284,8 @@ function maps_init(){
 					"boss_music":mus_volcanic_tower_boss,
 					"pre_level":"tower_cake_9_1",
 					"rewards":[
-						{"card_id":"egg_boiler_pult","target_shape":1}
+						{"card_id":"egg_boiler_pult","target_shape":1},
+						{"card_id":"sea_star","target_shape":1}
 					]
 				},
 				{
@@ -321,7 +327,8 @@ function maps_init(){
 					"boss_music":mus_volcanic_tower_boss,
 					"pre_level":"tower_cake_10_2",
 					"rewards":[
-						{"card_id":"hotdog_cannon","target_shape":1}
+						{"card_id":"hotdog_cannon","target_shape":1},
+						{"card_id":"berry_dessert","target_shape":1}
 					]
 				},
 				{

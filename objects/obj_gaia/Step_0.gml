@@ -1,12 +1,14 @@
 if global.is_paused{
 	exit
 }
+
 var current_flash_speed = flash_speed
 if is_slowdown{
 	current_flash_speed *= 2
 }
 
 event_inherited(); 
+
 if is_frozen || state == CARD_STATE.SLEEP{
 	exit
 }
@@ -22,8 +24,8 @@ else{
 }
 
 //冷却计时器，没冷却完啥都不要干
-if cooldown > 0{
-	cooldown --;
+if cooldown_timer > 0{
+	cooldown_timer --;
 	state = CARD_STATE.IDLE;
 	exit;
 }
@@ -62,18 +64,18 @@ if (has_enemy) {
 if attacking {
 	state = CARD_STATE.ATTACK;
 	attack_timer ++
-	if attack_timer == attack_anim * flash_speed -50 {
+	if attack_timer == (attack_anim - 10) * current_flash_speed {
 		event_user(1);// 发射子弹
 	}
-	if attack_timer == attack_anim * flash_speed -40 {
+	if attack_timer == (attack_anim - 8) * current_flash_speed {
 		event_user(1);// 发射子弹
 	}
-	if attack_timer == attack_anim * flash_speed -30 {
+	if attack_timer == (attack_anim - 6) * current_flash_speed {
 		event_user(1);// 发射子弹
 	}
-	if attack_timer >= attack_anim * flash_speed {
+	if attack_timer >= attack_anim * current_flash_speed {
 		attacking = false;
-		cooldown = cycle - attack_timer;
+		cooldown_timer = cycle - attack_timer;
 		attack_timer = 0;
 		target_x = noone;
 	}

@@ -29,5 +29,5 @@ is_slowdown = false
 target_type = "throw"
 
 target_instance = noone
-cooldown = cycle
+cooldown_timer = cycle
 attacking = false

@@ -1,5 +1,5 @@
 // 用户事件1 - 发射子弹
-var inst = instance_create_depth(x-40, y-125, depth-500, obj_iceeggboilerpult_bullet)
+var inst = instance_create_depth(x+15, y-180, depth-45, obj_iceeggboilerpult_bullet)
 
 audio_play_sound(snd_throw, 0, 0)
 
@@ -26,7 +26,7 @@ if (target_instance != noone && instance_exists(target_instance)) {
     
     // 计算子弹所需的速度向量
     var total_distance_x = predicted_x - inst.x
-    var total_distance_y = 600//enemy_y - inst.y
+    var total_distance_y = 500//enemy_y - inst.y
     
     // 抛物线运动参数计算:cite[6]
     inst.move_speed = total_distance_x / flight_time
@@ -39,14 +39,11 @@ if (target_instance != noone && instance_exists(target_instance)) {
     inst.has_target = true
 } else {
     // 没有目标，使用默认抛物线
-    inst.move_speed = 8
+    inst.move_speed = 10
     inst.cvspeed = 6
     inst.cgravity = 0.2
-    inst.has_target = false
-    inst.target_enemy = noone
 }
 
 // 子弹状态初始化
 inst.hit_enemy = false
-inst.splashed = false
 inst.shape = shape

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"clotho_get_random_level",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"clotho_get_random_level",
+  "parent":{
+    "name":"assistant",
+    "path":"folders/脚本/assistant.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

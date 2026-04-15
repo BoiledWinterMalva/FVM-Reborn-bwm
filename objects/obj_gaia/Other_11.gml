@@ -1,4 +1,4 @@
-var inst = instance_create_depth(x, y-330, depth-1, obj_gaia_bullet)
+var inst = instance_create_depth(x, y-330, depth-45, obj_gaia_bullet)
 
 if (target_x != noone ) {
 	inst.target_x = target_x

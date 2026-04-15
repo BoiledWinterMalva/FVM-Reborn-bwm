@@ -34,3 +34,6 @@ hover_weapon_index = -1
 hover_gem_index = -1
 hover_material_index = -1
 view_max_shapes = 0
+
+y_offset = 0
+p_card_surface = -1

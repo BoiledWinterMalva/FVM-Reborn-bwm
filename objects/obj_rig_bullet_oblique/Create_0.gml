@@ -3,7 +3,6 @@ move_speed_x = 0
 move_speed_y = 0
 damage_type = "normal"
 target_type = "normal"
-bounced = false
 image_xscale = 1.2
 image_yscale = 1.2
 image_speed = 0

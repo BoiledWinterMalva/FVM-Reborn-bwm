@@ -27,8 +27,8 @@ target_type = "rotate"
 
 target_x = noone
 if shape == 0 {
-	cooldown = cycle
+	cooldown_timer = cycle
 } else {
-	cooldown = 30
+	cooldown_timer = 30
 }
 attacking = false

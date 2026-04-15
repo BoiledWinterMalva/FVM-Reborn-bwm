@@ -38,7 +38,7 @@
   ],
   "name":"spr_ice_cream",
   "nineSlice":null,
-  "origin":7,
+  "origin":9,
   "parent":{
     "name":"ice_cream",
     "path":"folders/精灵/Cards/Assistant/ice_cream.yy",
@@ -135,7 +135,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":50,
+    "xorigin":49,
     "yorigin":132,
   },
   "swatchColours":null,

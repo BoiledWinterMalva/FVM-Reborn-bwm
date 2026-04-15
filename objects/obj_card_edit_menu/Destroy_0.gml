@@ -1,2 +1,3 @@
 instance_destroy(obj_card_edit_select_btn)
 instance_destroy(obj_card_edit_btn)
+obj_package_bg.is_submenu_opened = false

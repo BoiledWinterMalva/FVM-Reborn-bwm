@@ -21,8 +21,8 @@ else{
 }
 
 //冷却计时器，没冷却完啥都不要干
-if cooldown > 0{
-	cooldown --;
+if cooldown_timer > 0{
+	cooldown_timer --;
 	state = CARD_STATE.IDLE;
 	exit;
 }
@@ -66,7 +66,7 @@ if attacking {
 	}
 	if attack_timer >= attack_anim * flash_speed {
 		attacking = false;
-		cooldown = cycle - attack_timer;
+		cooldown_timer = cycle - attack_timer;
 		attack_timer = 0;
 		target_instance = noone;
 	}

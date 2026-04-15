@@ -10,6 +10,7 @@ if !hit_enemy{
 		instance_create_depth(x,y,depth,obj_saladpult_bullet_effect)
 		hit_enemy = true
 		hitted_enemy = other.id
+		
 		// 计算子弹飞行时间（基于水平距离和预设速度）
 	    var distance_x = other.x + global.grid_cell_size_x
 	    var flight_time = 30

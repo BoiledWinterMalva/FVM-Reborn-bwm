@@ -17,6 +17,7 @@ function shop_init(){
 	register_goods("zhurong",{"type":"card","cost":"250000","unlock_item_id":"zhurong","description":"祝融神使：点燃前方3x3区域，持续灼烧敌人","display_name":"祝融神使"})
 	register_goods("rig",{"type":"card","cost":"250000","unlock_item_id":"rig","description":"里格神使：前方5方向发射穿透子弹","display_name":"里格神使"})
 	register_goods("brahma",{"type":"card","cost":"250000","unlock_item_id":"brahma","description":"梵天神使：变身出多个上一次种下的卡片","display_name":"梵天神使"})
+	register_goods("clotho",{"type":"card","cost":"250000","unlock_item_id":"clotho","description":"克洛托神使：随机改变范围内卡片星级，一段时间后恢复","display_name":"克洛托神使"})
 	register_goods("firework_dragon_real",{"type":"card","cost":"150000","unlock_item_id":"firework_dragon_real","description":"花火龙：释放产生大量火苗的烟花","display_name":"花火龙"})
 	register_goods("warm_birds",{"type":"card","cost":"40000","unlock_item_id":"warm_birds","description":"暖暖鸡：一次生产3朵火苗","display_name":"暖暖鸡"})
 	register_goods("sea_star",{"type":"card","cost":"100000","unlock_item_id":"sea_star","description":"炭烧海星：向五个方向发射炭烧海星子弹","display_name":"炭烧海星"})
@@ -25,6 +26,7 @@ function shop_init(){
 	register_goods("berry_dessert",{"type":"card","cost":"60000","unlock_item_id":"berry_dessert","description":"莓果点心：为3x3范围内追踪类卡片提供增伤","display_name":"莓果点心"})
 	register_goods("grilled_lizard_pult",{"type":"card","cost":"50000","unlock_item_id":"grilled_lizard_pult","description":"烤蜥蜴投手：向前投掷配料爆弹","display_name":"烤蜥蜴投手"})
 	register_goods("blueberry_tower",{"type":"card","cost":"70000","unlock_item_id":"blueberry_tower","description":"蓝莓信号塔塔：为本行投掷卡片增加攻击力","display_name":"蓝莓信号塔塔"})
+	register_goods("donut",{"type":"card","cost":"70000","unlock_item_id":"donut","description":"梦幻多拿滋：连续攻击本行鼠军，优先空军","display_name":"梦幻多拿滋"})
 	
 	register_goods("card_slot_plus",{"type":"item","cost":"20000","unlock_item_id":"card_slot","description":"增加一格卡槽，仅可在卡槽数小于18时使用","display_name":"卡槽+1","spr":spr_slot_plus})
 	register_goods("card_slot_19",{"type":"item","cost":"50000","unlock_item_id":"card_slot_19","description":"解锁第19格卡槽","display_name":"卡槽第19格","spr":spr_slot_19})

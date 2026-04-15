@@ -16,7 +16,7 @@ flash_speed = 4
 plant_type = "normal"
 is_slowdown = false
 
-cooldown = cycle
+cooldown_timer = cycle
 attacking = false
 
 global.rig_count += 1

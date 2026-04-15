@@ -3,13 +3,13 @@ var middle_y = y - 75; // 中间行的y坐标
 var row_height = 100; // 行高，根据你的游戏调整
 
 // 创建三颗子弹，分别对应三行
-var inst_middle = instance_create_depth(x + 40, middle_y, depth - 500, obj_triplewinerack_bullet);
+var inst_middle = instance_create_depth(x + 40, middle_y, depth - 45, obj_triplewinerack_bullet);
 inst_middle.damage = atk;
 inst_middle.move_speed = 8;
 inst_middle.row = grid_row;
 inst_middle.target_row = grid_row; // 目标行（中间行不变）
 
-var inst_up = instance_create_depth(x + 40, middle_y, depth - 500, obj_triplewinerack_bullet);
+var inst_up = instance_create_depth(x + 40, middle_y, depth , obj_triplewinerack_bullet);
 inst_up.damage = atk;
 inst_up.move_speed = 8;
 inst_up.row = grid_row;
@@ -22,7 +22,7 @@ else{
 }
 inst_up.start_y = middle_y; // 记录起始y坐标
 
-var inst_down = instance_create_depth(x + 40, middle_y, depth - 500, obj_triplewinerack_bullet);
+var inst_down = instance_create_depth(x + 40, middle_y, depth - 90, obj_triplewinerack_bullet);
 inst_down.damage = atk;
 inst_down.move_speed = 8;
 inst_down.row = grid_row;
@@ -36,7 +36,7 @@ else{
 inst_down.start_y = middle_y; // 记录起始y坐标
 
 if shape == 1{
-	var inst_middle2 = instance_create_depth(x + 80, middle_y, depth - 500, obj_triplewinerack_bullet);
+	var inst_middle2 = instance_create_depth(x + 80, middle_y, depth - 45, obj_triplewinerack_bullet);
 	inst_middle2.damage = atk;
 	inst_middle2.move_speed = 8;
 	inst_middle2.row = grid_row;

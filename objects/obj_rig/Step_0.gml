@@ -21,8 +21,8 @@ else{
 }
 
 //冷却计时器，没冷却完啥都不要干
-if cooldown > 0{
-	cooldown --;
+if cooldown_timer > 0{
+	cooldown_timer --;
 	return;
 }
 
@@ -47,9 +47,9 @@ if attacking {
 	if attack_timer == attack_anim * flash_speed - 30 && shape == 3 {
 		event_user(1);// 发射子弹
 	}
-	if attack_timer >= attack_anim * flash_speed {
+	if (attack_timer >= attack_anim * flash_speed || attack_timer >= cycle){
 		attacking = false;
-		cooldown = cycle - attack_timer;
+		cooldown_timer = cycle - attack_timer;
 		attack_timer = 0;
 		state = CARD_STATE.IDLE;
 	}

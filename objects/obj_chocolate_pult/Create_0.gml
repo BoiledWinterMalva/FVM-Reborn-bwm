@@ -23,6 +23,10 @@ idle_anim = 11
 flash_speed = 5
 plant_type = "normal"
 is_slowdown = false
-target_instance = noone
-large_chocolate_count = 0
 target_type = "throw"
+
+large_chocolate_count = 0
+
+target_instance = noone
+cooldown_timer = cycle
+attacking = false

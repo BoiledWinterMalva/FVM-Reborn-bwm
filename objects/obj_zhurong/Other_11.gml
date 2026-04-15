@@ -1,5 +1,5 @@
 // 用户事件1 - 发射子弹
-var inst = instance_create_depth(x+20, y-105, depth-500, obj_zhurong_bullet)
+var inst = instance_create_depth(x+20, y-105, depth-45, obj_zhurong_bullet)
 audio_play_sound(snd_throw, 0, 0)
 
 // 基本属性
