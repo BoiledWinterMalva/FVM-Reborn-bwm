@@ -1,4 +1,4 @@
-var inst = instance_create_depth(x+40,y-65,depth-500,obj_odin_bullet)
+var inst = instance_create_depth(x+60,y-65,depth-500,obj_odin_bullet)
 if shape = 1{
 	inst.sprite_index = spr_odin_bullet_1
 }

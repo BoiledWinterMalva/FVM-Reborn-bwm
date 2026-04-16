@@ -5,3 +5,4 @@ if shape >= 1{
 inst.damage = atk
 inst.move_speed = 8
 inst.row = grid_row
+inst.shape=shape

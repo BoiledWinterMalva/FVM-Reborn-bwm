@@ -26,6 +26,7 @@ fire_cd = 25;
 if get_gem_index("zeus_shadow_gem")!= -1{
 	bullet_style = weapon_info.bullet_style_impact[get_gem_level("zeus_shadow_gem")]
 	splash_ratio = (weapon_info.splash_ratio_impact[get_gem_level("zeus_shadow_gem")])/100
+	cycle=weapon_info._cycle[get_gem_level("zeus_shadow_gem")]
 }
 if get_gem_index("zeus_power_gem")!= -1{
 	atk = weapon_info.atk_impact[get_gem_level("zeus_power_gem")]
