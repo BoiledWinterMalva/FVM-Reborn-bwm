@@ -4,7 +4,7 @@ if (global.is_paused) {
 
 }
 
-image_speed = 1;
+image_speed = 0.5;
 
 // 物理运动规律
 x += move_speed;
@@ -37,7 +37,8 @@ if (cvspeed < 0 && y >= thrower_y) {
         	}
 	        if shape == 0{
 	           inst.sprite_index = spr_ymir_bullet_effect_3
-         	}			            
+         	}
+			audio_play_sound(snd_egg_bullet, 0, 0);
             instance_destroy();
     }
 }

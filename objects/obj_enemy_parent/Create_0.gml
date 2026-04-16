@@ -61,3 +61,4 @@ hit_sound = snd_hit1
 
 water_effect_timer = 0
 hp_modified = false
+divine_holy_gem_debuffed = false

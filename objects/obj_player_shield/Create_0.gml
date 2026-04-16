@@ -24,7 +24,7 @@ divine_holy_gem = false
 hp_modified_card_list = []
 atk_modified_card_list = []
 
-blacklist = ["aurora","player","cherry_pudding","brazier","berry_dessert"];
+blacklist = ["thalia","jinniu","fire_god","aurora","player","cherry_pudding","brazier","berry_dessert"];
 
 origin_x = x;
 origin_y = y;
@@ -88,6 +88,7 @@ if get_gem_index("divine_blessing_gem")!= -1{
 	first_produce_delay = gem_info.first_produce_delay * 60
 	first_produce = false
 	divine_blessing_gem = true
+	var inst = instance_create_depth(x-25,y-40,depth-1000,obj_divine_effect)
 }
 
 if get_gem_index("divine_protect_gem")!= -1{
@@ -96,6 +97,8 @@ if get_gem_index("divine_protect_gem")!= -1{
 	var gem_level =  get_gem_level("divine_protect_gem")
 	if gem_level > 15 gem_level = 15
 	buff_value = gem_info.atk_ratio[gem_level]
+	var inst = instance_create_depth(x-25,y,depth-10,obj_divine_effect)
+	inst.sprite_index =spr_divine_protect_gem_effect
 }
 
 if get_gem_index("divine_holy_gem")!= -1{
@@ -104,7 +107,11 @@ if get_gem_index("divine_holy_gem")!= -1{
 	var gem_level =  get_gem_level("divine_holy_gem")
 	if gem_level > 15 gem_level = 15
 	reflect_damage = gem_info.atk[gem_level]
+	reflect_damage_2 = gem_info.atk_2[gem_level]
+	atk_ratio = gem_info.atk_ratio[gem_level]
 	ice_timer = gem_info.ice_timer[gem_level]
+	var inst = instance_create_depth(x-25,y,depth-20,obj_divine_effect)
+	inst.sprite_index =spr_divine_holy_gem_effect
 }
 
 rebuild_shield_grid()

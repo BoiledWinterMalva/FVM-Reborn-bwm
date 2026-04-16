@@ -33,6 +33,9 @@ load_file(global.save_slot)
 
 
 //{//测试版设置初始存档
+edit_gem_max_level("divine_holy_gem",15)
+edit_gem_max_level("divine_protect_gem",15)
+edit_gem_max_level("divine_blessing_gem",15)
 //unlock_card("ymir",16,3,8)
 //	unlock_card("toast_bread",9,0,7)
 //	unlock_card("small_fire",9,1,7)

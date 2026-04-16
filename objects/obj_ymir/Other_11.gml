@@ -6,7 +6,7 @@ var is_top_edge = (grid_row == 0);
 var is_bottom_edge = (grid_row == global.grid_rows - 1);
 
 with (obj_enemy_parent) {
-    if (hp > 0) {
+    if (hp > 0&&can_target_on(other.target_type,target_type)) {
         if (grid_row == other.grid_row && x < mx_mid) {
             mx_mid = x; t_mid = id;
         } else if (grid_row == other.grid_row - 1 && x < mx_up) {

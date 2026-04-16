@@ -10,8 +10,8 @@
   "name":"obj_aurora_dead_explode",
   "overriddenProperties":[],
   "parent":{
-    "name":"Effects",
-    "path":"folders/物体/Effects.yy",
+    "name":"Gold card",
+    "path":"folders/物体/Gold card.yy",
   },
   "parentObjectId":null,
   "persistent":false,

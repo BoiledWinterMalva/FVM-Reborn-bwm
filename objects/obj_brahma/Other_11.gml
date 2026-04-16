@@ -7,35 +7,22 @@ with (obj_enemy_parent) {
     && can_hit(other.target_type, target_type)) {
 		if array_get_index(other.can_mouse_list,mouse_id) != -1 && !can_dropped{
 			into_act()
+	 	}
+		if (immune_to_ash && hp>other.atk) {
+			hp -= 1600;
+			event_user(0)
+		} else {
+			if special_ash{
+				var inst = instance_create_depth(x,y-20,depth,obj_mouse_ash_death)
+				inst.special_ash = true
+				inst.sprite_index = sprite_index
+				inst.image_index = image_index
+			}
+			else{
+				instance_create_depth(x,y-20,depth,obj_mouse_ash_death)
+			}
+			instance_destroy();
 		}
-        
-        // ===== 灰烬判定准备 =====
-        var can_ash = !immune_to_ash;
-        var _prev_hp = hp;
-
-        // ===== 造成伤害 =====
-        hp -= 900;
-
-        // ===== 受击表现 =====
-        event_user(0);
-
-        // ===== 灰烬触发=====
-        if (can_ash) {
-            if (_prev_hp > 0 && hp <= 0) {
-
-                if (special_ash) {
-                    var inst = instance_create_depth(x, y - 20, depth, obj_mouse_ash_death);
-                    inst.special_ash = true;
-                    inst.sprite_index = sprite_index;
-                    inst.image_index = image_index;
-                }
-                else {
-                    instance_create_depth(x, y - 20, depth, obj_mouse_ash_death);
-                }
-
-                instance_destroy();
-            }
-        }
     }
 }
 audio_play_sound(snd_coke_bomb_explode, 0, false);

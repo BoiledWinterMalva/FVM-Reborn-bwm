@@ -10,7 +10,6 @@ if !buff_cells_refreshed {
 	global.buff_dirty = true;
 	buff_cells_refreshed = true
 }
-
 var current_flash_speed = flash_speed
 if is_slowdown{
 	current_flash_speed *= 2

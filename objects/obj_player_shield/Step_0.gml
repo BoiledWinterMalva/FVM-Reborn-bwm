@@ -163,49 +163,22 @@ if (divine_protect_gem && !buff_cells_refreshed) {
 	apply_shield_buff(id);
 	buff_cells_refreshed = true;
 }
-//if (divine_holy_gem) {
 
-//    if (timer mod 150 == 0) {
-
-//        var list = ds_list_create();
-
-//        collision_rectangle_list(
-//            player_x - 2 * global.grid_cell_size_x,
-//            player_y - 2 * global.grid_cell_size_y,
-//            player_x + 2 * global.grid_cell_size_x,
-//            player_y + 2 * global.grid_cell_size_y,
-//            obj_enemy_parent,
-//            false,
-//            true,
-//            list,
-//            false
-//        );
-
-//        for (var i = 0; i < ds_list_size(list); i++) {
-
-//            var inst = list[| i];
-
-//            if (!inst.divine_holy_gem_debuffed) {
-//                inst.divine_holy_gem_debuffed = true;
-
-//                inst.hp -= reflect_damage;
-//                inst.ice_timer += ice_timer;
-//            }
-//        }
-
-//        ds_list_destroy(list);
-//    }
-//}
 if (divine_holy_gem) {
 	if (timer mod 150 == 0) {
 		 with (obj_enemy_parent) {
 			var row_diff = grid_row - other.grid_row;
 			var col_diff = grid_col - other.grid_col;
 			
-			if (row_diff >= -2 && row_diff <= 2 && col_diff >= -2 && col_diff <= 2 && !divine_holy_gem_debuffed) {
+			if (row_diff >= -2 && row_diff <= 2 && col_diff >= -2 && col_diff <= 2) {
+				if(!divine_holy_gem_debuffed){
 				hp -= other.reflect_damage;
                 ice_timer += other.ice_timer;
                 divine_holy_gem_debuffed = true;
+				}
+				var final_atk = min(other.atk_ratio*hp+other.reflect_damage_2,3000);
+				hp -= final_atk;
+				event_user(0)				
             }
 		 }
 	}
