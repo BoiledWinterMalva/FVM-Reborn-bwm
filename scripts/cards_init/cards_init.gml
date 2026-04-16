@@ -2945,7 +2945,6 @@ function cards_init(){
         }
 	    ]
 	);
-	
 
 // 注册corn_shooter
 	register_plant_lite(

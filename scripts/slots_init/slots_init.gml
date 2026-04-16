@@ -255,6 +255,12 @@ function slots_init(){
 	    {"shape":1, "sprite":spr_dragon_fruit_1, "cost":375, "cooldown":60*60, "description":"炎阳火龙果：灼烧3*3范围敌人","plant_type":"normal","feature_type":"normal","target_card":"none"},
 		{"shape":2, "sprite":spr_dragon_fruit_2, "cost":375, "cooldown":60*60, "description":"九天皓日火龙果：灼烧5*5范围敌人","plant_type":"normal","feature_type":"normal","target_card":"none"}
 	])
+	register_card("zhurong", obj_zhurong, [
+	    {"shape":0, "sprite":spr_zhurong, "cost":245, "cooldown":7*60, "description":"祝融神使：点燃前方3x3区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":1, "sprite":spr_zhurong_1, "cost":245, "cooldown":7*60, "description":"祝融圣神：点燃前方3x3区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":2, "sprite":spr_zhurong_2, "cost":245, "cooldown":7*60, "description":"赤帝·祝融：点燃前方5x5区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":3, "sprite":spr_zhurong_3, "cost":245, "cooldown":7*60, "description":"至尊赤帝：点燃前方7x5区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
+	]);
 	register_card("firework_dragon_real", obj_firework_dragon_real, [
 	    {"shape":0, "sprite":spr_firework_dragon, "cost":150, "cooldown":7*60, "description":"花火龙：释放产生大量火苗的烟花","plant_type":"normal","feature_type":"normal","target_card":"none"},
 	    {"shape":1, "sprite":spr_firework_dragon_1, "cost":150, "cooldown":7*60, "description":"灼灼花火龙：释放产生大量火苗的烟花","plant_type":"normal","feature_type":"normal","target_card":"none"},
