@@ -21,6 +21,9 @@ craft_rule_init()
 task_init()
 randomise()
 
+gods_goods_registry_init() // mod诸神宝殿
+gods_shop_init()           // mod诸神宝殿
+
 // 全局植物注册表
 global.plant_registry = ds_map_create();
 cards_init()

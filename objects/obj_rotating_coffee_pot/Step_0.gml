@@ -58,13 +58,16 @@ if !attacking {
 	if shape == 2{
 		grid_offest = 2
 	}
+	
+	var _x = x
+	var _y = y + 40
+	var _range = (shape == 2)? 350:220;
 
 	with (obj_enemy_parent) {
 			if (can_target_on(other.target_type,target_type) 
 			&& grid_row <= other.grid_row + grid_offest
 			&& grid_row >= other.grid_row - grid_offest
-			&& grid_col <= other.grid_col + grid_offest
-			&& grid_col >= other.grid_col - grid_offest
+			&& point_distance(x, y, _x, _y) < _range 
 			&& hp > 0 ) {
 		        other.attacking = true
 		    }
@@ -75,13 +78,13 @@ if !attacking {
 if attacking {
 	state = CARD_STATE.ATTACK;
 	attack_timer ++
-	if attack_timer == attack_anim * flash_speed -30 {
+	if attack_timer == (attack_anim - 6) * current_flash_speed {
 		event_user(1);// 发射子弹
 	}
-	if attack_timer == attack_anim * flash_speed -60 {
+	if attack_timer == (attack_anim - 12) * current_flash_speed {
 		audio_play_sound(snd_coffee_pot_attack,0,0)
 	}
-	if attack_timer >= attack_anim * flash_speed || attack_timer >= cycle{
+	if attack_timer >= attack_anim * current_flash_speed || attack_timer >= cycle{
 		attacking = false;
 		cooldown = cycle - attack_timer;
 		attack_timer = 0;

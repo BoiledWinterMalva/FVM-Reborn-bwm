@@ -39,7 +39,7 @@ if (plant_data != undefined) {
 }
 
 if current_level >= 4{ //绑定星级贴图
-	var inst = instance_create_depth(x,y-5,depth-1,obj_stars)
+	var inst = instance_create_depth(x,y-5,depth,obj_stars)
 	var star_spr = -1
 	switch current_level{
 		case 4:star_spr = spr_star_4;break;

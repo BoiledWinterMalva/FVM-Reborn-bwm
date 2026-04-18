@@ -53,4 +53,4 @@
 			}
 		}
 	}
-audio_play_sound(snd_exp_gaia,0,0)
+audio_play_sound(snd_gaia_explode,0,0)

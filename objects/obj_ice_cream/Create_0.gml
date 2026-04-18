@@ -16,8 +16,7 @@ else if shape == 2{
 
 // ========== 特定属性默认值 ==========
 
-attack_anim = 26;
-attack_timer = 0
+attack_anim = 0
 idle_anim = 16
 if shape >= 2{
 	idle_anim = 25
@@ -25,4 +24,5 @@ if shape >= 2{
 flash_speed = 5
 plant_type = "coffee"
 is_slowdown = false
+
 ignore_list = ["ice_cream"]

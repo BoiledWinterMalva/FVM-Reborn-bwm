@@ -299,7 +299,8 @@ function maps_init(){
 					"boss_music":mus_volcanic_tower_boss,
 					"pre_level":"tower_cake_9_2",
 					"rewards":[
-						{"card_id":"firework_dragon","target_shape":1}
+						{"card_id":"firework_dragon","target_shape":1},
+						{"card_id":"donut","target_shape":1}
 					]
 				},
 				{
@@ -313,7 +314,8 @@ function maps_init(){
 					"boss_music":mus_volcanic_tower_boss,
 					"pre_level":"tower_cake_10_1",
 					"rewards":[
-						{"card_id":"hamburger","target_shape":1}
+						{"card_id":"hamburger","target_shape":1},
+						{"card_id":"spoon_rabbit","target_shape":1}
 					]
 				},
 				{
@@ -328,7 +330,7 @@ function maps_init(){
 					"pre_level":"tower_cake_10_2",
 					"rewards":[
 						{"card_id":"hotdog_cannon","target_shape":1},
-						{"card_id":"berry_dessert","target_shape":1}
+						{"card_id":"virgo","target_shape":1}
 					]
 				},
 				{
@@ -370,7 +372,8 @@ function maps_init(){
 					"boss_music":mus_volcanic_tower_boss,
 					"pre_level":"tower_cake_12_1",
 					"rewards":[
-						{"card_id":"cotton_candy","target_shape":1}
+						{"card_id":"cotton_candy","target_shape":1},
+						{"card_id":"spoon_rabbit","target_shape":1}
 					]
 				},
 				{

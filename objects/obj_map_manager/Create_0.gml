@@ -21,4 +21,6 @@ for(var i = 0 ; i <button_array_length ; i++){
 
 instance_create_depth(room_width-210,room_height,-1,obj_player_menu_bg)
 
+instance_create_depth(650, 56, -2, obj_gods_hall_enter) // mod诸神宝殿
+
 

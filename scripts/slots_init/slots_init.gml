@@ -311,9 +311,9 @@ function slots_init(){
 		{"shape":2, "sprite":spr_firework_dragon_icon_2, "cost":150, "cooldown":7*60, "description":"炽焰花火龙：释放产生大量火苗的烟花","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_firework_dragon_2}
 	]);
 	register_card("warm_birds", obj_warm_birds, [
-	    {"shape":0, "sprite":spr_warm_birds, "cost":125, "cooldown":50*60, "description":"暖暖鸡：一次生产3朵火苗","plant_type":"normal","feature_type":"normal","target_card":"none"},
-	    {"shape":1, "sprite":spr_warm_birds_1, "cost":125, "cooldown":50*60, "description":"焰羽暖暖鸡：一次生产4朵火苗","plant_type":"normal","feature_type":"normal","target_card":"none"},
-		{"shape":2, "sprite":spr_warm_birds_2, "cost":125, "cooldown":25*60, "description":"日耀暖暖鸡：一次生产5朵火苗","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	    {"shape":0, "sprite":spr_warm_birds, "cost":125, "cooldown":30*60, "description":"暖暖鸡：一次生产3朵火苗","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_warm_birds_1, "cost":125, "cooldown":30*60, "description":"焰羽暖暖鸡：一次生产4朵火苗","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_warm_birds_2, "cost":125, "cooldown":15*60, "description":"日耀暖暖鸡：一次生产5朵火苗","plant_type":"normal","feature_type":"normal","target_card":"none"}
 	]);
 	register_card("sea_star", obj_sea_star, [
 	    {"shape":0, "sprite":spr_sea_star, "cost":350, "cooldown":420, "description":"炭烧海星：向五个方向发射炭烧海星子弹","plant_type":"normal","feature_type":"normal","target_card":"none"},
@@ -348,5 +348,15 @@ function slots_init(){
 	    {"shape":1, "sprite":spr_donut_4, "cost":200, "cooldown":7*60, "description":"仙女多拿滋：连续攻击本行鼠军，优先空军","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_donut_1},
 		{"shape":2, "sprite":spr_donut_5, "cost":200, "cooldown":7*60, "description":"女王多拿滋：连续攻击本行鼠军，优先空军","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_donut_2}
 	]);
+	register_card("spoon_rabbit", obj_spoon_rabbit, [
+	    {"shape":0, "sprite":spr_spoon_rabbit_icon, "cost":300, "cooldown":7*60, "description":"勺勺兔：向前方3行投射子弹","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_spoon_rabbit},
+	    {"shape":1, "sprite":spr_spoon_rabbit_icon_1, "cost":300, "cooldown":7*60, "description":"增强勺勺兔：向前方3行投射子弹","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_spoon_rabbit_1},
+		{"shape":2, "sprite":spr_spoon_rabbit_icon_2, "cost":300, "cooldown":7*60, "description":"盖世勺勺兔：向前方3行投射子弹","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_spoon_rabbit_2}
+	]);
+	register_card("virgo",obj_virgo,[
+	    {"shape":0, "sprite":spr_virgo_icon, "cost":175, "cooldown":30*60, "description":"处女座精灵：保护被罩住的卡片并反伤","plant_type":"shield_outer","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_virgo_icon_1, "cost":200, "cooldown":30*60, "description":"处女座战将：保护被罩住的卡片并反伤","plant_type":"shield_outer","feature_type":"normal","target_card":"none"},
+		{"shape":2, "sprite":spr_virgo_icon_2, "cost":250, "cooldown":30*60, "description":"处女座星宿：保护被罩住的卡片并反伤","plant_type":"shield_outer","feature_type":"normal","target_card":"none"}
+	])
 	
 }

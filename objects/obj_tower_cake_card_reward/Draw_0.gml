@@ -1,7 +1,16 @@
 draw_self()
 
 var card_data = deck_get_card_data(target_card_id,target_shape)
-var card_name = "点击领取"//get_plant_shape_data(target_card_id,target_shape)[? "name"]
+var card_name = ""//get_plant_shape_data(target_card_id,target_shape)[? "name"]
+if unlocked {
+	if is_card_unlocked(target_card_id) {
+		card_name = "点击领取"
+	} else {
+		card_name = "卡片未获取"
+	}
+}
+else if card_got card_name = "已领取"
+else card_name = "通关后领取"
 
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)

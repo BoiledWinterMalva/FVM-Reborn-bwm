@@ -8,3 +8,5 @@ btn_index = 0
 
 unlocked = false
 on_click = false
+
+card_got = false

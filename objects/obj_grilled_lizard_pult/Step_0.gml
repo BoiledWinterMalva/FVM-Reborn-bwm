@@ -58,13 +58,13 @@ if (has_enemy) {
 if attacking {
 	state = CARD_STATE.ATTACK;
 	attack_timer ++
-	if attack_timer == attack_anim * flash_speed -20 {
+	if attack_timer == (attack_anim - 4) * current_flash_speed {
 		event_user(1);// 发射子弹
 	}
-	if attack_timer == attack_anim * flash_speed -10 && shape == 2 {
+	if attack_timer == (attack_anim - 2) * current_flash_speed && shape == 2 {
 		event_user(1);// 发射子弹
 	}
-	if attack_timer >= attack_anim * flash_speed {
+	if attack_timer >= attack_anim * current_flash_speed {
 		attacking = false;
 		cooldown_timer = cycle - attack_timer;
 		attack_timer = 0;

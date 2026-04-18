@@ -29,11 +29,11 @@ if target_enemy != noone && instance_exists(target_enemy) && target_enemy.hp > 0
             instance_destroy()
         }
     }
-} else if target_enemy != noone && (!instance_exists(target_enemy) or target_enemy.hp <= 0){
-    // 目标敌人在飞行过程中死亡，检查是否落地
-    if y >= thrower_y - 10{
-        // 击中地面，造成溅射伤害
-        instance_create_depth(x,y,depth,obj_saladpult_bullet_effect)
-        instance_destroy()
-    }
+}
+
+// 检查是否落地
+if y >= thrower_y - 10{
+    // 击中地面，造成溅射伤害
+    instance_create_depth(x,y,depth,obj_saladpult_bullet_effect)
+    instance_destroy()
 }

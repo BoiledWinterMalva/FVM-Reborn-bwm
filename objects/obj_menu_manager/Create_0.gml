@@ -17,6 +17,8 @@ if not instance_exists(obj_world_map_button){
 	instance_create_depth(1670,80,0,obj_world_map_button)
 }
 instance_create_depth(room_width-210,room_height,-1,obj_player_menu_bg)
+
+instance_create_depth(650, 56, -2, obj_gods_hall_enter) // mod诸神宝殿
 timer = 0
 
 /// @description preload textures
