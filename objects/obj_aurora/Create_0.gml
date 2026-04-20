@@ -22,9 +22,8 @@ plant_type = "normal"
 is_slowdown = false
 
 // ========== 初始化增伤数据 ==========
-atk_whitelist = ["egg_boiler_pult", "chocolate_pult", "ice_egg_boiler_pult", "salad_pult", "stinky_tofu_pult", "gaia","grilled_lizard_pult","zhurong"];// 暂时无用
 
-buff_type = "thrower"
+buffer_type = "thrower"
 buff_value = atk/100
 if (shape < 3) {
 	buff_shape = "row";

@@ -40,5 +40,5 @@ sleep_timer = 0
 awake_anim = 6
 wake_timer = 0
 
-cooldown = cycle
+cooldown_timer = cycle
 attacking = false

@@ -29,7 +29,7 @@
   "origin":9,
   "parent":{
     "name":"tanghulu",
-    "path":"folders/精灵/Bullet/normal/tanghulu.yy",
+    "path":"folders/精灵/Mod Cards/Bullet/track/tanghulu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

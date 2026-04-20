@@ -87,13 +87,6 @@ function try_place_once(){
             
             // 扣除阳光
             global.flame -= current_cost;
-			
-			// 记录上一张卡（排除复制卡自己）
-			if (card_id != "brahma" && card_id != "coffee_grounds") {
-			    global.last_placed_card_id = card_id;
-				//show_debug_message(string(card_id));
-			    global.last_placed_card_shape = card_shape;
-			}
             
             // 重置冷却计时器
             cooldown_timer = 0;

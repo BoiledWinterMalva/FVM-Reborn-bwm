@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Boomer",
-    "path":"folders/物体/Cards/Boomer.yy",
+    "path":"folders/物体/Mod Cards & Weapons/Cards/Boomer.yy",
   },
   "parentObjectId":{
     "name":"obj_card_parent",

@@ -6,6 +6,7 @@ event_inherited();
 
 // 构建一次增伤数据（范围、倍率）
 if !buff_cells_refreshed {
+	buff_value = atk/100
 	refresh_buff_cells();
 	global.buff_dirty = true;
 	buff_cells_refreshed = true

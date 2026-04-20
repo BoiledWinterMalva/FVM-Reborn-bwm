@@ -203,9 +203,9 @@ if global.debug{
 	}
 }
 
-//增益系统更新触发器
-if (global.buff_dirty) {
-	reset_aurora_grid();
-    rebuild_buff_grid();
-    global.buff_dirty = false;
-}
+////增益系统更新触发器
+//if (global.buff_dirty) {
+//	reset_aurora_grid();
+//    rebuild_buff_grid();
+//    global.buff_dirty = false;
+//}

@@ -2,13 +2,6 @@ if global.is_paused{
 	exit
 }
 
-//if state == CARD_STATE.IDLE{
-//	flash_speed = 5
-//}
-//else if state == CARD_STATE.ATTACK{
-//	flash_speed = 4
-//}
-
 event_inherited(); 
 
 if is_frozen{
@@ -47,8 +40,8 @@ if state == CARD_STATE.AWAKE{
 }
 
 //冷却计时器，没冷却完啥都不要干
-if cooldown > 0{
-	cooldown --;
+if cooldown_timer > 0{
+	cooldown_timer --;
 	return;
 }
 
@@ -69,7 +62,8 @@ if !attacking {
 			&& grid_row >= other.grid_row - grid_offest
 			&& point_distance(x, y, _x, _y) < _range 
 			&& hp > 0 ) {
-		        other.attacking = true
+		        other.attacking = true;
+				break;
 		    }
 		
 	}
@@ -86,7 +80,7 @@ if attacking {
 	}
 	if attack_timer >= attack_anim * current_flash_speed || attack_timer >= cycle{
 		attacking = false;
-		cooldown = cycle - attack_timer;
+		cooldown_timer = cycle - attack_timer;
 		attack_timer = 0;
 		state = CARD_STATE.IDLE;
 	}

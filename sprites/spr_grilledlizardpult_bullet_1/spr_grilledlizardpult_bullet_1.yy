@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"grilled_lizard_pult",
-    "path":"folders/精灵/Bullet/throw/grilled_lizard_pult.yy",
+    "path":"folders/精灵/Mod Cards/Bullet/throw/grilled_lizard_pult.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

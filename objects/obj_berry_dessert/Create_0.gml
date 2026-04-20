@@ -18,9 +18,8 @@ plant_type = "normal"
 is_slowdown = false
 
 // ========== 初始化增伤数据 ==========
-atk_whitelist = ["cold_drew", "takoyaki"];// 暂时无用
 
-buff_type = "tracker"
+buffer_type = "tracker"
 buff_value = atk/100
 buff_shape = (shape >=1)?"5x5":"3x3";
 buff_cells = build_buff_cells(grid_col, grid_row, buff_shape, buff_value);

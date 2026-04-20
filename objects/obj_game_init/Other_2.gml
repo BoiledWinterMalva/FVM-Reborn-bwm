@@ -21,12 +21,14 @@ craft_rule_init()
 task_init()
 randomise()
 
-gods_goods_registry_init() // mod诸神宝殿
-gods_shop_init()           // mod诸神宝殿
-
 // 全局植物注册表
 global.plant_registry = ds_map_create();
 cards_init()
+
+// mod启动
+if (!instance_exists(obj_mod_manager)) {
+    global.mod_manager = instance_create_layer(0, 0, "Instances", obj_mod_manager);
+}
 
 global.player_name = "Player";
 global.player_sprite = noone;

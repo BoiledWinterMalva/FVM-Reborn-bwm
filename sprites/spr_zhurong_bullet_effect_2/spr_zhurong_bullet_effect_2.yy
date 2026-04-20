@@ -45,7 +45,7 @@
   "origin":9,
   "parent":{
     "name":"zhurong",
-    "path":"folders/精灵/Bullet/bullet effect/zhurong.yy",
+    "path":"folders/精灵/Mod Cards/Bullet/bullet effect/zhurong.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

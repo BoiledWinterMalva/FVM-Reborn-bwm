@@ -37,7 +37,7 @@
   "origin":9,
   "parent":{
     "name":"aurora",
-    "path":"folders/精灵/Cards/Assistant/aurora.yy",
+    "path":"folders/精灵/Mod Cards/Cards/Assistant/aurora.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

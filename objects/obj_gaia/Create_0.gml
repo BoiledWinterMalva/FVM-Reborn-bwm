@@ -23,7 +23,7 @@ idle_anim = 11
 flash_speed = 5
 plant_type = "normal"
 is_slowdown = false
-target_type = "rotate"
+target_type = "split"
 
 target_x = noone
 if shape == 0 {

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"goods",
-    "path":"folders/精灵/Mod Hall of Gods/Part Store/goods.yy",
+    "name":"brahma",
+    "path":"folders/精灵/Mod Hall of Gods/Part Store/goods/brahma.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

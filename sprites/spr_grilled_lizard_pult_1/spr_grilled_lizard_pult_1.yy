@@ -44,7 +44,7 @@
   "origin":9,
   "parent":{
     "name":"grilled_lizard_pult",
-    "path":"folders/精灵/Cards/Pult/grilled_lizard_pult.yy",
+    "path":"folders/精灵/Mod Cards/Cards/Pulter/grilled_lizard_pult.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

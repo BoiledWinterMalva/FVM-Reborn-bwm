@@ -24,7 +24,6 @@ state = CARD_STATE.IDLE
 timer = 0
 attack_timer = 0
 cycle = 0
-base_cycle = 0
 first_produce = 0
 first_produce_delay = 0
 flame_produce = 0
@@ -54,7 +53,3 @@ awake_anim = 0
 plant_id = ""  // 植物唯一标识符
 current_level = 0  // 当前等级
 
-// ========== 增伤相关 ==========
-base_atk = -1 // 原始攻击力用于增伤系统
-buff_timer = 5 // 增伤读取计时器
-shield_buffed = false //盾牌增伤开关

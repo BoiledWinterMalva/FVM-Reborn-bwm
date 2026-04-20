@@ -22,7 +22,7 @@ if not obj_gods_store_bg.is_submenu_opened and not is_disabled{
 			show_notice("神谕之石不足",60)
 		}
 	} else if btn_type == "shape" {
-		if target_card_unlocked {
+		if meet_requirements {
 			if amt >= cost || global.debug{
 				var inst = instance_create_depth(room_width/2,room_height/2,depth-3,obj_gods_store_buy_confirm)
 				inst.banding_buy_btn = id
@@ -32,7 +32,7 @@ if not obj_gods_store_bg.is_submenu_opened and not is_disabled{
 				show_notice("神谕之石不足",60)
 			}
 		} else {
-			show_notice("该卡片未解锁，无法兑换凭证！",60);
+			show_notice("卡片未解锁或未达到可转职等级，无法兑换凭证！",60);
 		}
 	}
 } 

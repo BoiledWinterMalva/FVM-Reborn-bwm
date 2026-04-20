@@ -57,7 +57,7 @@
   "origin":9,
   "parent":{
     "name":"brahma",
-    "path":"folders/精灵/Cards/Assistant/brahma.yy",
+    "path":"folders/精灵/Mod Cards/Cards/Assistant/brahma.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

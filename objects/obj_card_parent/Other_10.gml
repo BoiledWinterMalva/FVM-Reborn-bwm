@@ -25,7 +25,6 @@ if (plant_data != undefined) {
         range = upgrade_data[? "range"];
         cooldown = upgrade_data[? "cooldown"];
         cycle = upgrade_data[? "cycle"];
-		base_cycle = cycle
         
         // 获取自定义属性（如果存在）
         if (ds_map_exists(upgrade_data, "flame_produce")) {

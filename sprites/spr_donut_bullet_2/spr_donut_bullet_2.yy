@@ -32,7 +32,7 @@
   "origin":9,
   "parent":{
     "name":"donut",
-    "path":"folders/精灵/Bullet/normal/donut.yy",
+    "path":"folders/精灵/Mod Cards/Bullet/normal/donut.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

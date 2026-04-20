@@ -12,7 +12,7 @@ else {sprite_index = spr_rig;}
 
 attack_anim = 16;
 idle_anim = 9
-flash_speed = 4
+flash_speed = 5
 plant_type = "normal"
 is_slowdown = false
 

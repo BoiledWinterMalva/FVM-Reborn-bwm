@@ -1,5 +1,5 @@
 if shape < 2{
-	var inst = instance_create_depth(x+50,y-75,depth-500,obj_coffeepot_bullet)
+	var inst = instance_create_depth(x+50,y-75,depth-45,obj_coffeepot_bullet)
 	audio_play_sound(snd_coffee_pot_attack,0,0)
 	inst.damage = atk
 	inst.move_speed = 0
@@ -38,7 +38,7 @@ if shape < 2{
 	}
 }
 else{
-	var inst4 = instance_create_depth(x,y-45,depth-500,obj_odenpot_bullet_vertical)
+	var inst4 = instance_create_depth(x,y-45,depth-45,obj_odenpot_bullet_vertical)
 	audio_play_sound(snd_coffee_pot_attack,0,0)
 	inst4.damage = atk
 	inst4.move_speed = 0

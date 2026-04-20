@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Weapons",
-    "path":"folders/物体/Player/Weapons.yy",
+    "path":"folders/物体/Mod Cards & Weapons/Weapons.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"sea_star",
-    "path":"folders/精灵/Bullet/normal/sea_star.yy",
+    "path":"folders/精灵/Mod Cards/Bullet/normal/sea_star.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

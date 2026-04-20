@@ -32,4 +32,4 @@ if shape == 3 spr = spr_clotho_effect_2;
 var effect = instance_create_depth(x,y-30,0,obj_clotho_effect);
 effect.sprite_index = spr;
 
-gold_cards = ["gaia","aurora","zhurong","rig"]
+gold_cards = ["gaia","aurora","zhurong","rig","loki"]

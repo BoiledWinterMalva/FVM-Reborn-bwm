@@ -49,7 +49,7 @@
   "origin":7,
   "parent":{
     "name":"warm_birds",
-    "path":"folders/精灵/Cards/Flame Producer/warm_birds.yy",
+    "path":"folders/精灵/Mod Cards/Cards/Flame Producer/warm_birds.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

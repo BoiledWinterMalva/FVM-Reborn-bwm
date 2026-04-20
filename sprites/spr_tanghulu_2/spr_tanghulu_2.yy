@@ -55,7 +55,7 @@
   "origin":9,
   "parent":{
     "name":"tanghulu",
-    "path":"folders/精灵/Cards/Track/tanghulu.yy",
+    "path":"folders/精灵/Mod Cards/Cards/Tracker/tanghulu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

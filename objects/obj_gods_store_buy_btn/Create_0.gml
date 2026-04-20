@@ -10,4 +10,4 @@ is_disabled = false
 tooltip = false
 cost = 0
 target_shape = 0
-target_card_unlocked = true
+meet_requirements = true

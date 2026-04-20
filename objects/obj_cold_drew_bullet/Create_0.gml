@@ -10,6 +10,7 @@ row = 0
 damage = 0
 
 damage_type = "normal"
+target_type = "split"
 delay = 0
 hit_frame = 3
 hit_done = false

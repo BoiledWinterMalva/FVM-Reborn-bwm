@@ -32,7 +32,7 @@ if target_enemy != noone && instance_exists(target_enemy) && target_enemy.hp > 0
 }
 
 // 检查是否落地
-if y >= thrower_y {
+if y >= thrower_y - 30 {
     // 击中地面，造成溅射伤害
         
 	if sprite_index == spr_stinkytofupult_bullet_poison{

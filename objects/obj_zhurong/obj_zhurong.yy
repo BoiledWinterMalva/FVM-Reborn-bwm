@@ -10,8 +10,8 @@
   "name":"obj_zhurong",
   "overriddenProperties":[],
   "parent":{
-    "name":"Pult",
-    "path":"folders/物体/Cards/Pult.yy",
+    "name":"Pulter",
+    "path":"folders/物体/Mod Cards & Weapons/Cards/Pulter.yy",
   },
   "parentObjectId":{
     "name":"obj_card_parent",

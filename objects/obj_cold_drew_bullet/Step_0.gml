@@ -19,22 +19,21 @@ if (delay > 0) {
 }
 if (!hit_done && image_index == hit_frame) {
 	var _x = x
-	var _y = y
     if (instance_exists(target_id)) {
 	    target_id.hp -= damage;
 		_x = target_id.x;
-		_y = target_id.y;
 
 	    // 溅射：当 bullet_shape >= 1 时，对主目标周围 3x3 格（排/列相邻）造成 20% 伤害（不作用于主目标）
 	    if (shape_bullet >= 1) {
-			var _range = 200;
+			var _range = 165;
 	        var splash_ratio = 0.2;
 	        with (obj_enemy_parent) {
 	            if (hp > 0
-	                && id != other.target_id
 	                && grid_row <= other.row + 1
 	                && grid_row >= other.row - 1
-	                && point_distance(x, y, _x, _y) < _range)
+	                && abs(x - _x) < _range
+					&& id != other.target_id
+					&& can_hit(other.target_type, target_type))
 	            {
 	                damage_amount = other.damage * splash_ratio;
 	                damage_type = other.damage_type;

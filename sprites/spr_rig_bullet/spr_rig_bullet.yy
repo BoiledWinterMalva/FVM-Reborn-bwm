@@ -32,7 +32,7 @@
   "origin":9,
   "parent":{
     "name":"rig",
-    "path":"folders/精灵/Bullet/normal/rig.yy",
+    "path":"folders/精灵/Mod Cards/Bullet/normal/rig.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

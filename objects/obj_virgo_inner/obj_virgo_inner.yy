@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Defender",
-    "path":"folders/物体/Cards/Defender.yy",
+    "path":"folders/物体/Mod Cards & Weapons/Cards/Defender.yy",
   },
   "parentObjectId":null,
   "persistent":false,

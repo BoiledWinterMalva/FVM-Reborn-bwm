@@ -31,7 +31,7 @@
   "origin":9,
   "parent":{
     "name":"bullet effect",
-    "path":"folders/精灵/Bullet/bullet effect.yy",
+    "path":"folders/精灵/Mod Cards/Bullet/bullet effect.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

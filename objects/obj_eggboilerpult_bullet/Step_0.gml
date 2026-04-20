@@ -12,7 +12,7 @@ if x > 2200 or y > 1200 or x < -200 or y < -200{
 }
 
 //落地
-if y >= thrower_y - 10 {
+if y >= thrower_y - 30 {
     instance_create_depth(x,y,depth,obj_eggboilerpult_bullet_effect)
     instance_destroy()
 }

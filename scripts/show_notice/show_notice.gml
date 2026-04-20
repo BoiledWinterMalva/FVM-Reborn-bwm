@@ -46,7 +46,7 @@ function update_notices() {
         // 前20帧：淡入和缩放效果
         if (notice.frames <= 10) {
             notice.alpha = notice.frames / 10;
-            notice.scale = 2.2 - (0.2 * (notice.frames / 10));
+            notice.scale = 2 - (0.2 * (notice.frames / 10));
         }
         // 生命周期结束前的阶段
         else if (notice.frames > notice.life) {
@@ -116,7 +116,7 @@ function draw_notices() {
         draw_set_valign(fa_middle);
         draw_set_alpha(alpha);
         draw_text_ext_transformed(
-            pos_x, pos_y, text,90,1920,scale,scale,0
+            pos_x, pos_y-5, text, 90, 1920, scale-0.3, scale-0.3, 0
         );
         
         // 重置绘制设置

@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"bullet effect",
-    "path":"folders/物体/Bullet/bullet effect.yy",
+    "path":"folders/物体/Mod Cards & Weapons/Bullet/bullet effect.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -18,7 +18,7 @@ draw_set_color(c_white);
 draw_text(x, y - 112, "兑换确认")
 draw_text(x, y - 25, "确定消耗      个       ");
 draw_set_color(c_yellow);
-draw_text(x+13, y - 27, string(banding_buy_btn.cost));
+draw_text(x+12, y - 27, string(banding_buy_btn.cost));
 draw_sprite_ext(spr_gods_hall_reward,1,x+76,y-25,0.8,0.8,0,c_white,1)
 draw_set_color(c_white);
 draw_text(x, y+5, "兑换"+banding_buy_btn.goods_name+"吗？");

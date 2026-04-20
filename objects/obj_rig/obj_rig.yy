@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Shooter",
-    "path":"folders/物体/Cards/Shooter.yy",
+    "path":"folders/物体/Mod Cards & Weapons/Cards/Shooter.yy",
   },
   "parentObjectId":{
     "name":"obj_card_parent",

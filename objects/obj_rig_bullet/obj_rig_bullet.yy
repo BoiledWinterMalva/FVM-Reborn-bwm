@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"normal",
-    "path":"folders/物体/Bullet/normal.yy",
+    "path":"folders/物体/Mod Cards & Weapons/Bullet/normal.yy",
   },
   "parentObjectId":{
     "name":"obj_bullet_parent",

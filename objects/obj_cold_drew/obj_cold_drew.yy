@@ -10,8 +10,8 @@
   "name":"obj_cold_drew",
   "overriddenProperties":[],
   "parent":{
-    "name":"Track",
-    "path":"folders/物体/Cards/Track.yy",
+    "name":"Tracker",
+    "path":"folders/物体/Mod Cards & Weapons/Cards/Tracker.yy",
   },
   "parentObjectId":{
     "name":"obj_card_parent",

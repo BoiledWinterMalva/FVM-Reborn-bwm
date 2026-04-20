@@ -10,8 +10,8 @@
   "name":"obj_gaia_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"throw",
-    "path":"folders/物体/Bullet/throw.yy",
+    "name":"track",
+    "path":"folders/物体/Mod Cards & Weapons/Bullet/track.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -6,7 +6,8 @@ draw_set_font(font_yuan)
 draw_set_color(c_black)
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
-draw_text(x,y-108,goods_name)
+if btn_type == "card" draw_text(x,y-106,goods_name)
+else if btn_type == "shape" draw_text_ext_transformed(x, y-106, goods_name, 25, 1920, 0.9, 0.9, 0);
 if not is_disabled{
 	draw_set_color(c_white)
 	draw_text(x-8,y-58,"消耗"+string(cost)+"个")

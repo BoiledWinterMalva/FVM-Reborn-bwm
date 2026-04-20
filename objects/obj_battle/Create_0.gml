@@ -36,18 +36,6 @@ global.grid_offset_y = 228
 global.grid_cols = global.level_file.map_cols
 global.grid_rows = global.level_file.map_rows
 
-//复制类卡信息记录
-global.last_placed_card_id = "";
-global.last_placed_card_shape = 0;
-
-//增益系统启动
-global.buff_sources = ds_list_create();
-global.buff_dirty = false;
-build_shield_grid()
-build_buff_aurora()
-build_buff_grid()
-
-global.rig_count = 0
 
 //啃食音效
 chomp_sound_list = ds_list_create()

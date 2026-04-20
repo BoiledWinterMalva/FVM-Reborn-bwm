@@ -22,6 +22,7 @@
   "height":14,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"df65874a-8eed-4f32-8c42-24e6c1259a8e","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"df65874a-8eed-4f32-8c42-24e6c1259a8e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"e1a6ec91-ba26-43f6-9935-a2c75d7a5769","blendMode":0,"displayName":"default","isLocked":false,"name":"e1a6ec91-ba26-43f6-9935-a2c75d7a5769","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_fire_bullet",

@@ -11,8 +11,8 @@
   "name":"obj_zeus_bolt_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"normal",
-    "path":"folders/物体/Bullet/normal.yy",
+    "name":"track",
+    "path":"folders/物体/Mod Cards & Weapons/Bullet/track.yy",
   },
   "parentObjectId":{
     "name":"obj_bullet_parent",

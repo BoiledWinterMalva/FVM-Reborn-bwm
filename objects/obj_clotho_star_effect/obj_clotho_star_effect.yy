@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Effects",
-    "path":"folders/物体/Effects.yy",
+    "path":"folders/物体/Mod Cards & Weapons/Effects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

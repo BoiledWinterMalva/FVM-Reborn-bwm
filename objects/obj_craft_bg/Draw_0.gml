@@ -66,7 +66,8 @@ if button_select == 0{
 		var card_x = 42 + card_col*84
 		var card_y = 48+96 * card_row - y_offset
 		
-		draw_sprite_ext(spr_slot,0,card_x,card_y-3,0.25,0.25,0,c_white,1)
+		var slot_sprite = (card_slot_data[? "is_gold"] == 1) ? spr_slot_1 : spr_slot;//金卡判断
+		draw_sprite_ext(slot_sprite,0,card_x,card_y-3,0.25,0.25,0,c_white,1)
 		draw_sprite_ext(card_slot_data[? "sprite"],0,card_x,card_y+15,0.7,0.7,0,c_white,1)
 		draw_set_color(c_black);
 		draw_set_halign(fa_center);

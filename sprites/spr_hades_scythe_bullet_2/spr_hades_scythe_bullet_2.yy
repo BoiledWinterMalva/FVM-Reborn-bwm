@@ -31,7 +31,7 @@
   "origin":4,
   "parent":{
     "name":"hades_scythe",
-    "path":"folders/精灵/Bullet/normal/hades_scythe.yy",
+    "path":"folders/精灵/Mod Cards/Bullet/normal/hades_scythe.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

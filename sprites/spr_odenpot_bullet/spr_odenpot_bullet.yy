@@ -34,8 +34,8 @@
   "nineSlice":null,
   "origin":3,
   "parent":{
-    "name":"normal",
-    "path":"folders/精灵/Bullet/normal.yy",
+    "name":"oden_pot",
+    "path":"folders/精灵/Bullet/normal/oden_pot.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -46,7 +46,7 @@
   "origin":9,
   "parent":{
     "name":"zhurong",
-    "path":"folders/精灵/Cards/Pult/zhurong.yy",
+    "path":"folders/精灵/Mod Cards/Cards/Pulter/zhurong.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

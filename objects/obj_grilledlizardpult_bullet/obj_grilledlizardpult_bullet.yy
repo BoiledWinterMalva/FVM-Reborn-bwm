@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"throw",
-    "path":"folders/物体/Bullet/throw.yy",
+    "path":"folders/物体/Mod Cards & Weapons/Bullet/throw.yy",
   },
   "parentObjectId":{
     "name":"obj_bullet_parent",

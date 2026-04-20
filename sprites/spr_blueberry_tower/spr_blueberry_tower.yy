@@ -39,7 +39,7 @@
   "origin":9,
   "parent":{
     "name":"Assistant",
-    "path":"folders/精灵/Cards/Assistant.yy",
+    "path":"folders/精灵/Mod Cards/Cards/Assistant.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

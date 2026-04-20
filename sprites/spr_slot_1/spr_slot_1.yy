@@ -29,8 +29,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Card Slot",
-    "path":"folders/精灵/Card Slot.yy",
+    "name":"Mod Cards",
+    "path":"folders/精灵/Mod Cards.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

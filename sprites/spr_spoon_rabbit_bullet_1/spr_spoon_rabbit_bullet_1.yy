@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"spoon_rabbit",
-    "path":"folders/精灵/Bullet/throw/spoon_rabbit.yy",
+    "path":"folders/精灵/Mod Cards/Bullet/throw/spoon_rabbit.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

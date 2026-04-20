@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"goods",
-    "path":"folders/精灵/Mod Hall of Gods/Part Store/goods.yy",
+    "name":"aurora",
+    "path":"folders/精灵/Mod Hall of Gods/Part Store/goods/aurora.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

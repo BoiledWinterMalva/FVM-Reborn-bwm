@@ -79,13 +79,7 @@ for(var i = 0 ; i< 4; i++){
 				var goods_spr = goods_info.spr
 				var target_card_id = goods_info.unlock_item_id
 				
-				if goods_spr == spr_firework_dragon_1 {
-					draw_sprite_ext(goods_spr,0,x-618+411*j-122,y-248+165*i+35,1,1,0,c_white,1)
-				} else {
-					draw_sprite_ext(goods_spr,0,x-618+411*j-122,y-273+165*i+25,1.5,1.5,0,c_white,1)
-				}
-				//show_debug_message("target_card_id: " + string(target_card_id));
-				//show_debug_message("goods_info: " + string(goods_info));
+				draw_sprite_ext(goods_spr,0,x-618+411*j-122,y-273+165*i+25,1.5,1.5,0,c_white,1)
 				
 				var card_info_simple = get_card_info_simple(target_card_id);
 				if (card_info_simple != false) {

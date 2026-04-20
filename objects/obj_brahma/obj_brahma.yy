@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Assistant",
-    "path":"folders/物体/Cards/Assistant.yy",
+    "path":"folders/物体/Mod Cards & Weapons/Cards/Assistant.yy",
   },
   "parentObjectId":{
     "name":"obj_card_parent",

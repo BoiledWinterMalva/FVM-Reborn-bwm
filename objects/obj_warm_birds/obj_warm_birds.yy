@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Flame Producer",
-    "path":"folders/物体/Cards/Flame Producer.yy",
+    "path":"folders/物体/Mod Cards & Weapons/Cards/Flame Producer.yy",
   },
   "parentObjectId":{
     "name":"obj_card_parent",
