@@ -155,7 +155,7 @@ function slots_init(){
 	])
 	register_card("hamburger",obj_hamburger,[
 	    {"shape":0, "sprite":spr_hamburger, "cost":150, "cooldown":7*60, "description":"汉堡包：吃掉老鼠","plant_type":"normal","feature_type":"normal","target_card":"none"},
-	    {"shape":1, "sprite":spr_hamburger_1, "cost":150, "cooldown":7*60, "description":"天椒双层堡：吃掉前方三格老鼠","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_hamburger_1_icon, "cost":150, "cooldown":7*60, "description":"天椒双层堡：吃掉前方三格老鼠","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_hamburger_1},
 		{"shape":2, "sprite":spr_hamburger_2, "cost":150, "cooldown":7*60, "description":"牛肉双黑汉堡：吃掉前方三格老鼠并留下毒雾","plant_type":"normal","feature_type":"normal","target_card":"none"}
 	])
 	register_card("oil_lamp",obj_oil_lamp,[
@@ -164,7 +164,7 @@ function slots_init(){
 	])
 	register_card("ventilation_fan", obj_ventilation_fan, [
 	    {"shape":0, "sprite":spr_ventilation_fan, "cost":100, "cooldown":7*60, "description":"换气扇：吹走迷雾和空军","plant_type":"normal","feature_type":"normal","target_card":"none"},
-	    {"shape":1, "sprite":spr_ventilation_fan_1, "cost":99, "cooldown":7*60, "description":"超能草扇：吹走迷雾和空军，击退敌人","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_ventilation_fan_1_icon, "cost":99, "cooldown":7*60, "description":"超能草扇：吹走迷雾和空军，击退敌人","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_ventilation_fan_1},
 		{"shape":2, "sprite":spr_ventilation_fan_2, "cost":99, "cooldown":7*60, "description":"SSR草扇：吹走迷雾和空军，击退敌人","plant_type":"normal","feature_type":"normal","target_card":"none"}
 	]);
 	register_card("egg_boiler_pult", obj_egg_boiler_pult, [
@@ -227,7 +227,7 @@ function slots_init(){
 	]);
 	register_card("hotdog_cannon", obj_hotdog_cannon, [
 	    {"shape":0, "sprite":spr_hotdog_cannon, "cost":225, "cooldown":7*60, "description":"热狗大炮：发射冰弹攻击空中和地面敌人","plant_type":"normal","feature_type":"normal","target_card":"none"},
-		{"shape":1, "sprite":spr_hotdog_cannon_1, "cost":225, "cooldown":7*60, "description":"热狗高射炮：发射冰弹攻击空中和地面敌人","plant_type":"normal","feature_type":"normal","target_card":"none"},
+		{"shape":1, "sprite":spr_hotdog_cannon_1_icon, "cost":225, "cooldown":7*60, "description":"热狗高射炮：发射冰弹攻击空中和地面敌人","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_hotdog_cannon_1},
 		{"shape":2, "sprite":spr_hotdog_cannon_2, "cost":225, "cooldown":7*60, "description":"热狗榴弹炮：发射冰弹攻击空中和地面敌人","plant_type":"normal","feature_type":"normal","target_card":"none"}
 	]);
 	register_card("oden_pot", obj_oden_pot, [
@@ -252,7 +252,7 @@ function slots_init(){
 	])
 	register_card("dragon_fruit",obj_dragon_fruit,[
 	    {"shape":0, "sprite":spr_dragon_fruit, "cost":375, "cooldown":60*60, "description":"火龙果：灼烧3*3范围敌人","plant_type":"normal","feature_type":"normal","target_card":"none"},
-	    {"shape":1, "sprite":spr_dragon_fruit_1, "cost":375, "cooldown":60*60, "description":"炎阳火龙果：灼烧3*3范围敌人","plant_type":"normal","feature_type":"normal","target_card":"none"},
+	    {"shape":1, "sprite":spr_dragon_fruit_1_icon, "cost":375, "cooldown":60*60, "description":"炎阳火龙果：灼烧3*3范围敌人","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_dragon_fruit_1},
 		{"shape":2, "sprite":spr_dragon_fruit_2, "cost":375, "cooldown":60*60, "description":"九天皓日火龙果：灼烧5*5范围敌人","plant_type":"normal","feature_type":"normal","target_card":"none"}
 	])
 	register_card("pineapple_explosive_bread",obj_pineapple_explosive_bread,[

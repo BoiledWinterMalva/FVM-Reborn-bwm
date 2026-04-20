@@ -5,7 +5,7 @@ if array_length(mouse_preview_inst) == 0{
 		inst.sprite_index = enemy_data.spr
 		inst.image_xscale = 1.6
 		inst.image_yscale = 1.6
-		inst.tooltip_text = enemy_data.description + "\n生命值：" + string(enemy_data.hp)
+		inst.tooltip_text = enemy_data.description + "\n基础生命值：" + string(enemy_data.hp)
 		if enemy_data.shield > 0{
 			inst.tooltip_text += "\n防具血量：" + string(enemy_data.shield)
 		}
@@ -17,7 +17,7 @@ if array_length(mouse_preview_inst) == 0{
 		inst.sprite_index = enemy_data.spr
 		inst.image_xscale = 1.2
 		inst.image_yscale = 1.2
-		inst.tooltip_text = enemy_data.description + "\n生命值：" + string(enemy_data.hp)
+		inst.tooltip_text = enemy_data.description + "\n基础生命值：" + string(enemy_data.hp)
 		array_push(mouse_preview_inst,inst)
 	}
 }
