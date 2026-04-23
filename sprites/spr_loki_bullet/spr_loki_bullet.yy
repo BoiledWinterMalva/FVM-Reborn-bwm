@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"normal",
-    "path":"folders/精灵/Mod Cards/Bullet/normal.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Bullet/normal.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

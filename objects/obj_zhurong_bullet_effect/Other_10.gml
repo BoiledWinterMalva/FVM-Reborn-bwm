@@ -12,7 +12,6 @@ with (obj_enemy_parent) {
 	&& hp > 0) {
         
         // ===== 灰烬判定准备 =====
-        var can_ash = !immune_to_ash;
         var _prev_hp = hp;
 
         // ===== 造成伤害 =====
@@ -22,21 +21,19 @@ with (obj_enemy_parent) {
         event_user(0);
 
         // ===== 灰烬触发=====
-        if (can_ash) {
-            if (_prev_hp > 0 && hp <= 0) {
+        if (_prev_hp > 0 && hp <= 0) {
 
-                if (special_ash) {
-                    var inst = instance_create_depth(x, y - 20, depth, obj_mouse_ash_death);
-                    inst.special_ash = true;
-                    inst.sprite_index = sprite_index;
-                    inst.image_index = image_index;
-                }
-                else {
-                    instance_create_depth(x, y - 20, depth, obj_mouse_ash_death);
-                }
-
-                instance_destroy();
+            if (special_ash) {
+                var inst = instance_create_depth(x, y - 20, depth, obj_mouse_ash_death);
+                inst.special_ash = true;
+                inst.sprite_index = sprite_index;
+                inst.image_index = image_index;
             }
+            else {
+                instance_create_depth(x, y - 20, depth, obj_mouse_ash_death);
+            }
+
+            instance_destroy();
         }
     }
 }

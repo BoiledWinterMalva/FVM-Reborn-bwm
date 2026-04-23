@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"icon",
-    "path":"folders/精灵/Player/Gems/icon.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Gems/icon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

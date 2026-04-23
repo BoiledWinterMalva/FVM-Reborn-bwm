@@ -31,7 +31,7 @@
   "origin":9,
   "parent":{
     "name":"virgo",
-    "path":"folders/精灵/Mod Cards/Cards/Defender/virgo.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Cards/Defender/virgo.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

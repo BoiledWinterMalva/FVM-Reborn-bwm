@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"spoon_rabbit",
-    "path":"folders/精灵/UI/Icon/spoon_rabbit.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/UI/Icon/spoon_rabbit.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

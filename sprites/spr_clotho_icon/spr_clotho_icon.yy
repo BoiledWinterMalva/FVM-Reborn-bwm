@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"clotho",
-    "path":"folders/精灵/UI/Icon/clotho.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/UI/Icon/clotho.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

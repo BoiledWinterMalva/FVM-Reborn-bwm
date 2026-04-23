@@ -14,6 +14,5 @@ target_type = "split"
 delay = 0
 hit_frame = 3
 hit_done = false
-snd = false
 
 shape_bullet = 0

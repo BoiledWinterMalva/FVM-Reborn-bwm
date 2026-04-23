@@ -15,14 +15,16 @@ if (delay > 0) {
 } else {
 	image_alpha = 1;
     image_speed = 1; // 延迟结束，开始动画
-	if !snd {audio_play_sound(snd_cold_brew_machine,0,0);snd = true}
 }
 if (!hit_done && image_index == hit_frame) {
 	var _x = x
     if (instance_exists(target_id)) {
-	    target_id.hp -= damage;
 		_x = target_id.x;
-
+		with(target_id){
+		    damage_amount = other.damage;
+			damage_type = other.damage_type;
+			event_user(0);
+		}
 	    // 溅射：当 bullet_shape >= 1 时，对主目标周围 3x3 格（排/列相邻）造成 20% 伤害（不作用于主目标）
 	    if (shape_bullet >= 1) {
 			var _range = 165;
@@ -43,6 +45,7 @@ if (!hit_done && image_index == hit_frame) {
 	    }
 	}
     hit_done = true;
+	audio_play_sound(snd_cold_brew_machine,0,0)
 }
 
 if image_index >= 8 {instance_destroy();}

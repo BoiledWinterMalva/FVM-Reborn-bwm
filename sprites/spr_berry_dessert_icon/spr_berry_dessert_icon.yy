@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"berry_dessert",
-    "path":"folders/精灵/UI/Icon/berry_dessert.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/UI/Icon/berry_dessert.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

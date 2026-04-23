@@ -54,7 +54,7 @@
   "origin":9,
   "parent":{
     "name":"gaia",
-    "path":"folders/精灵/Mod Cards/Bullet/bullet effect/gaia.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Bullet/bullet effect/gaia.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -47,7 +47,7 @@
   "origin":9,
   "parent":{
     "name":"donut",
-    "path":"folders/精灵/Mod Cards/Cards/Shooter/donut.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Cards/Shooter/donut.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

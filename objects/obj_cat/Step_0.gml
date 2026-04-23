@@ -17,7 +17,7 @@ switch (state) {
 }
 
 with obj_enemy_parent{
-	if abs(x - other.x) <= 120{
+	if !is_boss && abs(x - other.x) <= 120{
 		if other.state == "idle" && other.row == grid_row && hp > 0 && (array_get_index(other.ignore_list,mouse_id) == -1)&& (array_get_index(other.target_ignore,mouse_id) == -1){
 			other.state = "awake"
 			other.timer = 0

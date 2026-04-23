@@ -39,7 +39,7 @@
   "origin":9,
   "parent":{
     "name":"aurora_dead",
-    "path":"folders/精灵/Mod Cards/Effects/aurora_dead.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Effects/aurora_dead.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

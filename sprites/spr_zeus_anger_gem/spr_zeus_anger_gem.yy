@@ -45,7 +45,7 @@
   "origin":4,
   "parent":{
     "name":"Gems",
-    "path":"folders/精灵/Player/Gems.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Gems.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

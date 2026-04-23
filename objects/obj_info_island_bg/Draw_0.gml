@@ -135,7 +135,7 @@ if info_button_select == 1 {
 		var card_data = card_data_shapes[| current_view_shape]
 		var info = get_plant_data_with_skill(card_id, current_view_shape,view_card_level,view_card_skill);
 		var name = get_plant_shape_data(card_id,current_view_shape)[? "name"]
-		var info_text = global.info_island[? card_id]
+		var info_text = (global.info_island[? card_id] != undefined)?global.info_island[? card_id]: "不够好运，查看失败"
 		
 		//绘制文本
 		draw_set_font(font_hei)

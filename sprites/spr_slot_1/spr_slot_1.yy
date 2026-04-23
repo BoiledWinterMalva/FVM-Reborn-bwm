@@ -29,8 +29,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Mod Cards",
-    "path":"folders/精灵/Mod Cards.yy",
+    "name":"Mod Cards & Weapons",
+    "path":"folders/精灵/Mod Cards & Weapons.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

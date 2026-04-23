@@ -164,7 +164,7 @@ if package_button_select == 1 {
 				var hover_card_x = x - 354 + col*84
 				var hover_card_y = y - 361 + 96*row - y_offset
 				
-				if (mouse_x >= x - 354
+				if (mouse_x >= x - 400
 				&& mouse_x <= x - 354 + 762
 				&& mouse_y >= y - 421
 				&& mouse_y <= y - 421 + 767) {

@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"virgo",
-    "path":"folders/精灵/UI/Icon/virgo.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/UI/Icon/virgo.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

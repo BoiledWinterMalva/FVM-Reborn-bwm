@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"shield",
-    "path":"folders/精灵/Player/Weapons/shield.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Weapons/shield.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

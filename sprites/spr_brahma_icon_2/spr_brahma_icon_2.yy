@@ -45,7 +45,7 @@
   "origin":9,
   "parent":{
     "name":"brahma",
-    "path":"folders/精灵/UI/Icon/brahma.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/UI/Icon/brahma.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

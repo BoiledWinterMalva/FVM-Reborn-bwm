@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"tanghulu",
-    "path":"folders/精灵/UI/Icon/tanghulu.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/UI/Icon/tanghulu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

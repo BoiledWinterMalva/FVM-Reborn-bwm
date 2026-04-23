@@ -7,5 +7,5 @@ if ds_list_find_index(other.brazier_list, self.id) == -1
 	other.burnt += 1;
 	ds_list_add(other.brazier_list, self.id)
 	audio_play_sound(snd_bullet_burnt,0,0)
-	sprite_index = spr_fire_tarsprayer_bullet
+	other.sprite_index = spr_fire_tarsprayer_bullet
 }

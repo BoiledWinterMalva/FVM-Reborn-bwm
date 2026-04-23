@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"cold_drew",
-    "path":"folders/精灵/UI/Icon/cold_drew.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/UI/Icon/cold_drew.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

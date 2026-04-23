@@ -137,7 +137,7 @@ if global.difficulty >= 2{
 enemy_list = []
 
 wave_max_time = 25*60
-wave_min_time = 2 *60
+wave_min_time = 4 *60
 wave_timer = 0
 //根据难度调整最大波长
 if global.difficulty >= 3 && global.map_id != "tower_cake"{
@@ -145,8 +145,7 @@ if global.difficulty >= 3 && global.map_id != "tower_cake"{
 }
 if is_real(global.level_file.version){
 	wave_max_time = global.level_file.max_wave_time
-	//wave_min_time = global.level_file.min_wave_time
-	wave_min_time = 120
+	wave_min_time = max(round((global.level_file.min_wave_time)/1.5), 120)
 	if global.difficulty >= 3 && global.map_id != "tower_cake"{
 		wave_max_time = round(wave_max_time/2)
 	}
@@ -206,8 +205,8 @@ function enemy_subwave_summon(){
                 var row_type = global.row_feature[row_index];
                 
                 // 如果行类型与敌人特性不匹配，则需要重新分配
-                if ((enemy_feature == "land" && row_type != "land") || 
-                    (enemy_feature == "water" && row_type != "water")) {
+                if global.map_id != "tower_cake" && (((enemy_feature == "land" && row_type != "land") || 
+                    (enemy_feature == "water" && row_type != "water"))) {
                     // 标记为需要重新分配行数
                     target_row = 0;
                 } else {

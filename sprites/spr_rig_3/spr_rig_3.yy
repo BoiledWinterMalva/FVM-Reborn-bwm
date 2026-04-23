@@ -50,7 +50,7 @@
   "origin":9,
   "parent":{
     "name":"rig",
-    "path":"folders/精灵/Mod Cards/Cards/Shooter/rig.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Cards/Shooter/rig.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

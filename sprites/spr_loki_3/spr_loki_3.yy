@@ -36,7 +36,7 @@
   "origin":9,
   "parent":{
     "name":"loki",
-    "path":"folders/精灵/Mod Cards/Cards/Assistant/loki.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Cards/Assistant/loki.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

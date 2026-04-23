@@ -1,6 +1,9 @@
 event_inherited();  // 继承父对象属性
+
 plant_id = "rig"; 
-// 设置对象类型和精灵
+obj_type = object_index;
+current_level = 1
+
 event_user(0)
 
 if shape == 1 {sprite_index = spr_rig_1;}
@@ -15,6 +18,7 @@ idle_anim = 9
 flash_speed = 5
 plant_type = "normal"
 is_slowdown = false
+target_type = "pierce"
 
 cooldown_timer = cycle
 attacking = false

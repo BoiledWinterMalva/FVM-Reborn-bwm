@@ -47,7 +47,7 @@
   "origin":7,
   "parent":{
     "name":"sea_star",
-    "path":"folders/精灵/Mod Cards/Cards/Shooter/sea_star.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Cards/Shooter/sea_star.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

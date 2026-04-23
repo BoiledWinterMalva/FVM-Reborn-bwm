@@ -14,8 +14,7 @@ with obj_card_parent{
 }
 
 if timer mod 60 == 0{
-	var plant_in_range = noone;
-        
+	
 	var plant_order_list = [noone,noone,noone,noone,noone]
 		
     // 使用碰撞检测查找攻击范围内的植物
@@ -60,6 +59,7 @@ if timer mod 60 == 0{
 		
 	}
 }
+
 has_mouse = false
 with obj_enemy_parent{
 	if grid_row == other.row && grid_col == other.col &&

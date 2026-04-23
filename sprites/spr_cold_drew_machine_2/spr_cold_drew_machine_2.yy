@@ -49,7 +49,7 @@
   "origin":9,
   "parent":{
     "name":"cold_drew_machine",
-    "path":"folders/精灵/Mod Cards/Cards/Tracker/cold_drew_machine.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Cards/Tracker/cold_drew_machine.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

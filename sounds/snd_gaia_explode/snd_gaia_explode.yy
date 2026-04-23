@@ -2,8 +2,8 @@
   "$GMSound":"v2",
   "%Name":"snd_gaia_explode",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"sound",
+    "path":"audiogroups/sound",
   },
   "bitDepth":1,
   "channelFormat":0,
@@ -15,12 +15,12 @@
   "name":"snd_gaia_explode",
   "parent":{
     "name":"Sound Effect",
-    "path":"folders/声音/Sound Effect.yy",
+    "path":"folders/声音/Mod Sound/Sound Effect.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snd_gaia_explode.mp3",
-  "volume":0.3,
+  "volume":1.0,
 }

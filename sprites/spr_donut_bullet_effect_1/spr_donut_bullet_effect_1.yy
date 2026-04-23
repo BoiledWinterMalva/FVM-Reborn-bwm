@@ -29,7 +29,7 @@
   "origin":9,
   "parent":{
     "name":"donut",
-    "path":"folders/精灵/Mod Cards/Bullet/bullet effect/donut.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Bullet/bullet effect/donut.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

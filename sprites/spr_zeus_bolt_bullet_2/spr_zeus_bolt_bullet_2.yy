@@ -29,7 +29,7 @@
   "origin":9,
   "parent":{
     "name":"zeus_bolt",
-    "path":"folders/精灵/Mod Cards/Bullet/normal/zeus_bolt.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Bullet/normal/zeus_bolt.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

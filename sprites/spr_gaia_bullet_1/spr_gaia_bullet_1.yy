@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"gaia",
-    "path":"folders/精灵/Mod Cards/Bullet/track/gaia.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Bullet/track/gaia.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

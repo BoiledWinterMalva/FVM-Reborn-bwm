@@ -39,7 +39,7 @@
   "origin":9,
   "parent":{
     "name":"Weapons",
-    "path":"folders/精灵/Player/Weapons.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Weapons.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

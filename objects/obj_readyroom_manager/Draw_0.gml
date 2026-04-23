@@ -296,7 +296,7 @@ for(var i = deck_first_slot_index; i < deck_first_slot_index+11;i++){
 	
 	//绘制奖励
 	if global.level_file.version != "1.0.0"{
-		if array_get_index(global.save_data.completed_levels,global.level_data.id) == -1{
+		if global.map_name != "跨服远征" && array_get_index(global.save_data.completed_levels,global.level_data.id) == -1{
 			draw_text(100,780,"关卡奖励（首通）")
 			draw_text(100,820,"金币（"+string(global.level_file.rewards[1].gold)+"）")
 			draw_text(100,860,"技能："+string(global.level_file.rewards[1].skill_level)+"级")

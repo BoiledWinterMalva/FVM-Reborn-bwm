@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"aurora",
-    "path":"folders/精灵/UI/Icon/aurora.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/UI/Icon/aurora.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"donut",
-    "path":"folders/精灵/UI/Icon/donut.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/UI/Icon/donut.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -50,8 +50,8 @@
   },
   "origin":9,
   "parent":{
-    "name":"delicious_island",
-    "path":"folders/精灵/Enemy/delicious_island.yy",
+    "name":"Mob",
+    "path":"folders/精灵/Enemy/delicious_island/Mob.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

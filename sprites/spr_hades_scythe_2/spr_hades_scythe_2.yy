@@ -61,7 +61,7 @@
   "origin":4,
   "parent":{
     "name":"hades_scythe",
-    "path":"folders/精灵/Player/Weapons/hades_scythe.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Weapons/hades_scythe.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -1,6 +1,25 @@
 function maps_init(){
 	map_registry_init()
-	register_map("delicious_island",{"map_name":"美味岛","map_sprite":spr_delicious_islands,"levels_data":[{"id":"salad_island_land","name":"色拉岛（陆）","button_spr":spr_levelselect_button,"button_index":1,"button_x":1365,"button_y":455,"level_file":"salad_island_land.json","hard_level_file":"salad_island_land_hard.json","level_sprite":spr_salad_island_land,"pre_music":mus_delicious_island_daytime_pre,"elite_music":mus_delicious_island_daytime_elite,"boss_music":mus_delicious_island_daytime_boss,"player_level_require":2,"pre_level_require":[]},
+	register_map(
+		"delicious_island",
+		{
+			"map_name":"美味岛",
+			"map_sprite":spr_delicious_islands,
+			"levels_data":[
+				{
+					"id":"salad_island_land",
+					"name":"色拉岛（陆）",
+					"button_spr":spr_levelselect_button,
+					"button_index":1,
+					"button_x":1365,
+					"button_y":455,
+					"level_file":"salad_island_land.json",
+					"hard_level_file":"salad_island_land_hard.json",
+					"level_sprite":spr_salad_island_land,
+					"pre_music":mus_delicious_island_daytime_pre,
+					"elite_music":mus_delicious_island_daytime_elite,
+					"boss_music":mus_delicious_island_daytime_boss,
+					"player_level_require":2,"pre_level_require":[]},
 																										{"id":"salad_island_water","name":"色拉岛（水）","button_spr":spr_levelselect_button,"button_index":2,"button_x":1395,"button_y":620,"level_file":"salad_island_water.json","hard_level_file":"salad_island_water_hard.json","level_sprite":spr_salad_island_water,"pre_music":mus_delicious_island_daytime_pre,"elite_music":mus_delicious_island_daytime_elite,"boss_music":mus_delicious_island_daytime_boss,"player_level_require":3,"pre_level_require":[]},
 																										{"id":"cookie_island","name":"曲奇岛","button_spr":spr_levelselect_button,"button_index":0,"button_x":1295,"button_y":285,"level_file":"cookie_island.json","hard_level_file":"cookie_island_hard.json","level_sprite":spr_cookie_island,"pre_music":mus_delicious_island_daytime_pre,"elite_music":mus_delicious_island_daytime_elite,"boss_music":mus_delicious_island_daytime_boss,"player_level_require":1,"pre_level_require":[]},
 																										{"id":"mousse_island","name":"慕斯岛","button_spr":spr_levelselect_button,"button_index":3,"button_x":1310,"button_y":730,"level_file":"mousse_island.json","hard_level_file":"mousse_island_hard.json","level_sprite":spr_mousse_island,"pre_music":mus_delicious_island_night_pre,"elite_music":mus_delicious_island_night_elite,"boss_music":mus_delicious_island_night_boss,"player_level_require":4,"pre_level_require":[]},
@@ -149,7 +168,8 @@ function maps_init(){
 					"boss_music":mus_delicious_tower_boss,
 					"pre_level":"tower_cake_4_2",
 					"rewards":[
-						{"card_id":"small_fire","target_shape":1}
+						{"card_id":"small_fire","target_shape":1},
+						{"card_id":"virgo","target_shape":1}
 					]
 				},
 				{
@@ -331,7 +351,6 @@ function maps_init(){
 					"pre_level":"tower_cake_10_2",
 					"rewards":[
 						{"card_id":"hotdog_cannon","target_shape":1},
-						{"card_id":"virgo","target_shape":1},
 						{"card_id":"dragon_fruit","target_shape":1}
 					]
 				},
@@ -346,7 +365,8 @@ function maps_init(){
 					"boss_music":mus_volcanic_tower_boss,
 					"pre_level":"tower_cake_11_1",
 					"rewards":[
-						{"card_id":"tar_sprayer","target_shape":1}
+						{"card_id":"tar_sprayer","target_shape":1},
+						{"card_id":"hspeed_juicer","target_shape":1}
 					]
 				},
 				{
@@ -374,8 +394,7 @@ function maps_init(){
 					"boss_music":mus_volcanic_tower_boss,
 					"pre_level":"tower_cake_12_1",
 					"rewards":[
-						{"card_id":"cotton_candy","target_shape":1},
-						{"card_id":"spoon_rabbit","target_shape":1}
+						{"card_id":"cotton_candy","target_shape":1}
 					]
 				},
 				{
@@ -650,38 +669,38 @@ function maps_init(){
 					"player_level_require":30,
 					"pre_level_require":[]
 				},
-				//{
-				//	"id":"cotton_candy_sky_daytime",
-				//	"name":"棉花糖天空（日）",
-				//	"button_spr":spr_levelselect_button_volcanic,
-				//	"button_index":10,
-				//	"button_x":800,
-				//	"button_y":300,
-				//	"level_file":"volcanic/cotton_candy_sky_daytime.json",
-				//	"hard_level_file":"volcanic/cotton_candy_sky_daytime_hard.json",
-				//	"level_sprite":spr_cotton_candy_sky_daytime,
-				//	"pre_music":mus_volcanic_island_daytime_pre,
-				//	"elite_music":mus_volcanic_island_daytime_elite,
-				//	"boss_music":mus_volcanic_island_daytime_boss,
-				//	"player_level_require":31,
-				//	"pre_level_require":[]
-				//},
-				//{
-				//	"id":"cotton_candy_sky_night",
-				//	"name":"棉花糖天空（夜）",
-				//	"button_spr":spr_levelselect_button_volcanic,
-				//	"button_index":11,
-				//	"button_x":657,
-				//	"button_y":290,
-				//	"level_file":"volcanic/cotton_candy_sky_night.json",
-				//	"hard_level_file":"volcanic/cotton_candy_sky_night_hard.json",
-				//	"level_sprite":spr_cotton_candy_sky_night,
-				//	"pre_music":mus_volcanic_island_night_pre,
-				//	"elite_music":mus_volcanic_island_night_elite,
-				//	"boss_music":mus_volcanic_island_night_boss,
-				//	"player_level_require":32,
-				//	"pre_level_require":[]
-				//},
+				{
+					"id":"cotton_candy_sky_daytime",
+					"name":"棉花糖天空（日）",
+					"button_spr":spr_levelselect_button_volcanic,
+					"button_index":10,
+					"button_x":800,
+					"button_y":300,
+					"level_file":"volcanic/cotton_candy_sky_daytime.json",
+					"hard_level_file":"volcanic/cotton_candy_sky_daytime_hard.json",
+					"level_sprite":spr_cotton_candy_sky_daytime,
+					"pre_music":mus_volcanic_island_daytime_pre,
+					"elite_music":mus_volcanic_island_daytime_elite,
+					"boss_music":mus_volcanic_island_daytime_boss,
+					"player_level_require":31,
+					"pre_level_require":[]
+				},
+				{
+					"id":"cotton_candy_sky_night",
+					"name":"棉花糖天空（夜）",
+					"button_spr":spr_levelselect_button_volcanic,
+					"button_index":11,
+					"button_x":657,
+					"button_y":290,
+					"level_file":"volcanic/cotton_candy_sky_night.json",
+					"hard_level_file":"volcanic/cotton_candy_sky_night_hard.json",
+					"level_sprite":spr_cotton_candy_sky_night,
+					"pre_music":mus_volcanic_island_night_pre,
+					"elite_music":mus_volcanic_island_night_elite,
+					"boss_music":mus_volcanic_island_night_boss,
+					"player_level_require":32,
+					"pre_level_require":[]
+				},
 				//{
 				//	"id":"jam_tribe_daytime",
 				//	"name":"果酱部落（日）",

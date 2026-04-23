@@ -52,7 +52,7 @@
   "origin":9,
   "parent":{
     "name":"clotho",
-    "path":"folders/精灵/Mod Cards/Effects/clotho.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Effects/clotho.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

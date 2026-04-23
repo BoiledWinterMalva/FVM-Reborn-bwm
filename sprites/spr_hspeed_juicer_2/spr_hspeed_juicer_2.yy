@@ -33,7 +33,7 @@
   "origin":9,
   "parent":{
     "name":"hspeed_juicer",
-    "path":"folders/精灵/Mod Cards/Cards/Assistant/hspeed_juicer.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Cards/Assistant/hspeed_juicer.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

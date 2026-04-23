@@ -119,3 +119,211 @@ if record_timer > 0 {
 	}
 	record_timer = 5;
 }
+
+if global.debug{
+	if keyboard_check_pressed(vk_numpad1){
+		var grid_pos = get_grid_position_from_world(mouse_x,mouse_y)
+		var inst = instance_create_depth(grid_pos.x,grid_pos.y+38,0,obj_infected_frog_prince_mouse)
+		inst.grid_row = grid_pos.row
+		inst.grid_col = grid_pos.col
+		inst.frozen_timer = 0000
+	}
+	if keyboard_check_pressed(vk_numpad2){
+		var grid_pos = get_grid_position_from_world(mouse_x,mouse_y)
+		var inst = instance_create_depth(grid_pos.x,grid_pos.y+38,0,obj_infected_duck_mouse)
+		inst.grid_row = grid_pos.row
+		inst.grid_col = grid_pos.col
+		inst.frozen_timer = 0000
+	}
+	if keyboard_check_pressed(vk_numpad3){
+		var grid_pos = get_grid_position_from_world(mouse_x,mouse_y)
+		var inst = instance_create_depth(grid_pos.x,grid_pos.y+38,0,obj_infected_submarine_mouse)
+		inst.grid_row = grid_pos.row
+		inst.grid_col = grid_pos.col
+		inst.frozen_timer = 0000
+	}
+	if keyboard_check_pressed(vk_numpad4){
+		var grid_pos = get_grid_position_from_world(mouse_x,mouse_y)
+		var inst = instance_create_depth(grid_pos.x,grid_pos.y+38,0,obj_infected_normal_mouse)
+		inst.grid_row = grid_pos.row
+		inst.grid_col = grid_pos.col
+		inst.frozen_timer = 0000
+	}
+	if keyboard_check_pressed(vk_numpad5){
+		var grid_pos = get_grid_position_from_world(mouse_x,mouse_y)
+		var inst = instance_create_depth(grid_pos.x,grid_pos.y+38,0,obj_infected_football_fan_mouse)
+		inst.grid_row = grid_pos.row
+		inst.grid_col = grid_pos.col
+		inst.frozen_timer = 0000
+	}
+	if keyboard_check_pressed(vk_numpad6){
+		var grid_pos = get_grid_position_from_world(mouse_x,mouse_y)
+		var inst = instance_create_depth(grid_pos.x,grid_pos.y+38,0,obj_infected_iron_pan_mouse)
+		inst.grid_row = grid_pos.row
+		inst.grid_col = grid_pos.col
+		inst.frozen_timer = 0000
+	}
+	if keyboard_check_pressed(vk_numpad7){
+		var grid_pos = get_grid_position_from_world(mouse_x,mouse_y)
+		var inst = instance_create_depth(grid_pos.x,grid_pos.y+38,0,obj_infected_mario_mouse)
+		inst.grid_row = grid_pos.row
+		inst.grid_col = grid_pos.col
+		inst.frozen_timer = 0000
+		obj_battle.boss_count += 1
+	}
+}
+
+if global.level_id == "ancient_castle_1" && !event_created {
+	var obstacle_pos_list = [
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,0,1,0,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,0,0,0,0,0,0]
+	]
+	for(var i = 0 ; i < array_length(obstacle_pos_list) ; i++){
+		for(var j = 0 ; j < array_length(obstacle_pos_list[i]) ; j++){
+			
+			if obstacle_pos_list[i][j] == 1{ 
+				var obs_pos = get_world_position_from_grid(j,i)
+				var inst = instance_create_depth(obs_pos.x,obs_pos.y-35,-1200,obj_obstacle)
+				inst.row = i
+			}
+		}
+	}
+	event_created = true;
+}
+if global.level_id == "ancient_castle_2" && !event_created {
+	var obstacle_pos_list = [
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,1,0,1,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,0,0,0,0,0,0]
+	]
+	for(var i = 0 ; i < array_length(obstacle_pos_list) ; i++){
+		for(var j = 0 ; j < array_length(obstacle_pos_list[i]) ; j++){
+			
+			if obstacle_pos_list[i][j] == 1{ 
+				var obs_pos = get_world_position_from_grid(j,i)
+				var inst = instance_create_depth(obs_pos.x,obs_pos.y-35,-1200,obj_obstacle)
+				inst.row = i
+			}
+		}
+	}
+	event_created = true;
+}
+if global.level_id == "ancient_castle_3" && !event_created {
+	var obstacle_pos_list = [
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,0,0,1,0,0,0],
+	[0,0,0,0,1,0,0,0,0],
+	[0,0,0,1,0,0,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,0,0,0,0,0,0]
+	]
+	for(var i = 0 ; i < array_length(obstacle_pos_list) ; i++){
+		for(var j = 0 ; j < array_length(obstacle_pos_list[i]) ; j++){
+			
+			if obstacle_pos_list[i][j] == 1{ 
+				var obs_pos = get_world_position_from_grid(j,i)
+				var inst = instance_create_depth(obs_pos.x,obs_pos.y-35,-1200,obj_obstacle)
+				inst.row = i
+			}
+		}
+	}
+	event_created = true;
+}
+if global.level_id == "ancient_castle_4" && !event_created {
+	var obstacle_pos_list = [
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,1,0,1,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,1,0,1,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,0,0,0,0,0,0]
+	]
+	for(var i = 0 ; i < array_length(obstacle_pos_list) ; i++){
+		for(var j = 0 ; j < array_length(obstacle_pos_list[i]) ; j++){
+			
+			if obstacle_pos_list[i][j] == 1{ 
+				var obs_pos = get_world_position_from_grid(j,i)
+				var inst = instance_create_depth(obs_pos.x,obs_pos.y-35,-1200,obj_obstacle)
+				inst.row = i
+			}
+		}
+	}
+	event_created = true;
+}
+if global.level_id == "ancient_castle_5" && !event_created {
+	var obstacle_pos_list = [
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,1,0,1,0,0,0],
+	[0,0,0,0,1,0,0,0,0],
+	[0,0,0,1,0,1,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,0,0,0,0,0,0]
+	]
+	for(var i = 0 ; i < array_length(obstacle_pos_list) ; i++){
+		for(var j = 0 ; j < array_length(obstacle_pos_list[i]) ; j++){
+			
+			if obstacle_pos_list[i][j] == 1{ 
+				var obs_pos = get_world_position_from_grid(j,i)
+				var inst = instance_create_depth(obs_pos.x,obs_pos.y-35,-1200,obj_obstacle)
+				inst.row = i
+			}
+		}
+	}
+	event_created = true;
+}
+if global.level_id == "ancient_castle_6" && !event_created {
+	var obstacle_pos_list = [
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,1,0,1,0,0,0],
+	[0,0,0,1,0,1,0,0,0],
+	[0,0,0,1,0,1,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,0,0,0,0,0,0]
+	]
+	for(var i = 0 ; i < array_length(obstacle_pos_list) ; i++){
+		for(var j = 0 ; j < array_length(obstacle_pos_list[i]) ; j++){
+			
+			if obstacle_pos_list[i][j] == 1{ 
+				var obs_pos = get_world_position_from_grid(j,i)
+				var inst = instance_create_depth(obs_pos.x,obs_pos.y-35,-1200,obj_obstacle)
+				inst.row = i
+			}
+		}
+	}
+	event_created = true;
+}
+if global.level_id == "ancient_castle_7" && !event_created {
+	var obstacle_pos_list = [
+	[1,0,0,0,0,0,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,1,0,1,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[0,0,0,1,0,1,0,0,0],
+	[0,0,0,0,0,0,0,0,0],
+	[1,0,0,0,0,0,0,0,0]
+	]
+	for(var i = 0 ; i < array_length(obstacle_pos_list) ; i++){
+		for(var j = 0 ; j < array_length(obstacle_pos_list[i]) ; j++){
+			
+			if obstacle_pos_list[i][j] == 1{ 
+				var obs_pos = get_world_position_from_grid(j,i)
+				var inst = instance_create_depth(obs_pos.x,obs_pos.y-35,-1200,obj_obstacle)
+				inst.row = i
+			}
+		}
+	}
+	event_created = true;
+}

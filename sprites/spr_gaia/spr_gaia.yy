@@ -57,7 +57,7 @@
   "origin":9,
   "parent":{
     "name":"gaia",
-    "path":"folders/精灵/Mod Cards/Cards/Boomer/gaia.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Cards/Boomer/gaia.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

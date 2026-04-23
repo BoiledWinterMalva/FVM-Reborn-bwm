@@ -1,5 +1,6 @@
 battle = noone;
-shield_replaced = false
+shield_replaced = false;
+event_created = false;
 buff_timer = 5;
 record_timer = 5;
 show_debug_message("obj_mod_battle_manager已创建")

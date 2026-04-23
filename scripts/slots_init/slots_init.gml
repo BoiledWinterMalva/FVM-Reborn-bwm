@@ -108,8 +108,8 @@ function slots_init(){
 	])
 	register_card("gatlin_long_bao",obj_gatlin_long_bao,[
 	    {"shape":0, "sprite":spr_gatlin_long_bao, "cost":250, "cooldown":50*60, "description":"机枪小笼包：发射四发包子","plant_type":"normal","feature_type":"upgrade","target_card":"double_long_bao"},
-	    {"shape":1, "sprite":spr_gatlin_long_bao_1, "cost":250, "cooldown":50*60, "description":"竹筒机枪小笼包：发射四发包子","plant_type":"normal","feature_type":"upgrade","target_card":"double_long_bao"},
-		{"shape":2, "sprite":spr_gatlin_long_bao_2, "cost":250, "cooldown":50*60, "description":"格林机枪笼包：发射六发包子","plant_type":"normal","feature_type":"normal","target_card":"none"}
+	    {"shape":1, "sprite":spr_gatlin_long_bao_icon_1, "cost":250, "cooldown":50*60, "description":"竹筒机枪小笼包：发射四发包子","plant_type":"normal","feature_type":"upgrade","target_card":"double_long_bao","place_preview":spr_gatlin_long_bao_1},
+		{"shape":2, "sprite":spr_gatlin_long_bao_icon_2, "cost":250, "cooldown":50*60, "description":"格林机枪笼包：发射六发包子","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_gatlin_long_bao_2}
 	])
 	register_card("rotating_coffee_pot", obj_rotating_coffee_pot, [
 	    {"shape":0, "sprite":spr_rotating_coffee_pot, "cost":150, "cooldown":50*60, "description":"旋转咖啡喷壶：3*3范围穿透攻击，白天睡觉","plant_type":"normal","feature_type":"upgrade","target_card":"coffee_pot"},

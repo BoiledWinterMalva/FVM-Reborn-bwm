@@ -35,7 +35,7 @@
   "origin":4,
   "parent":{
     "name":"zhurong",
-    "path":"folders/精灵/Mod Cards/Bullet/throw/zhurong.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Bullet/throw/zhurong.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

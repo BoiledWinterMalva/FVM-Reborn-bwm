@@ -25,9 +25,15 @@ var target_enemy = noone
 if !attacking {
 	// 检测自身右方是否有敌人，并获取最近的敌人
 	var min_distance = 10000 // 设置一个足够大的初始值
+	var row_offset = 1
+	if shape >= 3 row_offset = 3;
+	else if shape >= 2 row_offset = 2;
 
 	with(obj_enemy_parent){
-		if (grid_row == other.grid_row && grid_col >= other.grid_col && grid_col <= (global.grid_cols + 1) && can_target_on(other.target_type,target_type)){
+		if (abs(grid_row - other.grid_row) <= row_offset
+		&& grid_col >= other.grid_col 
+		&& grid_col <= (global.grid_cols + 1) 
+		&& can_target_on(other.target_type,target_type)){
 		    var distance = grid_col - other.grid_col
 		    if (distance < min_distance) {
 		        min_distance = distance

@@ -1,4 +1,3 @@
-// Inherit the parent event
 if global.is_paused{
 	exit
 }
@@ -49,6 +48,24 @@ if !on_lava{
 		}
 	}
 }
-if on_lava{
-	plant_type = "lilypad"
+if on_lava {
+	lava_timer++
+	if lava_timer >= 60 {
+		hp -= 10;
+		lava_timer = 0;
+	}
+	if bind_lava == noone {
+		with(obj_lava){
+			if row == other.grid_row && col == other.grid_col {
+				other.bind_lava = id;
+				break;
+			}
+		}
+	} else {
+		with(bind_lava){
+			if timer >= 44 {
+				timer = 5
+			}
+		}
+	}
 }

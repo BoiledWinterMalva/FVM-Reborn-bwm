@@ -41,7 +41,7 @@
   "origin":4,
   "parent":{
     "name":"hades_scythe_effect",
-    "path":"folders/精灵/Player/Weapons/hades_scythe_effect.yy",
+    "path":"folders/精灵/Mod Cards & Weapons/Weapons/hades_scythe_effect.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
