@@ -349,6 +349,12 @@ function slots_init(){
 	    {"shape":2, "sprite":spr_ymir_icon_2, "cost":380, "cooldown":7*60, "description":"巨神·尤弥尔：向前方三行投出共9发巨锤","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_ymir_2,"is_gold":1},
 	    {"shape":3, "sprite":spr_ymir_icon_3, "cost":380, "cooldown":7*60, "description":"至尊巨神：向前方三行投出共12发巨锤","plant_type":"normal","feature_type":"normal","target_card":"none","place_preview":spr_ymir_3,"is_gold":1}
 	])
+	register_card("aurora", obj_aurora, [
+	    {"shape":0, "sprite":spr_aurora_icon, "cost":190, "cooldown":1800, "description":"欧若拉神使：为本行投掷类卡片增伤","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_aurora},
+		{"shape":1, "sprite":spr_aurora_icon_1, "cost":190, "cooldown":1800, "description":"欧若拉圣神：为本行投掷类卡片增伤，死亡后爆炸","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_aurora_1},
+		{"shape":2, "sprite":spr_aurora_icon_2, "cost":190, "cooldown":1800, "description":"曙光女神·欧若拉：为本行投掷类卡片增伤，死亡后爆炸","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_aurora_2},
+		{"shape":3, "sprite":spr_aurora_icon_3, "cost":190, "cooldown":1800, "description":"至尊曙光女神：为本行及相邻行投掷类卡片增伤，死亡后爆炸","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_aurora_3}
+	]);
 	register_card("brahma", obj_brahma, [
 	    {"shape":0, "sprite":spr_brahma_icon, "cost":325, "cooldown":55*60, "description":"梵天神使：变身出多个上一次种下的卡片","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_brahma},
 		{"shape":1, "sprite":spr_brahma_icon_1, "cost":325, "cooldown":55*60, "description":"梵天圣神：变身出多个上一次种下的卡片","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_brahma_1},
@@ -391,18 +397,36 @@ function slots_init(){
 		{"shape":2, "sprite":spr_gaia_2, "cost":350, "cooldown":35*60, "description":"大地女神·盖亚：三连发射3*3范围爆炸的毁灭巨石","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
 		{"shape":3, "sprite":spr_gaia_3, "cost":350, "cooldown":35*60, "description":"至尊大地女神：三连发射5*5范围爆炸的毁灭巨石","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
 	]);
-	register_card("aurora", obj_aurora, [
-	    {"shape":0, "sprite":spr_aurora_icon, "cost":190, "cooldown":1800, "description":"欧若拉神使：为本行投掷类卡片增伤","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_aurora},
-		{"shape":1, "sprite":spr_aurora_icon_1, "cost":190, "cooldown":1800, "description":"欧若拉圣神：为本行投掷类卡片增伤，死亡后爆炸","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_aurora_1},
-		{"shape":2, "sprite":spr_aurora_icon_2, "cost":190, "cooldown":1800, "description":"曙光女神·欧若拉：为本行投掷类卡片增伤，死亡后爆炸","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_aurora_2},
-		{"shape":3, "sprite":spr_aurora_icon_3, "cost":190, "cooldown":1800, "description":"至尊曙光女神：为本行及相邻行投掷类卡片增伤，死亡后爆炸","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_aurora_3}
-	]);
 	register_card("zhurong", obj_zhurong, [
 	    {"shape":0, "sprite":spr_zhurong, "cost":245, "cooldown":7*60, "description":"祝融神使：点燃前方3x3区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
 	    {"shape":1, "sprite":spr_zhurong_1, "cost":245, "cooldown":7*60, "description":"祝融圣神：点燃前方3x3区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
 		{"shape":2, "sprite":spr_zhurong_2, "cost":245, "cooldown":7*60, "description":"赤帝·祝融：点燃前方5x5区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
 		{"shape":3, "sprite":spr_zhurong_3, "cost":245, "cooldown":7*60, "description":"至尊赤帝：点燃前方7x5区域，持续灼烧敌人","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
 	]);
+    register_card("power_god",obj_power_god,[
+	    {"shape":0, "sprite":spr_power_god, "cost":275, "cooldown":7*60, "description":"赫丘利神使：发射两发强力子弹追踪攻击空中鼠军","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":1, "sprite":spr_power_god_1, "cost":275, "cooldown":7*60, "description":"赫丘利圣神：发射两发强力子弹追踪攻击空中鼠军","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":2, "sprite":spr_power_god_2, "cost":275, "cooldown":7*60, "description":"大力神·赫丘利：发射三发强力子弹追踪攻击空中鼠军","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":3, "sprite":spr_power_god_3, "cost":275, "cooldown":7*60, "description":"至尊大力神：发射四发强力子弹追踪攻击空中鼠军","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
+	])
+	register_card("sheng_huo",obj_sh,[
+	    {"shape":0, "sprite":spr_sh, "cost":320, "cooldown":7*60, "description":"赫斯提亚神使：施展火焰术，向前方3行释放神圣穿透型火焰，灼烧沿途鼠军","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":1, "sprite":spr_sh_icon_1, "cost":320, "cooldown":7*60, "description":"赫斯提亚圣神：施展火焰术，向前方3行释放神圣穿透型火焰，灼烧沿途鼠军","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_sh_1},
+		{"shape":2, "sprite":spr_sh_icon_2, "cost":320, "cooldown":7*60, "description":"圣火女神·赫斯提亚：施展火焰术，向前方3行释放神圣穿透型火焰，灼烧沿途鼠军","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_sh_2},
+		{"shape":3, "sprite":spr_sh_icon_3, "cost":320, "cooldown":7*60, "description":"至尊圣火女神：施展火焰术，向前方3行释放神圣穿透型火焰，灼烧沿途鼠军","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_sh_3}
+	])
+	register_card("save_god",obj_save_god,[
+		{"shape":0,"sprite":spr_save_god_0,"cost":375,"cooldown":30*60,"description":"灵鱼摩蹉神使：化身为4条灵鱼，冲撞沿途遇到的老鼠","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":1,"sprite":spr_save_god_1,"cost":375,"cooldown":30*60,"description":"灵鱼摩蹉圣神：化身为4条灵鱼，冲撞沿途遇到的老鼠","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":2,"sprite":spr_save_god_2_icon,"cost":375,"cooldown":30*60,"description":"救世神·灵鱼摩蹉：化身为5条灵鱼，冲撞沿途遇到的老鼠","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_save_god_2},
+		{"shape":3,"sprite":spr_save_god_3_icon,"cost":375,"cooldown":30*60,"description":"至尊救世神：化身为7条灵鱼，冲撞沿途遇到的老鼠","plant_type":"coffee","feature_type":"normal","target_card":"none","is_gold":1,"place_preview":spr_save_god_3}
+	])
+    register_card("rig",obj_rig,[
+	    {"shape":0, "sprite":spr_rig, "cost":185, "cooldown":7*60, "description":"里格神使：拿起号角，向前方发射5个可穿透的音波球子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+	    {"shape":1, "sprite":spr_rig_1, "cost":185, "cooldown":7*60, "description":"里格圣神：拿起号角，向前方发射5个可穿透的音波球子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":2, "sprite":spr_rig_2, "cost":185, "cooldown":7*60, "description":"守护神·里格：拿起号角，向前方发射5个可穿透的音波球子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1},
+		{"shape":3, "sprite":spr_rig_3, "cost":185, "cooldown":7*60, "description":"至尊守护神：拿起号角，向前方发射5个可穿透的音波球子弹","plant_type":"normal","feature_type":"normal","target_card":"none","is_gold":1}
+	])
 	 register_card("athena",obj_athena,[
 	    {"shape":0, "sprite":spr_athena, "cost":375, "cooldown":20*60, "description":"雅典娜守护：全屏轰击，造成3×3范围伤害","plant_type":"normal","feature_type":"normal","target_card":"none"},
 	    {"shape":1, "sprite":spr_athena_1, "cost":375, "cooldown":20*60, "description":"雅典娜圣衣：全屏轰击，造成3×3范围伤害","plant_type":"normal","feature_type":"normal","target_card":"none"},

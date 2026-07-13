@@ -37,7 +37,7 @@
   "origin":9,
   "parent":{
     "name":"shenghuo",
-    "path":"folders/精灵/1-Gold card/shenghuo.yy",
+    "path":"folders/精灵/Gold card/shenghuo.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -1,0 +1,10 @@
+damage = 0
+move_speed = 0
+row = 0
+damage_type = "normal"
+target_type = "normal"
+burnt = 0
+bounced = false
+hitted_enemy = ds_list_create()
+image_xscale = 1.2
+image_yscale = 1.2
